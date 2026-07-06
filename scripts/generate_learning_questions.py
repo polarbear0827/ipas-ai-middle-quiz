@@ -27,6 +27,141 @@ VARIANTS = [
     "下列哪一個情境最能反映「{term}」在實務中的正確應用？",
 ]
 
+DEEP_VARIANTS = [
+    {
+        "prompt": "若考題把「{term}」放在{scenario}的案例中，最合理的判斷流程是？",
+        "correct": "先確認任務目標、資料條件與限制，再把「{term}」用在{goal}相關的判斷",
+        "wrongs": [
+            "只因技術名稱熱門就直接採用，不檢查資料與評估方式",
+            "先上線再回頭補資料品質、權限與風險控管",
+            "只看單一整體分數，忽略錯誤類型與使用情境",
+        ],
+        "difficulty": "情境",
+        "explanation": "這類題目會把概念放進專案脈絡；判斷時要回到任務目標、資料條件、限制與風險，而不是只背技術名稱。",
+    },
+    {
+        "prompt": "下列哪一項最像是把「{term}」用錯地方的陷阱選項？",
+        "correct": "把「{term}」當成所有 AI 問題的固定答案，忽略它真正支援的是{goal}",
+        "wrongs": [
+            "先釐清資料型態與任務目標，再評估是否需要此概念",
+            "將此概念與評估指標、資料流程或部署限制一起檢查",
+            "在{scenario}中確認它是否能解決實際痛點",
+        ],
+        "difficulty": "易混淆",
+        "explanation": "考題常把熱門名詞包裝成萬用答案；看到這類選項，要檢查它是否真的對應該概念的適用範圍。",
+    },
+    {
+        "prompt": "某團隊在{scenario}後提出四個改善方向。若要貼近「{term}」的精神，哪一項最合理？",
+        "correct": "把改善方向連到{goal}，並設定可驗證的資料、模型或營運指標",
+        "wrongs": [
+            "只增加模型參數量，不重新檢查問題定義",
+            "只調整介面文字，不確認模型或資料流程是否改善",
+            "移除驗證集以提高訓練分數，看起來更容易通過",
+        ],
+        "difficulty": "應用",
+        "explanation": "改善題要找能被驗證的方案；好的答案會同時照顧目標、資料、模型表現與營運指標。",
+    },
+    {
+        "prompt": "準備考試時，若想把「{term}」放進自己的筆記，下列哪個筆記寫法最有助於答題？",
+        "correct": "記下適用任務、輸入輸出、常見限制與它如何支援{goal}",
+        "wrongs": [
+            "只記英文縮寫，不寫任何適用情境",
+            "只背一個廠商產品名稱，忽略概念本身",
+            "只記最複雜的公式，不管題目問的是規劃或應用判斷",
+        ],
+        "difficulty": "基礎",
+        "explanation": "中級考試很重視情境判斷；筆記要能幫你把概念、適用條件、限制與實務用途串起來。",
+    },
+    {
+        "prompt": "在{scenario}的規劃會議中，哪一個問題最能檢查團隊是否真的理解「{term}」？",
+        "correct": "這個概念要解決的核心問題是否就是{goal}，需要哪些資料與驗證方式支持？",
+        "wrongs": [
+            "這個名詞聽起來是否比其他名詞更像最新技術？",
+            "能不能完全不看資料品質就保證模型準確？",
+            "是否只要寫進簡報就能取代風險管理與測試？",
+        ],
+        "difficulty": "情境",
+        "explanation": "好的規劃問題會逼團隊說清楚概念與目標、資料、驗證方式之間的關係。",
+    },
+    {
+        "prompt": "如果考題要求比較「{term}」與相鄰概念，下列哪個比較角度最穩？",
+        "correct": "比較它們的任務目標、輸入輸出、假設條件與評估方式是否不同",
+        "wrongs": [
+            "只比較哪個名詞比較長或比較常出現在新聞",
+            "只看是否都能被稱為 AI，不再區分任務差異",
+            "只用單一 accuracy 決定所有概念優劣",
+        ],
+        "difficulty": "易混淆",
+        "explanation": "相鄰概念題常考差異；最穩的比較軸是任務、輸入輸出、假設、限制與評估方式。",
+    },
+    {
+        "prompt": "某公司希望把「{term}」納入正式 AI 專案，而不只是概念展示。下列哪項最像完整落地思維？",
+        "correct": "把{goal}轉成可衡量需求，並規劃資料、模型、驗證、部署與維運責任",
+        "wrongs": [
+            "只完成一次 demo，就視為正式營運系統",
+            "只保留 notebook，不規劃 API、監控或權限",
+            "只要求模型回答更像人，完全不定義驗收標準",
+        ],
+        "difficulty": "應用",
+        "explanation": "落地題不只問模型；還要能把需求、資料、驗證、部署、維運與責任分工串起來。",
+    },
+    {
+        "prompt": "下列哪個敘述最能避免在「{term}」相關題目中被錯誤選項誤導？",
+        "correct": "先判斷題目問的是概念定義、模型選型、評估指標、資料治理還是部署維運",
+        "wrongs": [
+            "看到熟悉名詞就直接選，不讀完情境條件",
+            "所有題目都優先選最大模型或最複雜架構",
+            "只要選項提到自動化，就一定代表正確答案",
+        ],
+        "difficulty": "易混淆",
+        "explanation": "很多錯誤選項不是完全錯，而是答非所問；先辨認題目層次，可以排除看似相關但不貼題的選項。",
+    },
+    {
+        "prompt": "若要替「{term}」設計一題更接近實務的考題，最應該加入哪種條件？",
+        "correct": "加入資料型態、業務目標、限制條件與{goal}是否可被驗證",
+        "wrongs": [
+            "只加入更多專有名詞，讓題目看起來更艱深",
+            "刻意刪除所有業務背景，只留下孤立名詞",
+            "只問哪個選項字數最長，不涉及概念判斷",
+        ],
+        "difficulty": "情境",
+        "explanation": "實務型題目會提供條件讓你做取捨；業務目標、資料型態、限制與驗證方式是關鍵。",
+    },
+    {
+        "prompt": "在{scenario}時，哪一個行動最能降低「知道名詞但不會用」的風險？",
+        "correct": "把「{term}」對應到具體輸入、處理流程、輸出結果與{goal}",
+        "wrongs": [
+            "只重複背誦名詞，避免接觸任何情境題",
+            "完全跳過錯題，不分析錯在概念、條件或指標",
+            "把所有延伸概念都視為考試不會出現",
+        ],
+        "difficulty": "應用",
+        "explanation": "刷題要從名詞走到流程；能說清楚輸入、處理、輸出與目的，才比較能應付情境變化。",
+    },
+    {
+        "prompt": "若題目問「{term}」在風險或治理上的注意事項，下列哪個回答最合理？",
+        "correct": "除了{goal}，也要檢查資料品質、偏誤、隱私、效能監控與人工作業介面",
+        "wrongs": [
+            "只要模型準確率高，就不需要任何治理或監控",
+            "只把資料全部集中保存，不管授權與保存期限",
+            "只讓模型自動決策，不保留紀錄、覆核或回滾機制",
+        ],
+        "difficulty": "進階",
+        "explanation": "中級規劃題常把技術與治理綁在一起；高分答案會同時考慮效能、資料、合規、監控與營運風險。",
+    },
+    {
+        "prompt": "若「{term}」出現在跨部門 AI 導入討論中，哪一項溝通方式最適合？",
+        "correct": "用業務語言說明它如何支援{goal}，再補上資料需求、限制與驗收方式",
+        "wrongs": [
+            "只用公式或縮寫說明，讓非技術成員自行猜測價值",
+            "只承諾模型一定正確，不揭露限制與風險",
+            "完全不談資料來源、權限、維運與責任分工",
+        ],
+        "difficulty": "應用",
+        "explanation": "AI 應用規劃師要能跨部門溝通；技術概念需要被翻譯成業務價值、資料需求、限制與驗收標準。",
+    },
+]
+
 
 CONCEPTS = [
     # 科目 1：AI 相關技術應用
@@ -139,18 +274,34 @@ def option_order(question_number: int) -> list[str]:
     return orders[question_number % len(orders)]
 
 
+def fill_template(template: str, term: str, scenario: str, goal: str) -> str:
+    return template.format(term=term, scenario=scenario, goal=goal)
+
+
 def make_question(concept: tuple, variant_index: int, serial: int) -> dict:
     subject, topic, section, page, term, correct, wrong1, wrong2, wrong3, scenario, goal = concept
-    prompt = VARIANTS[variant_index].format(term=term, scenario=scenario, goal=goal)
-    variants = [
-        correct,
-        wrong1,
-        wrong2,
-        wrong3,
-    ]
+    if variant_index < len(VARIANTS):
+        prompt = fill_template(VARIANTS[variant_index], term, scenario, goal)
+        variants = [
+            correct,
+            wrong1,
+            wrong2,
+            wrong3,
+        ]
+        difficulty = ["基礎", "應用", "情境", "易混淆"][variant_index % 4]
+        explanation_tail = f"{term} 的核心是{goal}；因此應選「{correct}」。"
+    else:
+        deep_variant = DEEP_VARIANTS[variant_index - len(VARIANTS)]
+        prompt = fill_template(deep_variant["prompt"], term, scenario, goal)
+        variants = [
+            fill_template(deep_variant["correct"], term, scenario, goal),
+            *[fill_template(wrong, term, scenario, goal) for wrong in deep_variant["wrongs"]],
+        ]
+        difficulty = deep_variant["difficulty"]
+        explanation_tail = f"{deep_variant['explanation']} 本題仍要回到「{term}」與「{goal}」的連結。"
     order = option_order(serial + variant_index)
     options = {letter: variants[idx] for idx, letter in enumerate(order)}
-    answer = next(letter for letter, text in options.items() if text == correct)
+    answer = next(letter for letter, text in options.items() if text == variants[0])
     guide_file = GUIDES[subject]
     subject_name = "科目1 人工智慧技術應用與規劃" if subject == "S1" else "科目3 機器學習技術與應用"
     return {
@@ -160,8 +311,8 @@ def make_question(concept: tuple, variant_index: int, serial: int) -> dict:
         "prompt": prompt,
         "options": options,
         "topic": topic,
-        "difficulty": ["基礎", "應用", "情境", "易混淆"][variant_index % 4],
-        "explanation": f"學習指引 {subject_name} 第 {section} 節重點：{term} 的核心是{goal}；因此應選「{correct}」。",
+        "difficulty": difficulty,
+        "explanation": f"學習指引 {subject_name} 第 {section} 節重點：{explanation_tail}",
         "hasFigureReference": False,
         "source": {
             "file": guide_file,
@@ -182,7 +333,7 @@ def generate_questions() -> list[dict]:
     counters = {"S1": 0, "S3": 0}
     for concept in CONCEPTS:
         subject = concept[0]
-        for variant_index in range(len(VARIANTS)):
+        for variant_index in range(len(VARIANTS) + len(DEEP_VARIANTS)):
             counters[subject] += 1
             questions.append(make_question(concept, variant_index, counters[subject]))
 
