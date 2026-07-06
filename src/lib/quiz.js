@@ -6,7 +6,9 @@ export function loadState() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return defaultState();
-    return { ...defaultState(), ...JSON.parse(raw) };
+    const next = { ...defaultState(), ...JSON.parse(raw) };
+    if (!next.examIds.includes("GUIDE")) next.examIds = [...next.examIds, "GUIDE"];
+    return next;
   } catch {
     return defaultState();
   }
@@ -19,7 +21,7 @@ export function defaultState() {
     bookmarks: {},
     mode: "quick",
     subjects: ["S1", "S3"],
-    examIds: ["114-2", "115-1"],
+    examIds: ["114-2", "115-1", "GUIDE"],
     search: "",
     activeId: null,
     mock: null,
@@ -179,5 +181,5 @@ export function makeMock(questions, count = 50) {
 
 export function pdfUrlFor(question, baseUrl) {
   const encoded = encodeURIComponent(question.source.file);
-  return `${baseUrl}question-bank/${encoded}#page=${question.source.page}`;
+  return `${baseUrl}question-bank/${encoded}${question.source.page ? `#page=${question.source.page}` : ""}`;
 }

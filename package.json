@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "extract": "python3 scripts/extract_questions.py",
+    "extract": "python3 scripts/extract_questions.py && python3 scripts/generate_learning_questions.py",
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1"

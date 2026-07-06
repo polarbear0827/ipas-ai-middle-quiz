@@ -236,15 +236,22 @@ function App() {
           active={state.examIds.includes("114-2")}
           icon={<FileText size={18} />}
           label="114-2"
-          meta="100 題"
+          meta={`${countByExam("114-2", QUESTIONS)} 題`}
           onClick={() => toggleExam("114-2")}
         />
         <RailButton
           active={state.examIds.includes("115-1")}
           icon={<FileText size={18} />}
           label="115-1"
-          meta="100 題"
+          meta={`${countByExam("115-1", QUESTIONS)} 題`}
           onClick={() => toggleExam("115-1")}
+        />
+        <RailButton
+          active={state.examIds.includes("GUIDE")}
+          icon={<BookOpen size={18} />}
+          label="學習指引"
+          meta={`${countByExam("GUIDE", QUESTIONS)} 題`}
+          onClick={() => toggleExam("GUIDE")}
         />
 
         <SectionTitle icon={<ListChecks size={18} />} label="模式切換" />
@@ -327,7 +334,7 @@ function App() {
             </div>
           </>
         ) : (
-          <EmptyState onClear={() => patchState({ search: "", subjects: ["S1", "S3"], examIds: ["114-2", "115-1"] })} />
+          <EmptyState onClear={() => patchState({ search: "", subjects: ["S1", "S3"], examIds: ["114-2", "115-1", "GUIDE"] })} />
         )}
       </main>
 
@@ -533,6 +540,7 @@ function QuestionCard({ question, selectedAnswer, showAnswer, isMock, bookmarked
 }
 
 function buildHint(question) {
+  if (question.explanation) return question.explanation;
   const answerText = question.options[question.answer];
   return `官方公告題本未附逐題解析。先記這題的定位：${question.topic}；正確選項重點是「${answerText}」。`;
 }
@@ -673,7 +681,7 @@ function QuestionList({ questions, state, onClose, onPick }) {
             return (
               <button key={q.id} className={status} type="button" onClick={() => onPick(q.id)}>
                 <span>
-                  {q.source.examId} {q.source.subject === "S1" ? "科1" : "科3"}
+                  {q.source.examId === "GUIDE" ? "指引" : q.source.examId} {q.source.subject === "S1" ? "科1" : "科3"}
                 </span>
                 <strong>{String(q.number).padStart(2, "0")}</strong>
               </button>
@@ -699,6 +707,10 @@ function EmptyState({ onClear }) {
 
 function countBySubject(subject, questions) {
   return questions.filter((q) => q.source.subject === subject).length;
+}
+
+function countByExam(examId, questions) {
+  return questions.filter((q) => q.source.examId === examId).length;
 }
 
 function formatDays(days) {

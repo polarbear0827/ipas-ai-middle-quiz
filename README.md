@@ -1,6 +1,6 @@
 # iPAS AI 中級刷題室
 
-這是一個給 iPAS AI 應用規劃師中級備考用的 GitHub Pages 靜態刷題站。題庫由本資料夾中的公告試題 PDF 抽取，支援快速刷題、錯題複習、模擬考、弱點統計與原始 PDF 頁面連結。
+這是一個給 iPAS AI 應用規劃師中級備考用的 GitHub Pages 靜態刷題站。題庫由本資料夾中的公告試題 PDF 抽取，並依科目 1、科目 3 學習指引補上原創延伸題，支援快速刷題、錯題複習、模擬考、弱點統計與原始 PDF 頁面連結。
 
 ## 本機使用
 
@@ -18,7 +18,7 @@ npm run dev
 npm run extract
 ```
 
-抽取結果會寫入 `src/data/questions.json`，原始題本會複製到 `public/question-bank/` 供網站連結使用。
+抽取結果會寫入 `src/data/questions.json`。`npm run extract` 也會重新產生學習指引延伸題，並把公告題本與學習指引 PDF 複製到 `public/question-bank/` 供網站連結使用。
 
 ## 發佈到 GitHub Pages
 
