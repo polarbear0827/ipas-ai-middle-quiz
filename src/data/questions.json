@@ -1,0 +1,4640 @@
+{
+  "generatedAt": "2026-07-06",
+  "targetExamDate": "2026-11-14",
+  "questions": [
+    {
+      "id": "114-2-S1-01",
+      "number": 1,
+      "answer": "B",
+      "prompt": "某電商企業希望利用自然語言處理（NLP）技術，分析顧客在社群平\n台與商品評論中的文字內容，以即時掌握顧客對產品的滿意度變化。\n若採用情感分析（Sentiment Analysis）模型，其主要目的為何？",
+      "options": {
+        "A": "預測顧客使用的語言風格與語氣",
+        "B": "判斷文本中所表達的情感傾向",
+        "C": "將顧客留言自動翻譯成企業內部指定語言",
+        "D": "產生顧客評論的自動化摘要內容"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 1
+      }
+    },
+    {
+      "id": "114-2-S1-02",
+      "number": 2,
+      "answer": "A",
+      "prompt": "某跨國金融科技公司導入 Transformer 架構開發多語客服系統，以提\n升長篇金融文件的自動翻譯品質。下列何者為該模型能顯著改善翻譯\n準確度的主要原因？",
+      "options": {
+        "A": "透過自注意力機制（Self-Attention Mechanism）捕捉長距離語\n境依賴關係",
+        "B": "透過卷積運算（Convolution Operation）加速訓練過程",
+        "C": "透過強化學習（Reinforcement Learning）自動調整語句生成策\n略",
+        "D": "透過資料增強（Data Augmentation）平衡多語語料比例"
+      },
+      "topic": "深度學習",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 1
+      }
+    },
+    {
+      "id": "114-2-S1-03",
+      "number": 3,
+      "answer": "B",
+      "prompt": "某企業計畫應用 BERT（Bidirectional Encoder Representations\nfrom Transformers）模型分析大量顧客意見，以強化客服自動回覆\n系統。在 BERT 的預訓練過程中，「遮罩語言模型（Masked Language\nModel, MLM）」的主要訓練策略為何？",
+      "options": {
+        "A": "依序遮罩句尾詞語，讓模型從左到右逐步生成完整句子",
+        "B": "隨機遮罩部分詞語，並讓模型根據雙向上下文（Bidirectional\nContext）預測被遮罩的詞",
+        "C": "透過對抗訓練（Adversarial Training）生成語意相似的擾動樣\n本以提升泛化性",
+        "D": "以未遮罩的詞為條件，使用解碼器（Decoder）結構重建整句內容"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 1
+      }
+    },
+    {
+      "id": "114-2-S1-04",
+      "number": 4,
+      "answer": "C",
+      "prompt": "在詞向量（Word Embedding）訓練方法中，GloVe（Global Vectors\nfor Word Representation）與 Word2Vec 的主要差異為何？",
+      "options": {
+        "A": "Word2Vec 以詞頻權重訓練詞向量，而 GloVe 以隨機初始化向量進\n行學習",
+        "B": "Word2Vec 以全局統計矩陣為基礎，而 GloVe 採用神經網路進行上\n下文預測",
+        "C": "Word2Vec 為基於預測的模型，而 GloVe 為基於共現統計的模型",
+        "D": "Word2Vec 僅能用於靜態文本語料，而 GloVe 可應用於即時語料更\n新"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 1
+      }
+    },
+    {
+      "id": "114-2-S1-05",
+      "number": 5,
+      "answer": "A",
+      "prompt": "某企業以詞頻–逆文件頻率（Term Frequency–Inverse Document\nFrequency, TF-IDF）方法分析顧客意見內容，但發現模型在處理篇\n幅較長的回饋文本時，無法準確反映關鍵詞的重要性。下列何者為造\n成此現象的主要原因？",
+      "options": {
+        "A": "長文本中的詞頻偏高，導致常見詞權重被過度放大",
+        "B": "長文本中缺乏明確句子邊界，造成 TF-IDF 無法計算詞頻",
+        "C": "TF-IDF 無法同時處理多份文件",
+        "D": "長文本會改變 IDF（Inverse Document Frequency）的計算，使所\n有詞權重趨於相近"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 2
+      }
+    },
+    {
+      "id": "114-2-S1-06",
+      "number": 6,
+      "answer": "B",
+      "prompt": "某企業嘗試以 N-gram 語言模型（N-gram Language Model）建立客服\n自動回覆系統，但發現模型生成的句子雖在片段上合理，卻缺乏整體\n語意連貫性。此問題最可能源自 N-gram 模型的哪一項限制？",
+      "options": {
+        "A": "N-gram 模型在訓練過程中需要龐大計算量，導致長句無法收斂",
+        "B": "N-gram 模型僅根據固定長度的前序詞建立機率估計，難以捕捉長\n距離依賴關係（Long-range Dependencies）",
+        "C": "N-gram 模型缺乏語意嵌入（Semantic Embedding）層，因此無法\n表徵詞語間的語意相似度",
+        "D": "N-gram 模型假設詞與詞之間相互獨立，導致無法建構上下文語意\n關聯"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 2
+      }
+    },
+    {
+      "id": "114-2-S1-07",
+      "number": 7,
+      "answer": "A",
+      "prompt": "在企業導入的智慧監控系統中，模型以物件偵測（Object\nDetection）方式自動辨識影像中的人物與車輛。若評估指標採用平\n均精確率（Mean Average Precision, mAP），其中 IoU\n（Intersection over Union）閾值設定較高時，代表下列哪一項意\n義？",
+      "options": {
+        "A": "預測邊界框與真實邊界框的重疊程度越高，模型偵測結果越精\n準",
+        "B": "預測邊界框與真實邊界框的誤差越大，導致 mAP 數值上升",
+        "C": "模型整體精確率（Precision）降低，但召回率（Recall）上升",
+        "D": "預測邊界框的評估結果不受真實框大小影響"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 2
+      }
+    },
+    {
+      "id": "114-2-S1-08",
+      "number": 8,
+      "answer": "C",
+      "prompt": "關於 Softmax 與 Max-Pooling，下列敘述何者正確？",
+      "options": {
+        "A": "Softmax 與 Max-Pooling 都會將特徵張量壓縮為單一最大值",
+        "B": "Max-Pooling 會對輸入進行機率分佈的轉換",
+        "C": "Softmax 會保留所有輸入資訊，但以比例表示；Max-Pooling 只保\n留區域最大值",
+        "D": "Softmax 主要用於特徵降維，而 Max-Pooling 用於分類輸出"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 2
+      }
+    },
+    {
+      "id": "114-2-S1-09",
+      "number": 9,
+      "answer": "B",
+      "prompt": "某企業在訓練生成式 AI 模型時，導入資料增強（Data\nAugmentation）技術以擴充訓練資料，但觀察到模型效能反而下降。\n下列哪一項最可能的原因與對應改善策略最為正確？",
+      "options": {
+        "A": "增強樣本未經隨機初始化，導致模型梯度更新不穩定，應重新設\n計訓練啟動流程",
+        "B": "增強後資料的特徵分佈與原始資料不一致，影響模型的泛化能\n力，應檢查並調整增強策略以維持語意一致性",
+        "C": "增強樣本的比例過高，造成模型對特定資料產生偏好，應適度提\n高增強比例並調整學習率",
+        "D": "增強後資料的標註可信度下降，導致訓練訊號偏差，應以半監督\n學習方式重新校正資料"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 3
+      }
+    },
+    {
+      "id": "114-2-S1-10",
+      "number": 10,
+      "answer": "D",
+      "prompt": "如果希望同時兼顧「精確率（Precision）」和「召回率（Recall）」，\n下列哪一個指標可以作為綜合評估的標準？",
+      "options": {
+        "A": "準確率（Accuracy）",
+        "B": "均方根誤差（RMSE）",
+        "C": "均方誤差（MSE）",
+        "D": "F1 分數（F1 Score）"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 3
+      }
+    },
+    {
+      "id": "114-2-S1-11",
+      "number": 11,
+      "answer": "C",
+      "prompt": "企業資料分析團隊使用 DBSCAN（Density-Based Spatial Clustering\nof Applications with Noise）演算法進行顧客行為分群，並希望模\n型能自動區分主要群集與雜訊資料。\n在此演算法中，決定聚類結果的兩個主要超參數為下列何者？",
+      "options": {
+        "A": "特徵數與學習率",
+        "B": "K 值與距離閾值",
+        "C": "鄰域半徑（Epsilon ε）與最小點數（MinPts）",
+        "D": "交叉熵（Cross Entropy）與權重初始化"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 3
+      }
+    },
+    {
+      "id": "114-2-S1-12",
+      "number": 12,
+      "answer": "B",
+      "prompt": "某金融科技公司建立房價預測模型，使用多項特徵（如建坪、房齡、\n樓層、總價等）進行線性迴歸分析（Linear Regression\nAnalysis）。資料分析師發現多個特徵之間存在高度相關性，導致模\n型係數不穩定、預測誤差上升。為解決此問題，下列哪一種方法最適\n合？",
+      "options": {
+        "A": "繼續保留所有特徵，不進行任何處理",
+        "B": "使用主成分分析（PCA）將相關特徵轉換為彼此獨立的主成分",
+        "C": "新增更多原始變數以提升模型表現",
+        "D": "改用分類模型進行預測"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 3
+      }
+    },
+    {
+      "id": "114-2-S1-13",
+      "number": 13,
+      "answer": "B",
+      "prompt": "下列何者為 Kubernetes 在 AI 模型部署與運行中的核心功能？",
+      "options": {
+        "A": "自動化管理模型的訓練流程與參數調校",
+        "B": "管理與協調模型服務的部署、擴展與運行環境",
+        "C": "提供 AI 模型的資料儲存與版本控管功能",
+        "D": "負責深度學習推論的 GPU 加速運算"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S1-14",
+      "number": 14,
+      "answer": "A",
+      "prompt": "在調整模型超參數（Hyperparameters）時，若希望避免因過度調整\n參數而導致過擬合，下列哪一種做法最有效提升模型的泛化能力？",
+      "options": {
+        "A": "採用交叉驗證（Cross-Validation）於多組參數組合間反覆評\n估，選擇在驗證資料上表現最穩定的設定",
+        "B": "使用早期停止機制（Early Stopping）監控訓練誤差並在收斂前\n停止訓練，以防模型學習過度",
+        "C": "對輸入特徵進行標準化以減少特徵值差異帶來的過擬合風險",
+        "D": "提高模型複雜度並使用更多超參數搜尋範圍，以確保模型能充分\n學習資料特徵"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S1-15",
+      "number": 15,
+      "answer": "C",
+      "prompt": "在企業導入的 MLOps（Machine Learning Operations）流程中，\nModel Registry 最常用於哪一個階段？",
+      "options": {
+        "A": "用於設定運算資源與執行環境以確保訓練穩定",
+        "B": "用於建立可重複使用的資料與特徵版本",
+        "C": "用於集中管理模型版本、訓練紀錄與部署狀態",
+        "D": "用於追蹤模型上線後的表現與漂移情況"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S1-16",
+      "number": 16,
+      "answer": "D",
+      "prompt": "下列哪一種情境中最適合使用「序列到序列（Seq2Seq）」模型？",
+      "options": {
+        "A": "預測銷售趨勢曲線，輸出未來數值序列",
+        "B": "辨識文本中出現的人名、地名與組織名稱等實體資訊",
+        "C": "對輸入文本中的關鍵字進行頻率統計與可視化",
+        "D": "將輸入文字轉換成語意等價的另一段文字，如自動翻譯或摘要生\n成"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S1-17",
+      "number": 17,
+      "answer": "D",
+      "prompt": "在自然語言處理中，檢索增強生成（Retrieval-Augmented\nGeneration, RAG）是一種結合語言模型與向量搜尋的技術，可有效\n減少模型知識過時與產生幻覺的問題。若要建立一套高效能的 RAG 系\n統，下列何者為在「檢索階段」最關鍵的挑戰？",
+      "options": {
+        "A": "確保檢索到的文件能被完整納入語言模型的上下文視窗（Context\nWindow）中進行生成",
+        "B": "選擇使用 Faiss 或 ScaNN 等近似最近鄰搜尋函式庫",
+        "C": "降低嵌入模型（Embedding Model）在高維空間中的計算成本與記\n憶體占用",
+        "D": "避免向量檢索結果僅具語意相似但與查詢意圖無實質關聯的情況"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S1-18",
+      "number": 18,
+      "answer": "D",
+      "prompt": "當 Transformer 模型發生「注意力分布過於平均（Attention\nCollapse）」的情形時，導致模型無法有效聚焦於關鍵資訊，下列哪\n一項策略可有效改善此問題？",
+      "options": {
+        "A": "提高 Query-Key 點積（Dot Product）的縮放常數",
+        "B": "在 Softmax 前加入高斯雜訊（Gaussian Noise）",
+        "C": "使用 ReLU 函數取代 Softmax",
+        "D": "對注意力權重施加稀疏化約束（Sparsity Constraint）"
+      },
+      "topic": "深度學習",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 5
+      }
+    },
+    {
+      "id": "114-2-S1-19",
+      "number": 19,
+      "answer": "B",
+      "prompt": "某研究團隊正在訓練一個針對低資源語言（如少數民族語言）的語言\n模型，但該語言僅有約 1 萬筆語料可用。在訓練過程中出現明顯的過\n擬合現象，若希望在不新增真實語料的前提下提升模型的泛化能力，\n採用下列哪一種方法最為適合？",
+      "options": {
+        "A": "將 Transformer 的隱藏層維度擴增至 1024，以提升表徵能力",
+        "B": "採用反向翻譯（Back-Translation）技術，以生成額外目標語句\n的偽平行語料（Pseudo‑Parallel Corpus）",
+        "C": "對詞嵌入矩陣（Embedding Matrix），施加 L1 正則化以壓縮模型\n參數",
+        "D": "將多語言 BERT（mBERT）中所有 Transformer 層全部凍結以保留預\n訓練知識"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 5
+      }
+    },
+    {
+      "id": "114-2-S1-20",
+      "number": 20,
+      "answer": "B",
+      "prompt": "在使用生成對抗網路（GAN）進行人臉影像生成時，若出現「模式崩\n潰」（Mode Collapse）現象，下列哪一種方法最常被用來有效解決此\n問題？",
+      "options": {
+        "A": "在鑑別器中加入梯度懲罰（Gradient Penalty）以穩定訓練過\n程",
+        "B": "採用 Wasserstein 距離（WGAN 損失）替代原始的 GAN 損失函\n數",
+        "C": "對生成器輸入的潛在向量加入隨機擾動",
+        "D": "使用多尺度鑑別器架構以提高對多樣性的判別能力"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 5
+      }
+    },
+    {
+      "id": "114-2-S1-21",
+      "number": 21,
+      "answer": "B",
+      "prompt": "在多模態 AI 模型訓練或推論過程中，遇到某一模態資料缺失（例如\n僅有影像資料但缺少文本說明），下列哪一種策略最有效維持模型效\n能？",
+      "options": {
+        "A": "以零向量或固定向量填充缺失模態輸入",
+        "B": "訓練具備模態缺失感知能力的模型，使其適應缺失狀況",
+        "C": "利用生成模型（如 GAN 或自迴歸模型）預測並補全缺失模態資\n料",
+        "D": "直接捨棄缺少模態的樣本，避免干擾訓練或推論"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 5
+      }
+    },
+    {
+      "id": "114-2-S1-22",
+      "number": 22,
+      "answer": "D",
+      "prompt": "某電商平台開發的顧客流失預測模型在上線數月後，預測準確率明顯\n下降。專案團隊懷疑顧客行為模式改變，導致模型輸入特徵的分佈與\n原始訓練資料不同，出現典型的資料漂移（Data Drift）問題。為了\n偵測並確認資料分佈是否發生變化，下列哪一種作法最合適？",
+      "options": {
+        "A": "定期重新訓練模型以應對外部變化",
+        "B": "提升模型複雜度以捕捉更多資料變異性",
+        "C": "增加測試資料量以提高評估準確度",
+        "D": "計算輸入特徵分佈間的 KL 散度（KL Divergence）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 6
+      }
+    },
+    {
+      "id": "114-2-S1-23",
+      "number": 23,
+      "answer": "A",
+      "prompt": "某大型醫院即將部署一套輔助診斷的 AI 系統，為降低對臨床流程的\n衝擊，同時確保風險可控與回饋可收斂，應採取何種『漸進式部署』\n（Phased Rollout）策略最為合適？",
+      "options": {
+        "A": "從單一專科（如放射科）或特定病房開始啟用，逐步擴展至全\n院",
+        "B": "先部署於病例量較高的急診單位，加速收集高頻使用回饋",
+        "C": "僅在夜班或離峰時段啟用，避免影響主要臨床工作負載",
+        "D": "在使用者界面啟用提示模式，讓全院同步體驗但不影響診斷流程"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 6
+      }
+    },
+    {
+      "id": "114-2-S1-24",
+      "number": 24,
+      "answer": "D",
+      "prompt": "某金融機構的 AI 風控系統遭受對抗性攻擊，駭客透過對輸入特徵進\n行微小但惡意的擾動，成功欺騙了模型。為了從根本上解決模型自身\n對這類攻擊的脆弱性，下列何者並非針對此種攻擊型態的技術手段？",
+      "options": {
+        "A": "強化資料前處理，用以過濾掉格式不符或數值極端異常的輸入",
+        "B": "在模型訓練階段導入對抗樣本訓練，以提升模型對惡意特徵擾動\n的辨識與防禦能力",
+        "C": "於推論後階段使用規則引擎，以確保模型的預測結果不違反既有\n的業務硬性規定",
+        "D": "在模型部署環境中強化網路防火牆，以阻擋來自未授權來源的網\n路連線"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 6
+      }
+    },
+    {
+      "id": "114-2-S1-25",
+      "number": 25,
+      "answer": "B",
+      "prompt": "某企業部署生成式 AI 系統協助行銷與內容產出，但近期遭質疑部分\n生成內容可能涉及著作權侵權。為降低企業在法律層面的潛在責任與\n風險，下列哪一項策略最能有效預防侵權問題產生？",
+      "options": {
+        "A": "對生成內容進行語意相似度比對，自動標註可能涉及既有著作的\n輸出結果，以降低侵權風險",
+        "B": "建立訓練資料篩選與授權驗證機制，排除未授權或高風險資料來\n源",
+        "C": "在訓練與微調過程中採用差分隱私技術，避免模型記憶特定受著\n作權保護的樣本",
+        "D": "在模型輸出端嵌入浮水印（Watermarking）或數位指紋（Digital\nFingerprint）技術，以確保生成內容可追溯"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 6
+      }
+    },
+    {
+      "id": "114-2-S1-26",
+      "number": 26,
+      "answer": "D",
+      "prompt": "在房價預測任務中，若發現特徵如「房間數」與「坪數」存在高度多\n重共線性（Multicollinearity），為降低共線性對模型參數估計的負\n面影響，應優先選擇下列哪種模型？",
+      "options": {
+        "A": "不受多重共線性影響的決策樹模型",
+        "B": "傳統線性迴歸模型，不含正則化項",
+        "C": "支持向量機搭配線性核函數",
+        "D": "含 L1 正則化的 LASSO 迴歸模型"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 7
+      }
+    },
+    {
+      "id": "114-2-S1-27",
+      "number": 27,
+      "answer": "C",
+      "prompt": "某企業需分析半結構化的系統日誌（JSON 格式），以提取關鍵的時序\n特徵供故障預測模型使用。考量日誌結構複雜且包含巢狀欄位\n（Nested Fields），下列哪一種策略最有效且實務可行？",
+      "options": {
+        "A": "先將 JSON 資料扁平化轉成 CSV，再對欄位計算統計量（如均值、\n次數）作為特徵",
+        "B": "使用遞歸神經網路（RNN）直接輸入原始 JSON 字串進行時序特徵\n抽取",
+        "C": "設計遞迴函式展開巢狀欄位，並基於時間窗口（Time Window）進\n行聚合與特徵萃取",
+        "D": "只保留時間戳記欄位，忽略其他巢狀內容以簡化特徵工程"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 7
+      }
+    },
+    {
+      "id": "114-2-S1-28",
+      "number": 28,
+      "answer": "C",
+      "prompt": "在一個同時包含連續型特徵與類別型特徵的資料集中，若希望透過適\n當的特徵工程流程來提升模型整體表現，下列哪一種作法最為合適？",
+      "options": {
+        "A": "將類別型特徵使用標籤編碼（Label Encoding）轉換後，與連續\n特徵直接合併進行模型訓練",
+        "B": "將連續特徵進行離散化（Discretization）或分桶（Binning）轉\n為類別型特徵，統一以類別方式處理",
+        "C": "對連續特徵做標準化（Standardization），類別特徵採用目標編\n碼（Target Encoding），並生成交互特徵提升模型表現",
+        "D": "只保留連續特徵，忽略類別型變量以簡化模型"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 7
+      }
+    },
+    {
+      "id": "114-2-S1-29",
+      "number": 29,
+      "answer": "B",
+      "prompt": "某 AI 開發團隊為提升模型開發效率及品質控制，計畫實施持續整合\n（Continuous Integration, CI）流程。下列哪一項做法最符合 CI\n的核心實踐，且能有效減少整合風險？",
+      "options": {
+        "A": "在主分支（Main Branch）每日固定時間手動合併並執行完整測試\n流程",
+        "B": "每次程式碼提交（Commit）後自動觸發建置、單元測試及靜態程\n式碼分析",
+        "C": "於模型訓練完成後，定期安排開發團隊回顧並合併程式碼",
+        "D": "透過自動化部署腳本，將模型在特定時間點批次釋出到測試環境"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 8
+      }
+    },
+    {
+      "id": "114-2-S1-30",
+      "number": 30,
+      "answer": "A",
+      "prompt": "某銀行計劃將 AI 詐欺偵測模組整合至核心交易系統，主管機關要求\n全流程必須符合金融監管對「不可否認性（Non-repudiation）」的資\n訊安全規範，以確保日後能進行法務追蹤與稽核。下列哪一項措施最\n能確保此要求的落實？",
+      "options": {
+        "A": "為每筆 AI 模型推論記錄其輸入與輸出結果的加密雜湊值\n（Hash），並簽署數位簽章以確保不可竄改性",
+        "B": "優化模型效能以降低平均推論延遲至 100ms 以下，提升使用者體\n驗",
+        "C": "增加主機備援數量，以確保系統在故障時持續可用",
+        "D": "將模型推論請求導入負載平衡器，避免單點壅塞導致服務延遲"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 8
+      }
+    },
+    {
+      "id": "114-2-S1-31",
+      "number": 31,
+      "answer": "B",
+      "prompt": "某 AI 服務系統每次推論請求需約 1 秒完成，且必須支撐高達 10,000\n次請求每秒（RPS）的流量。為確保系統具備高可用性且能穩定應付\n流量峰值，下列哪一種架構方案最為合適？",
+      "options": {
+        "A": "依賴單台超高效能伺服器進行垂直擴展，提升硬體規格",
+        "B": "採用容器化部署並水平擴展服務實例，結合自動彈性伸縮機制\n（Auto Scaling）",
+        "C": "限制最大併發連線數，以避免系統過載",
+        "D": "增加批次處理大小，一次同時處理上千筆請求"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 8
+      }
+    },
+    {
+      "id": "114-2-S1-32",
+      "number": 32,
+      "answer": "D",
+      "prompt": "某企業已將 AI 模型部署於生產環境，為確保系統持續穩定運作，並\n能提前偵測模型效能可能衰退，技術團隊希望透過監控指標進行預\n警。\n下列哪一項監控指標最具預測效力，能提早發現模型效能下滑風險？",
+      "options": {
+        "A": "系統 CPU 與記憶體使用率波動幅度",
+        "B": "模型推論結果的置信度（Confidence）分佈變化趨勢",
+        "C": "API 平均回應時間與延遲百分位數變化",
+        "D": "輸入特徵與訓練資料分布差異的 PSI（Population Stability\nIndex）指數"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 8
+      }
+    },
+    {
+      "id": "114-2-S1-33",
+      "number": 33,
+      "answer": "C",
+      "prompt": "企業團隊在使用 Word2Vec 模型訓練客服文本語料時，若訓練資料量\n龐大且希望模型能更有效捕捉罕見詞的語意關聯，下列哪一種訓練策\n略最為適合？",
+      "options": {
+        "A": "採用 Skip-gram 模型，但以隨機初始化權重加快高頻詞的訓練收\n斂",
+        "B": "採用 CBOW 模型（Continuous Bag of Words Model）並結合 TFIDF 權重以強化低頻詞表示",
+        "C": "採用 Skip-gram 模型，利用中心詞預測周圍詞語，能更有效學習\n低頻詞關係",
+        "D": "採用 CBOW 模型（Continuous Bag of Words Model），利用周圍詞\n預測中心詞，能提升罕見詞的語意穩定度"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 9
+      }
+    },
+    {
+      "id": "114-2-S1-34",
+      "number": 34,
+      "answer": "D",
+      "prompt": "在自駕車影像辨識系統中，開發團隊希望模型能同時辨識每個像素所\n屬的物件類別（例如道路、建築、行人），又能區分出同類物件的不\n同個體（例如多位行人）。此時最適合採用下列哪一項電腦視覺技\n術？",
+      "options": {
+        "A": "語義分割（Semantic Segmentation）",
+        "B": "物件偵測（Object Detection）",
+        "C": "實例分割（Instance Segmentation）",
+        "D": "全景分割（Panoptic Segmentation）"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 9
+      }
+    },
+    {
+      "id": "114-2-S1-35",
+      "number": 35,
+      "answer": "A",
+      "prompt": "某媒體公司計畫導入 CLIP（Contrastive Language–Image Pretraining）模型，以協助大量影像自動標註與搜尋，並希望在無需新\n增標訓資料的情況下，僅透過文字提示（Text Prompt）即可識別影\n像內容。請問此應用情境中，CLIP 能夠達成的關鍵技術特性為何？",
+      "options": {
+        "A": "透過圖文對比式學習（Contrastive Learning）將影像與文字映\n射至共同嵌入空間（Shared Embedding Space），可直接以語意相似\n度進行零樣本分類",
+        "B": "透過影像增強與特徵擴散降低標訓資料需求",
+        "C": "以監督式學習結合多層感知器（Multilayer Perceptron, MLP）\n進行影像特徵分類",
+        "D": "以自迴歸生成模型（Autoregressive Model）逐步生成文字標籤\n描述影像內容"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 9
+      }
+    },
+    {
+      "id": "114-2-S1-36",
+      "number": 36,
+      "answer": "B",
+      "prompt": "某資料科學團隊在開發預測模型時，針對多種模型設定（如學習率、\n樹深度、正則化係數等）進行系統化測試，希望找出在驗證資料上表\n現最穩定的組合。此過程最可能採用下列哪一種方法？",
+      "options": {
+        "A": "使用交叉驗證（Cross Validation）反覆評估模型以降低過擬合\n風險",
+        "B": "透過網格搜尋（Grid Search）在多組超參數設定中進行系統化搜\n尋與評估",
+        "C": "以隨機搜尋（Random Search）快速探索部分參數空間以提升搜尋\n效率",
+        "D": "採用貝葉斯優化（Bayesian Optimization）根據歷次結果動態調\n整搜尋方向"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 9
+      }
+    },
+    {
+      "id": "114-2-S1-37",
+      "number": 37,
+      "answer": "B",
+      "prompt": "某公司正在訓練一個大型語音合成模型，開發團隊使用多台 GPU 進行\n訓練，但經常出現 GPU 記憶體不足問題。由於模型架構已固定且無\n法更換硬體，團隊希望在維持模型效能與收斂品質的前提下，下列哪\n一種方法最有效降低單張 GPU 的記憶體壓力？",
+      "options": {
+        "A": "減少訓練資料量以降低記憶體使用",
+        "B": "採用較小的批次大小（Batch Size）並搭配資料分片（Data\nSharding）分散訓練負載",
+        "C": "增加學習率（Learning Rate）以加快收斂速度",
+        "D": "改用測試資料集（Test Set）進行部分訓練以節省空間"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 10
+      }
+    },
+    {
+      "id": "114-2-S1-38",
+      "number": 38,
+      "answer": "B",
+      "prompt": "某影像設計團隊在使用 Stable Diffusion 生成 4K 級產品圖時，發現\n影像邊緣與細節存在顆粒化與模糊現象。\n若僅能在生成階段進行調整，希望提升畫面清晰度與紋理層次，同時\n避免過度平滑，下列哪一項作法最適合？",
+      "options": {
+        "A": "降低取樣步數，以縮短生成時間",
+        "B": "增加取樣步數並選擇高品質取樣器，以強化細節還原度",
+        "C": "提高 CFG（Classifier-Free Guidance）值，使生成結果更具創意\n與多樣性",
+        "D": "改用低解析度輸入以降低計算成本"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 10
+      }
+    },
+    {
+      "id": "114-2-S1-39",
+      "number": 39,
+      "answer": "C",
+      "prompt": "某企業的資料科學團隊利用 ARIMA 模型（AutoRegressive\nIntegrated Moving Average Model）預測每週產品銷售量。模型建\n立完成後，分析人員發現預測誤差隨時間呈現週期性波動，且自相關\n函數（ACF）顯示殘差在多個時滯（Lag）上仍顯著不為零。根據上述\n現象，最合理的模型診斷結論為何？",
+      "options": {
+        "A": "模型殘差符合白噪音（White Noise）假設，預測表現穩定",
+        "B": "模型殘差雖有輕微異常，但可視為隨機誤差忽略不計",
+        "C": "模型存在配適不足（Underfitting）問題，需重新調整 p 或 q\n參數以捕捉時間依賴性",
+        "D": "殘差特性不影響預測結果，無須進一步修正"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 10
+      }
+    },
+    {
+      "id": "114-2-S1-40",
+      "number": 40,
+      "answer": "A",
+      "prompt": "下列哪一項最正確地描述了 VAE（Variational Autoencoder）、GAN\n（Generative Adversarial Network）與擴散模型（Diffusion\nModel）在多模態潛在空間對齊（Latent Alignment）與生成策略上\n的根本差異？",
+      "options": {
+        "A": "VAE 透過顯式潛在變數建模實現跨模態對齊，適合捕捉整體語意結\n構但生成解析度有限；GAN 透過對抗損失（Adversarial Loss）在不\n同模態間學習分佈映射，生成品質高但穩定性差；擴散模型則以條件\n化噪聲反推（Conditional Denoising）方式實現高保真跨模態生\n成，兼具穩定性與多樣性",
+        "B": "VAE 與 Diffusion Ｍodel 均屬隱式生成架構，主要依賴對抗式訓\n練實現跨模態對齊；GAN 則以顯式後驗估計方式提升樣本一致性",
+        "C": "VAE 與 GAN 均使用馬爾可夫鏈（Markov Chain）進行跨模態轉換；\nDiffusion Model 則透過 KL 散度最小化學習語意對應",
+        "D": "三者在多模態應用中皆依賴同一潛在表徵空間（Shared Latent\nSpace），僅在解碼器結構不同而已"
+      },
+      "topic": "多模態",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 11
+      }
+    },
+    {
+      "id": "114-2-S1-41",
+      "number": 41,
+      "answer": "A",
+      "prompt": "在進行超參數調校（Hyperparameter Tuning）時，若直接在 K-Fold\n交叉驗證（Cross-Validation）的資料上同時調整模型參數並評估效\n能，最可能導致下列哪一種問題？",
+      "options": {
+        "A": "模型的交叉驗證結果出現過度樂觀偏差（Over-optimistic\nBias），因測試摺資料間接參與參數選擇，造成資料洩漏（Data\nLeakage）",
+        "B": "模型會在每一摺（Fold）內反覆調整參數，導致訓練不穩與過度\n正則化",
+        "C": "因交叉驗證資料被重複使用，造成效能方差增大，無法獲得穩定\n估計",
+        "D": "K-Fold 交叉驗證的假設與超參數搜尋相衝突，導致驗證過程失效"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 11
+      }
+    },
+    {
+      "id": "114-2-S1-42",
+      "number": 42,
+      "answer": "D",
+      "prompt": "若部署一個深度學習模型至金融風控系統，該模型採用鑑別式架構\n（如 Transformer Classifier）。然而上線後，模型對新樣本的分類\n錯誤率顯著上升，經檢查發現，輸入資料分佈已與原訓練集明顯不\n同。針對此情形，下列哪一種應對策略最為適合？",
+      "options": {
+        "A": "改用生成對抗網路（GAN）生成新樣本並混入訓練集",
+        "B": "改用邏輯迴歸模型（Logistic Regression）以提升穩定性",
+        "C": "增加模型容量（Model Capacity），以學習更多樣本差異",
+        "D": "使用變分自編碼器（VAE）監控潛在空間分佈，偵測輸入資料偏移"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 11
+      }
+    },
+    {
+      "id": "114-2-S1-43",
+      "number": 43,
+      "answer": "B",
+      "prompt": "某金融科技公司欲導入 AI 模型協助客服郵件自動分類（投訴、詢\n問、表揚）。團隊同時考慮兩種模型設計：\n方案 A（生成式路徑）：採用 VAE 建構潛在語意空間，再結合下游分\n類器進行標籤預測；\n方案 B（鑑別式路徑）：採用 BERT Classifier 直接根據輸入文本進\n行監督式分類。\n現有標註資料約 2,000 筆，資料分佈均勻但擴充成本高。若團隊希\n望公平比較兩種模型的資料利用效率與泛化能力，下列哪一種實驗設\n計最能突顯兩者的本質差異？",
+      "options": {
+        "A": "在完整資料集上分別訓練兩者，並比較其分類準確率\n（Accuracy）與推論時間",
+        "B": "在低資源情境（Low-resource Setting）下，逐步減少標註比例\n（100%、50%、10%），比較其 F1-score",
+        "C": "使用 GAN 自動生成文本樣本補足資料，觀察兩模型在資料增強後\n的精確率（Precision）差異",
+        "D": "在相同訓練資料上固定輸入維度，僅調整模型參數量，比較其對\n過擬合的敏感度"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 12
+      }
+    },
+    {
+      "id": "114-2-S1-44",
+      "number": 44,
+      "answer": "C",
+      "prompt": "某電信公司希望建立一個模型來預測顧客是否即將流失，並進一步模\n擬不同促銷或服務策略下顧客的行為變化，以生成多樣化的虛擬樣本\n資料進行 A/B 測試與行銷策略評估。若要同時兼顧預測與資料生成的\n需求，最適合採用下列哪一種方法？",
+      "options": {
+        "A": "使用傳統隨機森林（Random Forest）",
+        "B": "使用邏輯迴歸（Logistic Regression）模型",
+        "C": "使用變分自編碼器（Variational Autoencoder, VAE）或生成對\n抗網路（Generative Adversarial Network, GAN）",
+        "D": "使用強化學習代理（Reinforcement Learning Agent）"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 12
+      }
+    },
+    {
+      "id": "114-2-S1-45",
+      "number": 45,
+      "answer": "D",
+      "prompt": "進行影像分類任務時，研究團隊嘗試利用主成分分析（Principal\nComponent Analysis, PCA）將輸入特徵從 1024 維降至 100 維，並將\n降維後的資料輸入支持向量機（Support Vector Machine, SVM）模\n型進行訓練。關於此作法，下列哪一項描述最為合理？",
+      "options": {
+        "A": "PCA 保留的主成分必然能提升 SVM 的分類準確率",
+        "B": "使用原始高維資料通常更能保留資訊，因此 PCA 沒有實際意義",
+        "C": "PCA 可讓 SVM 自動適用於非線性（Nonlinear）資料集",
+        "D": "降維後可降低訓練時間並減少過擬合（Overfitting）風險"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 12
+      }
+    },
+    {
+      "id": "114-2-S1-46",
+      "number": 46,
+      "answer": "A",
+      "prompt": "某企業的 AI 模型已部署於線上服務環境中，用於即時預測顧客流失\n機率。近期團隊注意到模型預測準確率逐漸下降，但系統運作正常且\n未出現錯誤訊息。經分析發現，近期輸入資料的分布與模型訓練資料\n相比出現顯著偏移。若要在 MLOps 流程中主動偵測並預警此類問題，\n最應採用下列哪項措施？",
+      "options": {
+        "A": "建立即時的資料漂移（Data Drift）與概念漂移（Concept\nDrift）監測機制",
+        "B": "將模型轉換為量化版本以降低延遲",
+        "C": "增加模型超參數調整次數以強化適應性",
+        "D": "使用固定隨機種子（Random Seed）確保訓練穩定"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 13
+      }
+    },
+    {
+      "id": "114-2-S1-47",
+      "number": 47,
+      "answer": "C",
+      "prompt": "某金融科技公司導入多任務學習架構，讓單一 Transformer 模型同\n時執行 OCR（Optical Character Recognition）後的文檔分類以及命\n名實體辨識（Named Entity Recognition, NER）任務，\n以協助自動歸檔與抽取關鍵金融資訊。在部署初期，團隊發現當模型\n的 NER 準確率（Accuracy）提升時，文檔分類準確率反而下降。若模\n型架構正確且資料品質良好，下列哪一項最可能是造成此現象的原\n因？",
+      "options": {
+        "A": "模型架構無法同時支援文字分類與序列標註任務（Sequence\nLabeling）",
+        "B": "文檔分類任務不需要語意化表徵（Contextualized\nRepresentation）",
+        "C": "損失函數（Loss Function）未進行權重平衡，導致任務間競爭",
+        "D": "所使用的 BERT 模型無法支援多任務輸出頭（Multi-Head\nOutputs）"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 13
+      }
+    },
+    {
+      "id": "114-2-S1-48",
+      "number": 48,
+      "answer": "B",
+      "prompt": "某數據工程師使用 DBSCAN 演算法對一份數百萬筆的高維顧客資料進\n行聚類分析，但發現程式執行速度極慢，甚至出現記憶體不足的情\n況。若要在不改變演算法核心邏輯的前提下，最有效提升其運算效率\n的作法為何？",
+      "options": {
+        "A": "改用以平均連結（Average Linkage）為基礎的階層式群集法\n（Hierarchical Clustering）",
+        "B": "採用高效率的距離索引結構（Distance Index Structure），例如\nKD-Tree 或 Ball Tree",
+        "C": "將 ε（Epsilon）參數調得極小，以減少鄰近點的數量",
+        "D": "在資料前處理時增加標準化後的特徵維度數"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 13
+      }
+    },
+    {
+      "id": "114-2-S1-49",
+      "number": 49,
+      "answer": "A",
+      "prompt": "某電商平台導入 AI 情感分析模型，用以自動偵測顧客評論中的負面\n情緒並觸發客服機制。然而，上線後發現模型在面對不同語言或族群\n書寫風格的評論時表現不一致，例如部分語氣強烈的正面評論被誤判\n為負面，而禮貌但含批評意圖的評論卻被判為中性。若從技術與資料\n治理的角度分析，下列哪一項描述不正確？",
+      "options": {
+        "A": "模型未啟用詞嵌入正規化（Embedding Normalization）可能造成\n語意距離不穩定，導致預測誤差",
+        "B": "訓練語料若偏向特定文化或語氣特徵，可能使模型產生內隱偏誤\n（Implicit Bias）",
+        "C": "模型若訓練資料來源不平衡，容易導致對不同語言或族群風格的\n情緒判斷不準確",
+        "D": "Transformer 架構能捕捉上下文語意，但若訓練資料偏差仍存在，\n模型仍可能學習到偏誤判斷"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 14
+      }
+    },
+    {
+      "id": "114-2-S1-50",
+      "number": 50,
+      "answer": "C",
+      "prompt": "某設計師使用公司內部建置的生成式 AI 工具製作行銷素材，並輸入\n提示語（Prompt）：「請生成一張模特兒手持品牌飲料、背景為海邊夕\n陽的照片」。系統能正確生成主要主題與場景，但輸出的圖像中，品\n牌標誌顏色常有誤差，或人物手部姿勢顯得不自然。若從多模態生成\n模型的技術機制分析，此現象最可能是下列哪一項原因所造成？",
+      "options": {
+        "A": "擴散式生成模型的去雜訊過程出現隨機梯度漂移，導致影像像素\n錯誤",
+        "B": "提示語過長造成 Transformer 的位置編碼超出上下文限制，導致\n生成混亂",
+        "C": "CLIP 模型中的文字編碼器與影像編碼器在語意嵌入空間未充分對\n齊，導致跨模態理解偏差",
+        "D": "模型未採用對比學習（Contrastive Learning）損失函數，無法\n建立多模態語意關聯\n《以下空白》"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "114-11-08",
+        "page": 14
+      }
+    },
+    {
+      "id": "114-2-S3-01",
+      "number": 1,
+      "answer": "B",
+      "prompt": "某零售企業建立一個銷售預測模型，希望評估該模型在不同月份的新資料\n上，是否仍能維持穩定的預測表現。資料科學團隊計畫利用統計方法檢驗\n模型對未觀察資料的適應能力與泛化效果。下列哪一種方法最適合用於此\n目的？",
+      "options": {
+        "A": "F 檢定（F-test）",
+        "B": "交叉驗證（Cross-Validation）",
+        "C": "配對樣本 t 檢定（Paired-sample t-test）",
+        "D": "卡方檢定（Chi-square Test）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 1
+      }
+    },
+    {
+      "id": "114-2-S3-02",
+      "number": 2,
+      "answer": "C",
+      "prompt": "在建立迴歸或分類模型時，若希望避免模型過度擬合（Overfitting），可\n透過加入正則化項以限制模型的複雜度。其中，L1 正則化（Lasso）的主\n要效果為何？",
+      "options": {
+        "A": "增加模型參數的數量，以提升表現靈活度",
+        "B": "強化梯度穩定性，避免參數更新過度震盪",
+        "C": "產生稀疏模型（Sparse Model），使部分參數權重收斂為零",
+        "D": "提高學習率（Learning Rate），加速模型收斂速度"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 1
+      }
+    },
+    {
+      "id": "114-2-S3-03",
+      "number": 3,
+      "answer": "C",
+      "prompt": "在訓練非線性模型時，若目標函數為非凸函數（Non-convex Function），\n演算法在參數更新過程中可能出現多個極值點，導致最佳化結果不穩定。\n請問此時最可能發生下列哪一種情況？",
+      "options": {
+        "A": "梯度消失",
+        "B": "資料過少",
+        "C": "局部最優解",
+        "D": "過擬合"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 1
+      }
+    },
+    {
+      "id": "114-2-S3-04",
+      "number": 4,
+      "answer": "B",
+      "prompt": "在執行 DBSCAN（Density-Based Spatial Clustering of Applications\nwith Noise）群集分析時，若某資料點鄰域內的樣本數不足以形成核心點\n（Core Point），且該點未被任何核心點的鄰域所包含，也未與其他群集形\n成密度可達關係（Density Reachability），此資料點最終將被歸類為哪一\n種類型？",
+      "options": {
+        "A": "鄰近點（Neighbor Point）",
+        "B": "雜訊點（Noise Point）",
+        "C": "邊界點（Border Point）",
+        "D": "潛在點（Potential Point）"
+      },
+      "topic": "機器學習基礎",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 1
+      }
+    },
+    {
+      "id": "114-2-S3-05",
+      "number": 5,
+      "answer": "A",
+      "prompt": "某智慧製造公司開發一套影像辨識系統，用於自動檢測生產線上的瑕疵產\n品。系統採用卷積神經網路（Convolutional Neural Network, CNN）作為\n主要模型架構，其中第一層卷積層（Convolutional Layer）主要負責的功\n能為下列何者？",
+      "options": {
+        "A": "自動提取輸入影像中的局部特徵",
+        "B": "降低影像維度以加速運算效率",
+        "C": "增加神經元與參數數量以提升模型容量",
+        "D": "整合所有特徵並輸出最終分類結果"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 1
+      }
+    },
+    {
+      "id": "114-2-S3-06",
+      "number": 6,
+      "answer": "C",
+      "prompt": "某智慧城市團隊開發一套交通監控系統，用於即時辨識路口監視器影像中\n的車輛與行人。團隊比較後發現，卷積神經網路（Convolutional Neural\nNetwork, CNN）在訓練與推論效率上，明顯優於傳統的全連接神經網路\n（Fully Connected Neural Network, FCNN）。請問下列何者為主要原因？",
+      "options": {
+        "A": "CNN 能自動學習影像的旋轉與比例不變性",
+        "B": "CNN 可直接跳過人工特徵提取步驟進行分類",
+        "C": "CNN 透過區域感知（Local Receptive Field）與參數共享（Parameter\nSharing）機制，降低模型參數量與運算複雜度",
+        "D": "CNN 捨棄激勵函數（Activation Function），以加快運算速度"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 2
+      }
+    },
+    {
+      "id": "114-2-S3-07",
+      "number": 7,
+      "answer": "A",
+      "prompt": "下列哪一種應用最適合採用長短期記憶網路（Long Short-Term Memory,\nLSTM）模型？",
+      "options": {
+        "A": "預測未來七天的電力需求變化趨勢",
+        "B": "辨識監視影像中不同類別的物件",
+        "C": "將大量顧客資料依相似特徵自動分群",
+        "D": "將高維度的感測器資料壓縮成低維表示"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 2
+      }
+    },
+    {
+      "id": "114-2-S3-08",
+      "number": 8,
+      "answer": "D",
+      "prompt": "資訊增益（Information Gain）常用於衡量特徵對分類結果的不確定性貢\n獻程度，並據以進行特徵選擇。此方法主要應用於下列哪一類模型架構\n中？",
+      "options": {
+        "A": "使用 L1 正則化進行特徵篩選的線性模型",
+        "B": "利用激活函數（Activation Function）進行特徵擷取的深度神經網\n路",
+        "C": "透過核函數（Kernel Function）將特徵映射至高維空間的分類模型",
+        "D": "透過遞迴分裂方式建立分類規則的決策樹模型"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 2
+      }
+    },
+    {
+      "id": "114-2-S3-09",
+      "number": 9,
+      "answer": "A",
+      "prompt": "在建構以距離為基礎的機器學習模型（如 KNN、SVM）時，下列哪一項資料\n前處理方式最為關鍵？",
+      "options": {
+        "A": "進行特徵縮放（Feature Scaling），使各特徵變數具有相似的數值範\n圍",
+        "B": "將連續型特徵變數轉換為類別型變數",
+        "C": "以平均值或中位數進行缺失值補齊",
+        "D": "進行隨機抽樣以平衡資料筆數"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 2
+      }
+    },
+    {
+      "id": "114-2-S3-10",
+      "number": 10,
+      "answer": "C",
+      "prompt": "下列哪一種應用情境最適合導入 AutoML，以提升模型開發效率？",
+      "options": {
+        "A": "公司已有完整的 MLOps 平台與資深資料科學團隊，模型更新採固定流\n程",
+        "B": "製造部門的生產良率模型已長期穩定運作，只需定期調整參數",
+        "C": "行銷部門希望在短時間內比較多種顧客流失預測模型，缺乏專職工程師\n與時間進行手動建模",
+        "D": "財務部門正在開發高度客製化的信用風險評估模型，需要精細控制特徵\n工程與演算法細節"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 3
+      }
+    },
+    {
+      "id": "114-2-S3-11",
+      "number": 11,
+      "answer": "D",
+      "prompt": "相較於 Grid Search，Random Search 在超參數調整上具備哪一項主要優\n勢？",
+      "options": {
+        "A": "可自動產生模型架構",
+        "B": "可使用更大的訓練集",
+        "C": "避免模型過擬合",
+        "D": "能更有效率搜尋高維參數空間"
+      },
+      "topic": "機器學習基礎",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 3
+      }
+    },
+    {
+      "id": "114-2-S3-12",
+      "number": 12,
+      "answer": "C",
+      "prompt": "某智慧製造公司開發一套設備故障預測系統，利用感測器資料訓練深度神\n經網路（Deep Neural Network, DNN）模型，以提前偵測異常運作跡象。\n在訓練過程中，團隊發現模型收斂速度不穩定：有時過快導致過擬合，有\n時又遲遲無法達到最佳準確率。開發團隊可以藉由調整下列哪一項超參數\n（Hyperparameter）以改善此問題？",
+      "options": {
+        "A": "每個神經元的輸出結果",
+        "B": "損失函數（Loss Function）在訓練過程中的梯度變化值（Gradient）",
+        "C": "學習率（Learning Rate），控制模型權重更新的速度",
+        "D": "模型在訓練後產生的權重值"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 3
+      }
+    },
+    {
+      "id": "114-2-S3-13",
+      "number": 13,
+      "answer": "B",
+      "prompt": "標籤偏差(Label Bias)通常是因為什麼原因造成？",
+      "options": {
+        "A": "訓練資料量過大",
+        "B": "標記資料本身帶有主觀偏見",
+        "C": "模型結構設計不當",
+        "D": "特徵數量設定過多"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 3
+      }
+    },
+    {
+      "id": "114-2-S3-14",
+      "number": 14,
+      "answer": "C",
+      "prompt": "下列哪一種 AI 應用情境中，模型的可解釋性（Explainability）最為關\n鍵？",
+      "options": {
+        "A": "電商平台利用深度學習模型預測用戶的下一次購買時間，以優化推播行\n銷策略",
+        "B": "新創公司使用機器學習演算法自動調整廣告出價策略，以提升點擊轉換\n率",
+        "C": "醫院導入 AI 模型分析病患影像並給出腫瘤惡性可能性，作為臨床醫師\n診斷依據",
+        "D": "銀行導入 AI 模型預測客戶流失率，並自動推薦留客優惠方案"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 3
+      }
+    },
+    {
+      "id": "114-2-S3-15",
+      "number": 15,
+      "answer": "B",
+      "prompt": "在線性迴歸模型中，若 R²值為 0.85，其意義為何？",
+      "options": {
+        "A": "模型準確率為 85%",
+        "B": "85%的變異可被模型解釋",
+        "C": "預測誤差為 15%",
+        "D": "模型有 85%的信心水準"
+      },
+      "topic": "傳統機器學習",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S3-16",
+      "number": 16,
+      "answer": "A",
+      "prompt": "在二元分類問題中，若精確率（Precision）為 0.8，召回率（Recall）為\n0.6，則 F1 分數（F1 Score）為何？",
+      "options": {
+        "A": "0.686",
+        "B": "0.700",
+        "C": "0.720",
+        "D": "0.750"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S3-17",
+      "number": 17,
+      "answer": "B",
+      "prompt": "下列哪一種優化演算法內建動量（Momentum）的設計機制？",
+      "options": {
+        "A": "SGD+Momentum",
+        "B": "Adam",
+        "C": "RMSProp",
+        "D": "Adagrad"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S3-18",
+      "number": 18,
+      "answer": "A",
+      "prompt": "下列何者最能同時反映 XGBoost（eXtreme Gradient Boosting）相較於傳\n統梯度提升決策樹（Gradient Boosting Decision Tree, GBDT）的主要技\n術改進？",
+      "options": {
+        "A": "引入正則化項（Regularization）以抑制過擬合，並支援缺失值自動處\n理與並行化訓練",
+        "B": "改以隨機森林（Random Forest）架構取代樹模型以提升準確率",
+        "C": "以類神經網路（Neural Network）取代弱分類器（Weak Learners）",
+        "D": "採用批次正規化（Batch Normalization）技術提升模型穩定性"
+      },
+      "topic": "深度學習",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S3-19",
+      "number": 19,
+      "answer": "C",
+      "prompt": "某醫療機構開發疾病早期偵測模型，正樣本（確診病例）僅佔 3%。在模型\n訓練與評估過程中，下列哪一種作法最不適合用於提升對少數類病例的預\n測能力？",
+      "options": {
+        "A": "使用 SMOTE 過採樣",
+        "B": "調整類別權重",
+        "C": "使用準確率（Accuracy）作為評估指標",
+        "D": "欠採樣多數類(Undersampling the majority class)"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 4
+      }
+    },
+    {
+      "id": "114-2-S3-20",
+      "number": 20,
+      "answer": "C",
+      "prompt": "某電子商務公司為開發商品評論情感分析模型，希望模型能捕捉評論中不\n同特徵之間的關聯影響，例如「商品價格」與「顧客滿意度」的互動效\n果。下列哪一種特徵工程設計方式最適合用於建立互動特徵（Interaction\nFeatures）？",
+      "options": {
+        "A": "將單一特徵取平方",
+        "B": "對所有特徵進行對數轉換",
+        "C": "將兩個或多個特徵進行乘積或交互組合",
+        "D": "對特徵進行標準化"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 5
+      }
+    },
+    {
+      "id": "114-2-S3-21",
+      "number": 21,
+      "answer": "C",
+      "prompt": "某語音辨識系統開發團隊採用 Transformer 架構，為了讓模型能同時理解\n語音片段中的發音特徵、語速變化與語意脈絡等多層次資訊，團隊在設計\n中導入了多頭注意力（Multi-head Attention）機制。請問下列何者為此\n機制的主要優點？",
+      "options": {
+        "A": "減少模型參數量以降低訓練成本",
+        "B": "加速整體注意力計算過程",
+        "C": "從不同表示子空間（Representation Subspaces）同時捕捉多樣化關聯\n資訊",
+        "D": "避免梯度消失（Gradient Vanishing）問題"
+      },
+      "topic": "多模態",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 5
+      }
+    },
+    {
+      "id": "114-2-S3-22",
+      "number": 22,
+      "answer": "B",
+      "prompt": "某電商平台希望預測顧客是否會購買特定商品。系統蒐集顧客的瀏覽紀\n錄、停留時間、商品類別偏好與過去購買行為，並以此推估「在觀察到這\n些行為特徵的情況下，該顧客會購買的機率」。若模型採用貝氏定理\n（Bayes’Theorem）進行推論，下列敘述何者最符合其核心運作機制？",
+      "options": {
+        "A": "根據歷史樣本自動分群，找出行為相似的顧客群",
+        "B": "以條件機率方式計算顧客屬於「會購買」或「不會購買」的分類機率",
+        "C": "以最小平方誤差（Mean Squared Error）為損失函數，預測顧客的購買\n金額",
+        "D": "依據回饋信號（Feedback Signal）透過強化學習（Reinforcement\nLearning）動態調整推薦策略"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 5
+      }
+    },
+    {
+      "id": "114-2-S3-23",
+      "number": 23,
+      "answer": "A",
+      "prompt": "一家再生能源公司希望預測未來三個月太陽能發電量的波動範圍。由於氣\n候條件具有高度隨機性，且輸入變數（如日照時數、雲量、溫度）之間存\n在不確定關係，工程團隊決定以隨機抽樣方式模擬多種可能情境，以估算\n整體發電量的機率分佈與風險區間。請問此時所採用的技術最符合下列哪\n一種方法？",
+      "options": {
+        "A": "蒙地卡羅方法（Monte Carlo Method）",
+        "B": "K-means 聚類（K-means Clustering）",
+        "C": "支持向量迴歸（Support Vector Regression, SVR）",
+        "D": "特徵選取（Feature Selection）"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 5
+      }
+    },
+    {
+      "id": "114-2-S3-24",
+      "number": 24,
+      "answer": "C",
+      "prompt": "某房地產公司利用多元迴歸模型（Multiple Regression Model）預測房\n價，並繪製殘差圖（Residual Plot）檢查模型品質。結果顯示部分資料點\n的殘差極大，且在高價區樣本中出現系統性彎曲分佈現象。根據此觀察，\n下列何者為最可能的正確解釋？",
+      "options": {
+        "A": "模型過度擬合（Overfitting），導致在訓練資料上表現過好、泛化能力\n不足",
+        "B": "模型特徵數量不足，導致欠擬合（Underfitting）",
+        "C": "模型存在異常值（Outlier）或非線性關係，違反迴歸假設",
+        "D": "殘差圖呈現隨機分佈，表示模型已完全符合所有假設"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 6
+      }
+    },
+    {
+      "id": "114-2-S3-25",
+      "number": 25,
+      "answer": "A",
+      "prompt": "某金融機構正在建立傳統信用評分卡模型，採用邏輯迴歸（Logistic\nRegression）作為建模方法，並依循監理機關建議的標準化流程進行模型\n開發。下列哪一項不是傳統信用評分卡模型開發流程中的常見步驟？",
+      "options": {
+        "A": "使用生成式模型進行特徵學習",
+        "B": "進行特徵選擇與多重共線性（Multicollinearity）分析",
+        "C": "進行分箱（Binning）與資訊值（Information Value, IV）檢定",
+        "D": "使用樣本穩定性指標（Population Stability Index, PSI）檢驗模型\n穩定性"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 6
+      }
+    },
+    {
+      "id": "114-2-S3-26",
+      "number": 26,
+      "answer": "D",
+      "prompt": "在防止監督式學習模型過擬合（Overfitting）時，下列哪一種策略不屬於\n降低模型複雜度或限制學習能力的作法？",
+      "options": {
+        "A": "採用 L1 或 L2 正則化",
+        "B": "在訓練過程中使用 Dropout 技術",
+        "C": "採取早期停止（Early Stopping）機制",
+        "D": "擴增輸入特徵變數以提升模型表達能力"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 6
+      }
+    },
+    {
+      "id": "114-2-S3-27",
+      "number": 27,
+      "answer": "D",
+      "prompt": "某智慧製造團隊在開發瑕疵影像檢測模型時，發現使用線性激活函數\n（Activation Function）後，模型的訓練準確率長期停滯，懷疑模型無法\n學習到足夠複雜的特徵表達。若要改善此問題，下列哪一項調整方案最為\n合適？",
+      "options": {
+        "A": "增加卷積層（Convolutional Layer）數量，使網路更深以強化特徵提\n取",
+        "B": "將輸入影像先進行灰階化處理，降低運算量",
+        "C": "使用 Sigmoid 激活函數，以將輸出壓縮至[0,1]範圍",
+        "D": "改用 ReLU（Rectified Linear Unit）激活函數，以引入非線性並提升\n模型表達能力"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 6
+      }
+    },
+    {
+      "id": "114-2-S3-28",
+      "number": 28,
+      "answer": "C",
+      "prompt": "一家零售電商公司希望建立顧客流失預測模型，用以判斷哪些會員可能在\n三個月內不再消費。團隊以去年會員資料進行訓練，並僅採用「曾經購買\n三次以上」的活躍顧客紀錄作為樣本。模型上線後，對整體會員進行預測\n時，發現模型對於新註冊會員與低消費會員的預測準確率明顯偏低。下列\n何者為造成此現象最可能的原因？",
+      "options": {
+        "A": "特徵設計未排除與會員忠誠度高度相關的變數，導致特徵偏差\n（Feature Bias）",
+        "B": "標記（Label）由人工標註，導致標籤偏差（Label Bias）",
+        "C": "訓練樣本僅涵蓋高活躍顧客，造成取樣偏差（Sampling Bias）",
+        "D": "模型未進行超參數調整，導致過擬合（Overfitting）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 7
+      }
+    },
+    {
+      "id": "114-2-S3-29",
+      "number": 29,
+      "answer": "D",
+      "prompt": "在工業設備故障預測專案中，模型訓練與超參數調整均依賴於一段歷史數\n據作為驗證集。然而，隨著設備運行環境與工況條件的變化，原有驗證集\n已無法充分反映現況，導致模型在實際部署後的預測準確率逐漸下降。下\n列哪一種策略最能有效提升模型在長期運行環境中的穩健性與泛化能力？",
+      "options": {
+        "A": "固定驗證集內容，並透過模型正則化技巧（如 L2 正則化）強化模型泛\n化",
+        "B": "將全部歷史資料納入訓練，不使用驗證集，依靠早期停止（Early\nStopping）控制訓練",
+        "C": "簡化模型架構，減少模型參數數量以降低過擬合風險",
+        "D": "採用時間序列交叉驗證（Time Series Cross Validation）或滑動視窗\n驗證（Rolling Window Validation）方法，動態更新驗證資料以適應時間\n演進"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 7
+      }
+    },
+    {
+      "id": "114-2-S3-30",
+      "number": 30,
+      "answer": "C",
+      "prompt": "某情感分析模型在英文資料集上取得 macro F1-score = 0.91。當該模型\n部署於西班牙文資料集時，F1-score 驟降至 0.58。下列哪一項解釋最合\n理，且與 F1-score 變化相關？",
+      "options": {
+        "A": "macro F1-score 本身波動性高，建議改用 micro-average F1-score\n評估",
+        "B": "模型在西班牙文語料上過度擬合，導致評估結果偏高",
+        "C": "語言轉移造成召回率（Recall）下降，模型無法正確辨識關鍵情緒詞\n彙",
+        "D": "以均方誤差（MSE）取代 F1-score 評估可獲得更準確的結果"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 7
+      }
+    },
+    {
+      "id": "114-2-S3-31",
+      "number": 31,
+      "answer": "B",
+      "prompt": "某能源公司利用歷史氣象與用電資料，開發長期電力需求預測模型，採用\n深度神經網路架構進行訓練。在訓練過程中，模型在訓練集上的損失值持\n續下降，但在驗證集上，損失在第 80 輪後開始波動，呈現週期性上升與下\n降。團隊懷疑模型受到季節性資料波動與隨機噪音影響，導致驗證損失難\n以穩定收斂。若要在此情境下合理運用早期停止法（Early Stopping）以\n確保模型具最佳泛化能力，下列哪一項策略最為適當？",
+      "options": {
+        "A": "直接根據訓練集損失最低點停止訓練，以確保模型充分擬合所有樣本",
+        "B": "監控驗證集損失並設定適度的耐心值（Patience），在連續多輪未改善\n後再停止訓練",
+        "C": "改以測試集損失作為早停依據，以提升模型最終評估一致性",
+        "D": "將所有資料重新合併後訓練至收斂，避免因資料分割導致評估波動"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 7
+      }
+    },
+    {
+      "id": "114-2-S3-32",
+      "number": 32,
+      "answer": "D",
+      "prompt": "某電信公司開發客戶流失預測模型，使用大量顧客行為特徵，例如通話時\n長、上網頻率、帳單金額、客服聯絡次數等。在訓練過程中，團隊發現部\n分特徵彼此高度相關，但同時也懷疑有些特徵對流失預測的貢獻度有限。\n若希望模型在避免過擬合（Overfitting）的同時，能自動篩選出較具代表\n性的特徵，採用下列哪一種方法最為合適？",
+      "options": {
+        "A": "使用早期停止法（Early Stopping）控制訓練回合數，避免過擬合\n（Overfitting）",
+        "B": "同時移除多重共線性特徵並採用 L2 正則化（Ridge），以確保模型穩定\n收斂",
+        "C": "僅使用 L2 正則化（Ridge），抑制所有權重幅度但保留全部特徵",
+        "D": "採用 L1 正則化（Lasso），透過懲罰項使部分特徵係數縮為 0"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 8
+      }
+    },
+    {
+      "id": "114-2-S3-33",
+      "number": 33,
+      "answer": "B",
+      "prompt": "某資料科學團隊正在開發一個客戶相似度比對系統，用於計算所有客戶之\n間的相似度分數。若系統需逐一比對每一位客戶與其他所有客戶的資料組\n合，此時演算法的時間複雜度最可能為哪一種？其代表意義為何？",
+      "options": {
+        "A": "O(n) — 執行時間與資料量成線性關係",
+        "B": "O(n²) — 執行時間與資料量平方成正比",
+        "C": "O(1) — 執行時間固定不變",
+        "D": "O(log n) — 執行時間與資料量呈對數成長關係"
+      },
+      "topic": "機器學習基礎",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 8
+      }
+    },
+    {
+      "id": "114-2-S3-34",
+      "number": 34,
+      "answer": "D",
+      "prompt": "某醫療人工智慧團隊正在開發心臟病風險預測模型，資料量僅有 150 筆，\n其中陽性個案不到 8%。由於樣本數稀少且類別分布極不平衡，團隊希望在\n有限資料下，仍能準確評估模型在不同資料上的表現穩定性，同時避免訓\n練資料被過度切分而影響模型效能。若團隊希望在有限樣本下，同時兼顧\n資料的利用率與各類別在驗證折中的比例一致性，最適合採用下列哪一種\n交叉驗證方法？",
+      "options": {
+        "A": "5-Fold 交叉驗證（5-Fold Cross Validation）",
+        "B": "留一法交叉驗證（Leave-One-Out Cross Validation）",
+        "C": "隨機交叉驗證（Random Cross Validation）",
+        "D": "分層留一法交叉驗證（Stratified Leave-One-Out Cross\nValidation）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 8
+      }
+    },
+    {
+      "id": "114-2-S3-35",
+      "number": 35,
+      "answer": "A",
+      "prompt": "某公司針對製程感測器資料進行主成分分析（PCA），經標準化與協方差矩\n陣分解後，得到三個主成分的特徵值如下：λ1=6.0, λ2=3.0, λ3=1.0。\n若團隊決定僅保留能解釋至少 80% 總變異量的主成分，以進行後續模型建\n構，下列哪一項敘述最合理且數據解讀正確？",
+      "options": {
+        "A": "前兩個主成分合計解釋 90%的總變異量，因此可安全降維至二維，且仍\n保留大部分資訊",
+        "B": "第一主成分解釋 60%的變異量，表示資料結構呈現明顯線性關係，僅保\n留一維即可避免過擬合",
+        "C": "雖然前兩個主成分可解釋超過 80% 變異量，但第二主成分貢獻仍高達\n30%，不宜捨棄第三主成分",
+        "D": "三個特徵值相差不大，顯示各主成分變異均衡，降維可能導致資訊損失"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 9
+      }
+    },
+    {
+      "id": "114-2-S3-36",
+      "number": 36,
+      "answer": "D",
+      "prompt": "某銀行計畫與多家合作機構共同訓練一個 AI 信用風險預測模型，為避免客\n戶交易資料在傳輸與運算過程中外洩，技術團隊評估使用同態加密\n（Homomorphic Encryption）技術。下列何者最能正確描述同態加密在此\n應用中的關鍵特性？",
+      "options": {
+        "A": "系統以隨機雜訊（Noise）干擾輸出，確保統計結果不洩漏個資",
+        "B": "各參與銀行透過安全通道交換私鑰，確保模型參數一致",
+        "C": "將原始資料壓縮並同時加密，以減少加密後資料量與運算時間",
+        "D": "資料在加密狀態下仍可進行數值運算，模型訓練可於未解密資料上完成"
+      },
+      "topic": "治理與合規",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 9
+      }
+    },
+    {
+      "id": "114-2-S3-37",
+      "number": 37,
+      "answer": "B",
+      "prompt": "某跨銀行風控平台希望整合多家銀行的用戶行為資料，用於訓練信用風險\n預測模型。由於競爭與法規限制，各銀行僅願意提供加密後資料，且資料\n在任何時間不得被平台解密。同時，平台需建立安全通訊協議以確保資料\n在傳輸過程未被竄改或重放。\n下列哪一組技術最能完整對應上述需求？",
+      "options": {
+        "A": "對稱加密（Symmetric Encryption）＋ 單向雜湊（Hash Function）＋\n非對稱加密（Asymmetric Encryption）＋ 差分隱私（Differential\nPrivacy）",
+        "B": "同態加密（Homomorphic Encryption）＋ 非對稱加密（Asymmetric\nEncryption）＋ 單向雜湊（ One-way Hash Function）＋ 對稱加密\n（Symmetric Encryption）",
+        "C": "差分隱私（Differential Privacy）＋ 對稱加密（Symmetric\nEncryption）＋ 同態加密（Homomorphic Encryption）＋ 數位簽章\n（Digital Signature）",
+        "D": "同態加密（Homomorphic Encryption）＋ 安全多方計算（Secure\nMulti-party Computation, MPC）＋ 雜湊函數（Hash Function）＋ 對稱\n加密（Symmetric Encryption）"
+      },
+      "topic": "治理與合規",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 9
+      }
+    },
+    {
+      "id": "114-2-S3-38",
+      "number": 38,
+      "answer": "B",
+      "prompt": "附圖程式碼所計算的是哪一類型的評估指標？",
+      "options": {
+        "A": "MAE",
+        "B": "MSE",
+        "C": "RMSE",
+        "D": "R²"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 10
+      }
+    },
+    {
+      "id": "114-2-S3-39",
+      "number": 39,
+      "answer": "C",
+      "prompt": "附圖程式碼實現的是哪一種正則化技術？",
+      "options": {
+        "A": "L1 正則化",
+        "B": "L2 正則化",
+        "C": "Dropout",
+        "D": "Batch Normalization"
+      },
+      "topic": "深度學習",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 10
+      }
+    },
+    {
+      "id": "114-2-S3-40",
+      "number": 40,
+      "answer": "C",
+      "prompt": "依據附圖程式碼進行資料處理，下列何者正確？",
+      "options": {
+        "A": "計算矩陣 A 的反矩陣",
+        "B": "v1 * v2 結果為 array([5, 7, 9])",
+        "C": "np.dot(v1, v2) 結果為 np.int64(32)",
+        "D": "np.linalg.eig"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 10
+      }
+    },
+    {
+      "id": "114-2-S3-41",
+      "number": 41,
+      "answer": "D",
+      "prompt": "考慮擲出骰子並採用 Monte Carlo 方法估算條件機率，參考附圖程式碼。\n事件 A：擲出偶數\n事件 B：擲出大於 3\n請問下列何者為條件機率 P(A∣B)的正確值？",
+      "options": {
+        "A": "A_and_B.sum() / (A.sum() * B.sum())",
+        "B": "A_and_B.sum() / (A.sum() + B.sum())",
+        "C": "A_and_B.sum() / A.sum()",
+        "D": "A_and_B.sum() / B.sum()"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 10
+      }
+    },
+    {
+      "id": "114-2-S3-42",
+      "number": 42,
+      "answer": "B",
+      "prompt": "VGG16 是由牛津大學 Visual Geometry Group(VGG)在 2014 年提出的經典\n卷積神經網路（Convolutional Neural Network, CNN）架構。該模型以簡\n潔且規則的層堆疊設計聞名，廣泛應用於影像分類、特徵提取及遷移學習\n等任務。附圖程式碼載入了預訓練的 VGG16 模型，並輸出其完整層級結構\n及參數統計摘要（如附表）。請根據此資訊回答 42~45 題。\n---------------------------------------------------------------Layer (type)\nOutput Shape\nParam #\n================================================================\nConv2d-1\n[-1, 64, 150, 150]\n1,792\nReLU-2\n[-1, 64, 150, 150]\n0\nConv2d-3\n[-1, 64, 150, 150]\n36,928\nReLU-4\n[-1, 64, 150, 150]\n0\nMaxPool2d-5\n[-1, 64, 75, 75]\n0\nConv2d-6\n[-1, 128, 75, 75]\n73,856\nReLU-7\n[-1, 128, 75, 75]\n0\nConv2d-8\n[-1, 128, 75, 75]\n147,584\nReLU-9\n[-1, 128, 75, 75]\n0\nMaxPool2d-10\n[-1, 128, 37, 37]\n0\nConv2d-11\n[-1, 256, 37, 37]\n295,168\nReLU-12\n[-1, 256, 37, 37]\n0\nConv2d-13\n[-1, 256, 37, 37]\n590,080\nReLU-14\n[-1, 256, 37, 37]\n0\nConv2d-15\n[-1, 256, 37, 37]\n590,080\nReLU-16\n[-1, 256, 37, 37]\n0\nMaxPool2d-17\n[-1, 256, 18, 18]\n0\nConv2d-18\n[-1, 512, 18, 18]\n1,180,160\nReLU-19\n[-1, 512, 18, 18]\n0\nConv2d-20\n[-1, 512, 18, 18]\n2,359,808\nReLU-21\n[-1, 512, 18, 18]\n0\nConv2d-22\n[-1, 512, 18, 18]\n2,359,808\nReLU-23\n[-1, 512, 18, 18]\n0\nMaxPool2d-24\n[-1, 512, 9, 9]\n0\nConv2d-25\n[-1, 512, 9, 9]\n2,359,808\nReLU-26\n[-1, 512, 9, 9]\n0\nConv2d-27\n[-1, 512, 9, 9]\n2,359,808\nReLU-28\n[-1, 512, 9, 9]\n0\nConv2d-29\n[-1, 512, 9, 9]\n2,359,808\nReLU-30\n[-1, 512, 9, 9]\n0\nMaxPool2d-31\n[-1, 512, 4, 4]\n0\nAdaptiveAvgPool2d-32\n[-1, 512, 7, 7]\n0\nLinear-33\n[-1, 4096]\n102,764,544\nReLU-34\n[-1, 4096]\n0\nDropout-35\n[-1, 4096]\n0\nLinear-36\n[-1, 4096]\n16,781,312\nReLU-37\n[-1, 4096]\n0\nDropout-38\n[-1, 4096]\n0\nLinear-39\n[-1, 1000]\n4,097,000\n================================================================\nTotal params: 138,357,544\nTrainable params: 138,357,544\nNon-trainable params: 0\n---------------------------------------------------------------Input size (MB): 0.26\nForward/backward pass size (MB): 96.93\nParams size (MB): 527.79\nEstimated Total Size (MB): 624.98\n----------------------------------------------------------------\n在深度神經網路中，不同層的參數量（parameter count）差異極大。有些\n層雖然數量少但計算量大，有些則相反。了解參數分佈情形，有助於模型\n壓縮與遷移學習設計。請問在 VGG16 中，下列何者的參數量最多？",
+      "options": {
+        "A": "卷積層(Conv2d)",
+        "B": "全連接層(Linear)",
+        "C": "ReLU 激活函數",
+        "D": "池化層(MaxPool2d, AdaptiveAvgPool2d)"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 13
+      }
+    },
+    {
+      "id": "114-2-S3-43",
+      "number": 43,
+      "answer": "A",
+      "prompt": "在神經網路中，了解各層的運算量分佈，有助於模型壓縮與硬體加速的策\n略設計。請問在 VGG16 中，下列何者運算量(FLOPs)最多？",
+      "options": {
+        "A": "卷積層(Conv2d)",
+        "B": "全連接層(Linear)",
+        "C": "ReLU 激活函數",
+        "D": "池化層(MaxPool2d, AdaptiveAvgPool2d)"
+      },
+      "topic": "深度學習",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 13
+      }
+    },
+    {
+      "id": "114-2-S3-44",
+      "number": 44,
+      "answer": "D",
+      "prompt": "VGG16 層數深且結構規則，由多層卷積、池化及全連接層組成。了解各層\n的輸入/輸出維度、參數量及記憶體需求，有助於掌握 CNN 模型的組成邏輯\n與實作技巧。根據 VGG16 的模型架構，下列敘述何者正確？",
+      "options": {
+        "A": "AdaptiveAvgPool2d 的輸出會被攤平後傳入第一個全連接層；由於前一\n層池化輸出空間為 4×4，所以第一個線性層的輸入維度是 512×4×4 =\n8192",
+        "B": "Linear-33（第一個全連接層）報出的 102,764,544 參數只包含權重，\n偏差（bias）沒有算在內",
+        "C": "根據列出的「Estimated Total Size (MB) = 624.98」，表示訓練此模\n型只需大約 625MB 的 GPU 記憶體（包含所有 optimizer state 與梯度），所\n以一張 1 GB 的 GPU 就足夠訓練",
+        "D": "VGG16 包含 13 層卷積層（conv）與 3 層全連接層（FC），總參數數目\n約為 138,357,544（約 138.36M）"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 13
+      }
+    },
+    {
+      "id": "114-2-S3-45",
+      "number": 45,
+      "answer": "B",
+      "prompt": "在實務應用中，我們常使用遷移學習(transfer learning)技巧，即載入預\n訓練模型（如 VGG16），凍結部分層的參數，只針對特定任務重新訓練最後\n幾層，這種做法可節省訓練時間並提升模型效能。假設你要對 VGG16 進行\n遷移學習(transfer learning)，希望凍結卷積層的參數，只訓練最後全連\n接層(classifier)。下列哪段程式碼寫法正確？",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 13
+      }
+    },
+    {
+      "id": "114-2-S3-46",
+      "number": 46,
+      "answer": "B",
+      "prompt": "在郵遞區號自動辨識的研究中，研究人員收集了一份手寫數字影像資料\n集，每一張影像為 8×8 的灰階圖片，共包含多個手寫數字樣本。這份資料\n集來自 UCI Machine Learning Repository，常被用於數字辨識與機器學\n習方法的教學與實驗。\n在過程中，研究人員發現資料中可能存在雜訊，例如筆跡模糊或影像中附\n加的干擾點，這會影響後續分類模型的效能。因此，他們希望透過資料降\n噪的方法，提升後續分類的準確度。同時，他們也想透過 KNN (K-Nearest\nNeighbors) 搭配交叉驗證來評估模型表現，確保模型在不同資料切割下都\n能有穩定的預測能力。\n部分樣本經繪製後的外觀如下圖所示：\n根據這份資料來回答 46~47 題。\n假設研究人員已將含有雜訊的手寫數字影像存放在變數 noisy 中。部分資\n料經視覺化後的外觀如下：\n他們嘗試使用 PCA 進行降噪，並希望能保留影像的主要特徵，同時去除影\n像中的雜訊。然而，當程式執行後，觀察到影像仍然含有明顯的雜訊。研\n究人員懷疑是程式中某個步驟的設定不正確，導致 PCA 沒有發揮降噪的作\n用，需要修改程式碼才能讓降噪有效。請問哪一段程式碼需要修改，才能\n讓 PCA 對 noisy 影像有效去噪？",
+      "options": {
+        "A": "程式碼 A",
+        "B": "程式碼 B",
+        "C": "程式碼 C",
+        "D": "程式碼 D"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 15
+      }
+    },
+    {
+      "id": "114-2-S3-47",
+      "number": 47,
+      "answer": "B",
+      "prompt": "研究人員在對 digits 資料集進行分類時，決定使用 KNN 並搭配交叉驗證來\n評估模型準確率。他們撰寫了四組不同的程式碼來進行 KNN 訓練與交叉驗\n證，但不確定哪幾組程式碼能正確執行並輸出準確率。每組程式碼在資料\n切割、模型訓練、交叉驗證函數的使用上略有差異，研究人員希望找出可\n以正確完成任務的程式碼組合，以確保模型評估的可靠性。\n請問哪幾組程式碼能正確使用 KNN 搭配交叉驗證，對 digits 資料集進行訓\n練並輸出準確率？",
+      "options": {
+        "A": "程式碼 A、程式碼 B、程式碼 C、程式碼 D",
+        "B": "程式碼 A、程式碼 C",
+        "C": "程式碼 A、程式碼 B",
+        "D": "程式碼 C、程式碼 D\n使用鐵達尼號(Titanic)資料集進行多層感知機(Multilayer Perceptron,\nMLP)分類預測分析，其中 survived 為反應變數(1 表示存活，0 表示死\n亡)。附圖程式碼展示資料載入與處理，請根據此資料回答第 48~50 題"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 15
+      }
+    },
+    {
+      "id": "114-2-S3-48",
+      "number": 48,
+      "answer": "C",
+      "prompt": "下圖顯示資料集的前 5 筆資料。\n參考下圖程式碼，下列何者正確？\nA：X_train -= X_train.mean(axis=0) 將每個訓練集特徵的平均值調整為\n0\nB：X_train /= X_train.std(axis=0) 將每個訓練集特徵的標準差調整為\n0\nC：X_train 處理結果會將資料壓縮到 0 和 1 之間\nD：標準化結果防止梯度爆炸或消失\nE：標準化是屬於特徵選擇(Feature Selection)方法\nF：X_train 程式碼應修正為 X_train = X_train.std(axis=0), X_test\n程式碼應修正為 X_test = X_test.std(axis=0)",
+      "options": {
+        "A": "A、B、C、D",
+        "B": "A、E",
+        "C": "A、D",
+        "D": "A、C、F"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 17
+      }
+    },
+    {
+      "id": "114-2-S3-49",
+      "number": 49,
+      "answer": "C",
+      "prompt": "參考下圖執行結果，下列何者正確？",
+      "options": {
+        "A": "activation=\"relu\"其數學式為",
+        "B": "空格 1 值為 110，空格 2 值為 100",
+        "C": "空格 1 值為 100，空格 2 值為 110",
+        "D": "activation=\"sigmoid\"一般用於多類別分類預測模型"
+      },
+      "topic": "機器學習基礎",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 18
+      }
+    },
+    {
+      "id": "114-2-S3-50",
+      "number": 50,
+      "answer": "C",
+      "prompt": "參考下圖執行結果，下列何者正確？\nA：空格 1 須填入 \"b-\"\nB：空格 2 須填入 \"b--\"\nC：空格 1 須填入 \"r-\"\nD：空格 2 須填入 \"r--\"\nE：驗證損失明顯較訓練損失減少更明顯",
+      "options": {
+        "A": "B、C",
+        "B": "A、C、D",
+        "C": "A、D",
+        "D": "C、D、E\n《以下空白》"
+      },
+      "topic": "機器學習基礎",
+      "hasFigureReference": true,
+      "source": {
+        "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+        "examId": "114-2",
+        "examLabel": "114 年第二梯次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "114-11-08",
+        "page": 18
+      }
+    },
+    {
+      "id": "115-1-S1-01",
+      "number": 1,
+      "answer": "D",
+      "prompt": "某 工 程 師 正 在 建 置 一 套 法 律 文 件 解 析 系 統 ， 在 進 行 資 訊 擷 取 （ Information\nExtraction）前，需要對文本進行詞性標註（Part-of-Speech Tagging, POS Tagging）\n。\n請問此步驟的主要目的為何？",
+      "options": {
+        "A": "將文本翻譯為其他語言以利跨語言分析",
+        "B": "將文本切分為基本詞彙單位，以便後續處理",
+        "C": "判斷文本中各詞彙的情感傾向",
+        "D": "為每個詞彙標記其語法類別，如名詞、動詞與形容詞"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 1
+      }
+    },
+    {
+      "id": "115-1-S1-02",
+      "number": 2,
+      "answer": "C",
+      "prompt": "一家新創公司希望對 Llama3 70B 模型進行領域微調（Domain Fine-Tuning）以建\n立企業專用助理，但 GPU 記憶體有限，無法支撐完整模型的反向傳播梯度計算。\n工程師希望凍結（freeze）原模型權重、僅訓練少量額外參數的前提下，評估採用\nLoRA（Low-Rank Adaptation）方案。請問 LoRA 在此場景下的主要優勢為何？",
+      "options": {
+        "A": "透過知識蒸餾（Knowledge Distillation）將 70B 模型壓縮為較小的學生模型",
+        "B": "對原始模型各層權重進行剪枝（Pruning），移除低重要性參數後再進行微調",
+        "C": "凍結原始預訓練權重，僅在各層加入低秩分解的可訓練矩陣，大幅降低可訓練\n參數量與 GPU 記憶體需求",
+        "D": "將模型中的注意力機制改為稀疏注意力（Sparse Attention），以降低長序列計\n算成本"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 1
+      }
+    },
+    {
+      "id": "115-1-S1-03",
+      "number": 3,
+      "answer": "B",
+      "prompt": "某工程師在建構搜尋引擎的詞向量模型時，語料庫規模達數十億 token，且包含\n大量長尾詞彙（Long-tail Terms）。他在 Word2Vec 的 CBOW 與 Skip-gram 兩種訓\n練策略之間進行選擇，需考量訓練效率與低頻詞表示品質之差異。下列何者最能\n準確地反映兩者在此情境下的取捨？",
+      "options": {
+        "A": "CBOW 對長尾詞表現更好，因為它透過多個上下文詞的平均來強化稀疏詞的\n訓練訊號",
+        "B": "CBOW 訓練速度較快、整體語意平滑，但對低頻詞的向量品質較差；Skip-gram\n以中心詞預測周圍詞，對長尾詞累積更多訓練樣本，向量品質較優",
+        "C": "Skip-gram 訓練速度更快，因為每次只需預測單一目標詞，計算量低於 CBOW",
+        "D": "兩者對低頻詞的表現完全相同，差異僅在於訓練時的 Batch 組織方式"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 1
+      }
+    },
+    {
+      "id": "115-1-S1-04",
+      "number": 4,
+      "answer": "C",
+      "prompt": "某金融科技公司的工程師正在準備內部客服對話與交易紀錄文本，進行 BERT 模\n型的預訓練，以提升模型對金融語境的理解能力，並採用遮蔽語言建模（Masked\nLanguage Model, MLM）作為訓練任務。請問 MLM 的核心訓練目標為何？",
+      "options": {
+        "A": "讓模型自左至右逐 token 生成句子，學習自迴歸語言模型（Autoregressive LM）\n能力",
+        "B": "透過對抗訓練（Adversarial Training）縮小真實句與生成句之間的語意差異",
+        "C": "隨機遮蔽輸入序列中部分 token，訓練模型根據雙向上下文預測被遮蔽的原始\n內容",
+        "D": "透過遮蔽低頻詞來減少詞彙表大小，降低 Embedding 的記憶體使用"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 1
+      }
+    },
+    {
+      "id": "115-1-S1-05",
+      "number": 5,
+      "answer": "C",
+      "prompt": "某電商平台的工程師在開發商品評論情感分析系統時，發現使用 One-Hot 編碼無\n法表達詞語之間的語意關係，且隨著詞彙表擴大，向量維度與記憶體需求快速增\n加。工程師因此改用 Word2Vec 進行詞語表示。請問 Word2Vec 從根本上解決了\n上述問題的哪項限制？",
+      "options": {
+        "A": "建立詞語之間的序列依賴關係，以捕捉長距離上下文語意",
+        "B": "根據詞語在語料中的出現頻率調整其重要性，使模型更重視高頻詞",
+        "C": "降低詞彙表示的維度，同時保留語意結構，避免高維稀疏表示所帶來的限制",
+        "D": "透過監督式學習利用標註語料，提升詞語分類的準確性"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 2
+      }
+    },
+    {
+      "id": "115-1-S1-06",
+      "number": 6,
+      "answer": "C",
+      "prompt": "某自駕車感知系統需要在同一張影像中同時完成道路、建築、行人的逐像素分類，\n並且能夠區分畫面中兩名相鄰行人（標記為「行人#1」和「行人#2」）\n。工程師在\n選擇語義分割（Semantic Segmentation）與實例分割（Instance Segmentation）時，\n請問兩者的根本差異為何？",
+      "options": {
+        "A": "實 例 分 割 對 每 個 像 素 進 行 分 類 但 不 產 生 Bounding Box ； 語 義 分 割 產 生\nBounding Box 但不進行像素級標記",
+        "B": "實例分割僅用於影像層級的類別分類，語義分割才進行逐像素標記",
+        "C": "語義分割將每個像素分配至預定義類別，但同一類別內的不同個體無法區分；\n實例分割能對同一類別的不同物件（如兩名行人）分別建立獨立遮罩（Mask）",
+        "D": "語義分割與實例分割皆為逐像素分類任務，但兩者在是否需要區分不同物件\n個體上並無差異"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 2
+      }
+    },
+    {
+      "id": "115-1-S1-07",
+      "number": 7,
+      "answer": "C",
+      "prompt": "某大型超市的防損系統需要即時偵測多名顧客各自手持的購物籃、手機與商品，\n並需對每個物件進行精確區域標記（Pixel-level Mask）\n，同時能區分畫面中不同個\n體（即使不同顧客拿著相同商品，也需分別標記）\n。請問下列哪一項技術最適合此\n場景的需求？",
+      "options": {
+        "A": "影像分類（Image Classification）",
+        "B": "目標檢測（Object Detection）",
+        "C": "實例分割（Instance Segmentation）",
+        "D": "語義分割（Semantic Segmentation）"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 2
+      }
+    },
+    {
+      "id": "115-1-S1-08",
+      "number": 8,
+      "answer": "B",
+      "prompt": "某工程師訓練了一個皮膚病變二元分類模型（惡性/良性），在向臨床醫師報告模\n型效能時，使用 ROC 曲線（Receiver Operating Characteristic Curve）進行呈現。\n請問 ROC 曲線的橫軸（X 軸）與縱軸（Y 軸）分別代表哪些指標，且在醫療情境\n中代表哪一種意義？",
+      "options": {
+        "A": "X 軸為準確率（Accuracy），Y 軸為召回率（Recall），表示模型整體分類正確\n比例與偵測能力",
+        "B": "X 軸為假陽率（False Positive Rate, FPR），Y 軸為真陽率（True Positive Rate,\nTPR），反映誤診健康個體的風險與正確識別病患的能力",
+        "C": "X 軸為精確率（Precision）\n，Y 軸為召回率（Recall）\n，表示預測為陽性樣本的準\n確性與完整性",
+        "D": "X 軸為 IoU 閾值，Y 軸為 mAP，反映物件偵測模型在不同重疊條件下的表現"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 2
+      }
+    },
+    {
+      "id": "115-1-S1-09",
+      "number": 9,
+      "answer": "D",
+      "prompt": "某團隊在監控影像分類模型的線上效能時，透過儀表板呈現混淆矩陣（Confusion\nMatrix）\n，以觀察模型預測結果與實際標籤的分佈情形。請問下列哪一項無法從混\n淆矩陣中直接計算？",
+      "options": {
+        "A": "精確率（Precision）",
+        "B": "準確率（Accuracy）",
+        "C": "召回率（Recall）",
+        "D": "ROC 曲線下面積（AUC）"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 3
+      }
+    },
+    {
+      "id": "115-1-S1-10",
+      "number": 10,
+      "answer": "A",
+      "prompt": "某工廠導入即時影像瑕疵偵測系統，需在高頻影像流中進行快速推論。工程師在\nYOLO 與 Faster R-CNN 兩種物件偵測架構之間進行評估，請問下列哪一個針對\n兩者在偵測流程設計上的差異最為正確？",
+      "options": {
+        "A": "YOLO 採用單階段偵測，直接從整張影像預測物件位置與類別；Faster R-CNN\n則先產生候選區域再進行分類",
+        "B": "YOLO 與 Faster R-CNN 皆採用兩階段流程，但在特徵擷取方式上有所不同",
+        "C": "YOLO 採用單階段架構，主要透過增加候選區域數量來提升偵測準確率",
+        "D": "Faster R-CNN 採用單階段偵測方式，將物件定位與分類整合於同一模型中"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 3
+      }
+    },
+    {
+      "id": "115-1-S1-11",
+      "number": 11,
+      "answer": "B",
+      "prompt": "某工程師在分析 Transformer 架構時，發現自注意力機制（Self-Attention）能夠有\n效提升模型對序列中長距離依賴關係的建模能力。請問 Self-Attention 的核心功能\n為何？",
+      "options": {
+        "A": "透過隱藏狀態的遞迴傳遞，逐步累積序列中的上下文資訊",
+        "B": "讓序列中每個 token 能與其他所有 token 建立關聯，並根據重要性分配權重",
+        "C": "對輸入序列進行局部運算，以捕捉相鄰詞之間的關係",
+        "D": "將整個序列壓縮為固定長度表示，以提供後續任務使用"
+      },
+      "topic": "深度學習",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 3
+      }
+    },
+    {
+      "id": "115-1-S1-12",
+      "number": 12,
+      "answer": "B",
+      "prompt": "某工程師在設計一個二元分類器（Binary Classifier）時，考慮在輸出層使用 Sigmoid\n函數。請問 Sigmoid 函數的主要特性與限制為何？",
+      "options": {
+        "A": "可將輸入轉換為任意實數範圍，適合用於迴歸任務",
+        "B": "可將輸入壓縮至(0, 1)區間，可解釋為機率值，但在輸入值過大或過小時可能\n產生梯度消失問題",
+        "C": "可將輸入轉換為多類別機率分布，常用於多分類任務",
+        "D": "可在整個輸入範圍內梯度保持穩定，適合用於深層神經網路"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 3
+      }
+    },
+    {
+      "id": "115-1-S1-13",
+      "number": 13,
+      "answer": "C",
+      "prompt": "某公司評估兩種方案，將大型語言模型客製化為內部客服助理：方案 A 為提示微\n調（Prompt Tuning）\n，在輸入端加入可學習的軟提示（Soft Prompt）\n；方案 B 為傳\n統微調（Fine-Tuning），以標註問答資料調整模型。兩方案最本質的技術差異為\n何？",
+      "options": {
+        "A": "提示微調主要用於降低推論延遲，而傳統微調則用於提升模型容量",
+        "B": "兩者技術本質相同，差別僅在於學習率（Learning Rate）設定不同",
+        "C": "傳統微調通常需要更新模型參數，而提示微調主要透過調整輸入表示來影響模\n型行為",
+        "D": "提示微調與傳統微調的差異僅在於是否使用預訓練模型"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 4
+      }
+    },
+    {
+      "id": "115-1-S1-14",
+      "number": 14,
+      "answer": "A",
+      "prompt": "某工程師計劃將通用 LLM 在醫療問答語料上進行監督微調（Supervised FineTuning, SFT）\n，但發生了災難性遺忘（Catastrophic Forgetting）問題。在計算資源\n有限的情況下，工程師希望透過調整微調策略來緩解此問題。下列哪一種訓練設\n計最能有效率地學習新任務的同時保留原有能力？",
+      "options": {
+        "A": "凍結大部分預訓練參數，僅對少量新增模組（如 LoRA 層）進行微調，並控制\n更新範圍以減少對原有知識的干擾",
+        "B": "提高學習率（Learning Rate）並縮短訓練步數，使模型快速收斂至新任務，避\n免長時間訓練造成遺忘",
+        "C": "僅使用醫療語料進行多輪訓練，強化模型對新任務的專注程度",
+        "D": "增加批次大小（Batch Size）以穩定梯度更新，使模型同時保留舊知識與學習\n新知識"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 4
+      }
+    },
+    {
+      "id": "115-1-S1-15",
+      "number": 15,
+      "answer": "B",
+      "prompt": "某企業建置一套多代理人（Multi-Agent）系統，由一個 Orchestrator Agent 負責任\n務分配，多個 Worker Agent 分別執行網路搜尋、程式撰寫與結果彙整。若\nOrchestrator 發現某 Worker Agent 回傳結果品質不符合預期，從系統容錯與任務\n可靠性角度，下列哪一項機制最能確保整體任務仍能正確完成？",
+      "options": {
+        "A": "直接採用該 Worker Agent 的輸出，避免重試機制造成延遲",
+        "B": "Orchestrator 具備結果評估能力，對不合格結果觸發重試（Retry）或重新分配\n給不同 Worker，並記錄失敗原因供後續改善",
+        "C": "強制所有 Worker Agent 統一使用相同的 LLM 模型，以減少輸出差異",
+        "D": "當任何一個 Worker 失敗時，整個 Multi-Agent 任務直接中止並通知使用者重\n新啟動"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 4
+      }
+    },
+    {
+      "id": "115-1-S1-16",
+      "number": 16,
+      "answer": "A",
+      "prompt": "一位工程師正在實作一個 ReAct 框架的 AI Agent，該 Agent 需要回答「台灣目前\n最大的電動車充電站營運商是哪間公司，以及其充電樁總數」。\nAgent 的工具清單如下：\n•web_search(query)：回傳搜尋結果摘要\n•get_webpage(url)：回傳網頁內文\n•calculator(expression)：回傳計算結果\n•get_current_date()：回傳今日日期\n工程師設計了以下的 System Prompt 與 ReAct Loop，請問此 Agent 設計存在哪些\n問題？應如何改善？\n[System Prompt]\n你是一個資料查詢助理。\n每次只能使用一個工具。\n當你知道答案時，直接輸出最終答案。\n[第一輪 Agent 輸出]\nThought: 我已經知道台灣電動車市場的概況，不需要搜尋，可以直接回答。\nAction: 無\nAnswer: 台灣最大充電站營運商是 XX 公司，共有 500 個充電樁。",
+      "options": {
+        "A": "System Prompt 未要求 Agent 在回答前使用工具驗證，導致直接依賴既有知識\n產生幻覺（Hallucination）；應明確規定即時性問題需先執行 web_search",
+        "B": "工具清單提供了 calculator 與 get_current_date，屬於多餘工具，可能增加 Agent\n的選擇複雜度",
+        "C": "ReAct 框架的核心問題在於 Thought 步驟佔用過多 token，應移除 Thought 欄\n位，直接讓 Agent 輸出 Action，以提升推理效率",
+        "D": "Agent 應在第一輪就呼叫所有可用工具並彙整結果，避免多輪 Loop 造成的延\n遲"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 4
+      }
+    },
+    {
+      "id": "115-1-S1-17",
+      "number": 17,
+      "answer": "D",
+      "prompt": "某醫療新創公司正在開發一套「多模態患者風險評估系統」\n，需同時處理三種異質\n資料來源：胸腔 X 光影像（影像模態）\n、臨床診斷筆記（文字模態）\n，以及心率與\n血氧的時序感測資料（數值時序模態）\n。工程師在進行各模態的特徵擷取模型選擇\n時，需為每種模態挑選最適合的模型架構。下列哪一組模型配置最符合三種模態\n各自的資料特性？",
+      "options": {
+        "A": "影像模態用 LSTM、文字模態用 CNN、時序模態用 BERT",
+        "B": "影像模態用 TF-IDF、文字模態用 ResNet、時序模態用 Word2Vec",
+        "C": "三種模態統一使用 BERT，因為 Transformer 架構具備通用性，可處理任意形\n式的輸入資料",
+        "D": "影像模態用 CNN、文字模態用 Transformer、時序模態用 LSTM 或 Temporal\nCNN"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 5
+      }
+    },
+    {
+      "id": "115-1-S1-18",
+      "number": 18,
+      "answer": "D",
+      "prompt": "某醫院的 AI 研究團隊正在開發一套整合「CT 影像+電子病歷文本+基因序列」三\n種模態資料的癌症預測模型。請問在此場景中採用「跨模態對齊（Cross-Modal\nAlignment）」技術主要解決什麼問題？",
+      "options": {
+        "A": "使模型僅聚焦於 CT 影像資料，避免文本與基因資料引入雜訊",
+        "B": "自動生成跨模態配對標註，以減少人工標記需求",
+        "C": "降低多模態資料的儲存與計算成本，以提升訓練效率",
+        "D": "將不同模態的資料表示對齊至共同語意空間，使模型能建立跨模態之間的語\n意關聯"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 6
+      }
+    },
+    {
+      "id": "115-1-S1-19",
+      "number": 19,
+      "answer": "A",
+      "prompt": "一家電商公司已將推薦系統 AI 模型上線三個月，業務主管要求專案團隊評估導\n入成效。團隊根據下圖數據得出結論：\n「因為 AUC 高達 0.91，模型表現優異，AI\n導入成效良好。」請問此評估結論存在什麼根本問題？",
+      "options": {
+        "A": "僅依賴離線指標 AUC 判斷模型成效，忽略線上業務指標（如 CTR 與營收）\n的變化，可能導致錯誤結論",
+        "B": "AUC 已達 0.91，代表模型排序能力優異，即使 CTR 略為下降，仍可視為推薦\n品質提升",
+        "C": "CTR 從 3.2%降至 3.1%，顯示模型效果變差，應立即還原（Rollback）至舊模\n型",
+        "D": "平均訂單金額提升至$1,020，代表模型已成功優化營收，因此無需考慮其他指\n標"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": true,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 6
+      }
+    },
+    {
+      "id": "115-1-S1-20",
+      "number": 20,
+      "answer": "A",
+      "prompt": "某電商公司計畫導入即時推薦系統，希望使用者進入網站後能在 100 毫秒內取得\n推薦結果，且推薦結果需依據最新使用者行為進行調整。系統需支援每日約 50 萬\n活躍使用者，尖峰時段每秒約 3,000 筆請求（QPS）\n。目前公司已累積歷史購買紀\n錄與瀏覽行為資料，並持續接收即時點擊流（Streaming Data）。IT 基礎架構採用\n雲端環境，團隊配置為 2 名資料工程師與 1 名機器學習工程師。某工程師提出以\n下導入規劃：\n(1)使用批次訓練（Batch Training）建立協同過濾模型\n(2)將模型部署為 REST API 提供即時推論服務\n(3)使用 Kafka 串流處理即時使用者行為特徵\n(4)將所有即時資料先寫入資料倉儲（Data Warehouse）再進行特徵計算\n(5)使用 Redis 或 Feature Store 快取即時特徵\n請問以下哪一項最合理的技術導入規劃組合與調整建議？",
+      "options": {
+        "A": "保留(1)(2)(3)，移除(4)，並加入(5)以降低延遲",
+        "B": "保留(1)(4)，移除(3)，以確保資料一致性與系統穩定",
+        "C": "保留(2)(4)(5)，移除(1)，改用即時線上學習（Online Learning）",
+        "D": "全部保留(1)~(5)，可同時兼顧即時性與資料完整性"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 6
+      }
+    },
+    {
+      "id": "115-1-S1-21",
+      "number": 21,
+      "answer": "B",
+      "prompt": "一位機器學習工程師正在優化公司內部的 RAG 法律文件問答系統。近期因營運\n成本壓力，公司要求在不更換模型且不影響回答品質的前提下，將整體 token 成\n本降低至目前的 60%，且目前成本主要集中於輸入 tokens。工程師在檢查系統後，\n盤點出目前的使用情況如下：\n◆使用模型：GPT-4o（輸入$5／1M tokens、輸出 $15／1M tokens）\n◆每次查詢：將前 10 筆檢索文件區塊全部加入 Prompt（每塊約 600 tokens）\n◆System Prompt：每次請求均包含約 500tokens 的公司背景說明\n◆對話機制：保留完整對話歷史，平均累積約 8,000tokens\n◆每日查詢量：約 5,000 次\n◆平均輸出：約 300tokens／次\n在上述限制與系統現況下，請問下列哪一項優化組合，最能在維持回答品質的前\n提下有效降低 token 成本？",
+      "options": {
+        "A": "將輸出 max_tokens 從 1,000 壓縮至 200，強制模型給出更短的回答，以降低輸\n出費用",
+        "B": "將 System Prompt 改為 Prompt Caching 或靜態前綴重用，並對對話歷史實作摘\n要壓縮，以保留語意而非完整對話",
+        "C": "將所有查詢改為 Batch API 模式送出，透過非同步處理降低單次費用",
+        "D": "在 Prompt 中明確要求模型「回答時盡量簡短」\n，透過指令引導模型自行縮減輸\n出長度"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 7
+      }
+    },
+    {
+      "id": "115-1-S1-22",
+      "number": 22,
+      "answer": "C",
+      "prompt": "某金融科技公司計劃建立完整的 AI 開發到維運流程，希望實現「模型訓練→測\n試→部署→監控→再訓練」的自動化流程串接，並確保線上模型的版本可追溯。\n技術主管建議引入 MLOps 框架。MLOps 在此 AI 開發生命週期中的核心角色為\n何？",
+      "options": {
+        "A": "專注於訓練資料的標註與品質控管，以提升模型訓練效果",
+        "B": "透過自動化模型搜尋與參數調整，降低模型開發門檻",
+        "C": "建立機器學習流程的自動化與版本管理機制，支援模型部署、監控與持續更新",
+        "D": "確保模型在部署後維持穩定效能，減少後續維運與更新需求"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 7
+      }
+    },
+    {
+      "id": "115-1-S1-23",
+      "number": 23,
+      "answer": "B",
+      "prompt": "某製造業公司計劃將 AI 導入生產線瑕疵檢測流程，目前瑕疵樣本約 800 張（含\n各類瑕疵類型）\n、正常樣本約 15,000 張，現有 IT 基礎設施為地端伺服器且無 GPU，\n且生產線環境需於地端即時完成推論，檢測需求為每片零件須在 100 毫秒內完成\n檢測，且預算為中等、無法於短期內大規模採購硬體。工程師正在規劃第一階段\n的 AI 導入方案，請問下列哪一種規劃最為合適？",
+      "options": {
+        "A": "從零訓練一個大型 CNN 模型，並採購高階 GPU 伺服器以滿足推論速度需求",
+        "B": "採用預訓練模型進行 Transfer Learning，針對瑕疵樣本進行 Fine-tuning，並使\n用模型量化（Quantization）或蒸餾（Distillation）技術壓縮模型以符合延遲需求，\n部署於地端",
+        "C": "因樣本數不足，建議先暫緩 AI 導入，待蒐集至少 10 萬筆瑕疵樣本後再啟動\n專案",
+        "D": "將所有影像上傳至雲端，使用第三方 AutoML 平台自動訓練並部署，以節省開\n發時間"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 8
+      }
+    },
+    {
+      "id": "115-1-S1-24",
+      "number": 24,
+      "answer": "D",
+      "prompt": "某即時詐欺偵測系統對模型回應時間有嚴格限制，若推論延遲過高將影響交易核\n准流程。維運工程師在模型上線前進行延遲測試（Latency Testing）時，主要評估\n的目標為何？",
+      "options": {
+        "A": "評估模型推論過程中的記憶體使用量，以確認部署資源是否足夠",
+        "B": "驗證模型對異常或攻擊輸入的穩定性與安全性",
+        "C": "評估模型在不同使用者族群上的預測結果是否一致",
+        "D": "評估模型從接收輸入到產生預測結果所需的回應時間是否符合系統要求"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 8
+      }
+    },
+    {
+      "id": "115-1-S1-25",
+      "number": 25,
+      "answer": "B",
+      "prompt": "某企業欲將其 AI 輔助決策系統提交給外部稽核單位審查，並宣稱符合 NIST《AI\n風險管理框架》\n（NIST AI RMF）中可驗證性（Verifiability）的要求。為讓第三方\n稽核人員能獨立重現模型評估結果，下列哪一項技術實踐最直接符合此要求？",
+      "options": {
+        "A": "將模型測試準確率優化至 99%以上，以達到業界公認的高可靠標準",
+        "B": "建立可追溯的測試資料與評估流程，並記錄模型訓練與評估過程中的關鍵設\n定，以確保結果可被重現",
+        "C": "加快模型迭代速度，縮短版本發布週期以盡快累積外部驗證數據",
+        "D": "擴充訓練資料量至數百萬筆，以統計方式確保模型的泛化能力達標"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 8
+      }
+    },
+    {
+      "id": "115-1-S1-26",
+      "number": 26,
+      "answer": "D",
+      "prompt": "某銀行導入一套 AI 授信審核系統，針對貸款申請人進行自動化決策。監理單位\n要求系統必須符合負責任 AI（Responsible AI）原則，特別是對被拒絕的申請人提\n供每筆決策的具體理由說明。從技術與合規的角度，此要求的核心能力需求為\n何？",
+      "options": {
+        "A": "系統必須在收到申請後 10 秒內自動刪除申請人個資",
+        "B": "系統應隨機調整部分決策以確保多元性",
+        "C": "系統必須保證所有決策準確率達到 100%",
+        "D": "系統必須具備可解釋性（Explainability）能力，能提供特徵貢獻說明"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 8
+      }
+    },
+    {
+      "id": "115-1-S1-27",
+      "number": 27,
+      "answer": "A",
+      "prompt": "某醫院計劃導入一套 AI 醫療影像診斷輔助系統，用於輔助放射科醫師判讀 CT 影\n像。院方技術委員會討論在人命攸關且需確保最終臨床決策責任由人類承擔的情\n境下，從系統設計架構層面，最關鍵的安全機制為何？",
+      "options": {
+        "A": "採用人機協作（Human-in-the-Loop, HITL）架構，由醫師最終審核決策",
+        "B": "模型信心低於閾值（Threshold）即自動關機",
+        "C": "隨機切換模型並以多數決決策",
+        "D": "對輸入影像加入隨機擾動"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 9
+      }
+    },
+    {
+      "id": "115-1-S1-28",
+      "number": 28,
+      "answer": "B",
+      "prompt": "一位資料科學家使用 XGBoost 建立信用風險評分模型，並使用 SHAP 解釋模型\n對某申請人的預測結果。SHAP summary plot 顯示該樣本中「月收入」的 SHAP 值\n為-2.3，\n「負債比率」為+1.8，其中 SHAP 值代表各特徵對模型輸出值的影響程度\n與方向。關於對 SHAP 值的解讀，下列敘述何者正確？",
+      "options": {
+        "A": "「月收入」的 SHAP 值-2.3 代表該特徵使此申請人的違約預測機率降低了 2.3%",
+        "B": "「月收入」的 SHAP 值-2.3 代表相對於基準值（base value），此特徵將模型輸\n出值往負方向推移了 2.3 個單位，表示月收入對該申請人有降低違約風險的貢獻",
+        "C": "SHAP 值為負代表該特徵對模型整體來說是不重要的特徵，應考慮從模型中移\n除",
+        "D": "負債比率」SHAP 值+1.8 代表負債比率是整個訓練集中對違約影響最大的特徵"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 9
+      }
+    },
+    {
+      "id": "115-1-S1-29",
+      "number": 29,
+      "answer": "C",
+      "prompt": "某工程師為一套卷積神經網路（CNN）的醫療影像輔助診斷系統設計模型可解釋\n性機制。該系統需滿足下列需求：\n1.能向醫師說明影像被判定為異常的原因\n2.支援近即時推論，每次解釋須於 200 毫秒內完成，且不可進行大量重複採樣計\n算\n3.解釋結果須以影像中具代表性的視覺化像素區域呈現\n在此情境下，下列何種方法最為適合？",
+      "options": {
+        "A": "使用 LIME，透過超像素擾動取樣分析影像區塊對預測的影響",
+        "B": "使用 SHAP KernelExplainer，計算各像素的 Shapley 值並疊加於原始影像",
+        "C": "使用 Grad-CAM（Class Activation Map），透過梯度反向傳播生成類別關注區\n域",
+        "D": "使用 SHAP TreeExplainer，計算特徵貢獻並以熱力圖呈現"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 9
+      }
+    },
+    {
+      "id": "115-1-S1-30",
+      "number": 30,
+      "answer": "C",
+      "prompt": "某資料科學家正在處理一份包含 200 個感測器特徵的工廠設備監測資料集，為了\n降低模型複雜度並保留主要變異資訊，他先對資料進行標準化（Standardization）\n，\n再使用主成分分析（PCA）進行降維。在 PCA 過程中，為了找出能最大化資料變\n異量的主成分方向，演算法主要依賴哪一項數學操作？",
+      "options": {
+        "A": "透過對目標函數進行梯度下降（Gradient Descent）最佳化，迭代求得主成分方\n向",
+        "B": "根據特徵與目標變數之間的相關性（Correlation）進行排序，選擇重要特徵",
+        "C": "對 資 料 的 協 方 差 矩 陣 （ Covariance Matrix ） 進 行 特 徵 值 分 解 （ Eigen\nDecomposition），取得對應主要變異方向的特徵向量",
+        "D": "對資料矩陣進行卷積運算（Convolution）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 10
+      }
+    },
+    {
+      "id": "115-1-S1-31",
+      "number": 31,
+      "answer": "A",
+      "prompt": "，擷取特徵之間的局部關係\n某資料工程師嘗試對包含 300 個特徵的使用者行為資料集使用 DBSCAN 進行群\n集分析，但發現幾乎所有資料點都被判定為雜訊點（Noise Points），難以形成有\n意義的群集，即使不斷調整ε（Epsilon）與 MinPts 參數也無濟於事。請問下列何\n者為此問題最可能的根本原因？",
+      "options": {
+        "A": "在高維空間中，維度詛咒（Curse of Dimensionality）使得資料點之間的距離趨\n於相近，導致 DBSCAN 的密度估計失效",
+        "B": "DBSCAN 演算法僅適用於低維資料，無法處理高維資料",
+        "C": "300 個特徵的資料必然不具備群集結構，因此無法進行有效的分群",
+        "D": "高維空間中核心點的數量會受到數學限制，導致無法形成群集"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 10
+      }
+    },
+    {
+      "id": "115-1-S1-32",
+      "number": 32,
+      "answer": "B",
+      "prompt": "某工程師正在實作一個 CNN 影像分類模型，在 PyTorch 中定義模型架構時，需\n要在卷積擷取特徵後接上全連結層（Fully Connected Layer）進行分類。在模型程\n式碼中，需要在卷積輸出與全連結層之間插入什麼操作？",
+      "options": {
+        "A": "使用全域平均池化（Global Average Pooling）將特徵圖壓縮後再接全連結層",
+        "B": "使用 Flatten 將特徵圖展平成一維向量",
+        "C": "直接將卷積輸出接到全連結層，系統會自動轉換維度",
+        "D": "先對特徵圖做 Softmax，再輸入全連結層"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 10
+      }
+    },
+    {
+      "id": "115-1-S1-33",
+      "number": 33,
+      "answer": "D",
+      "prompt": "某自駕車公司的 AI 訓練團隊面臨標註成本高的問題，無法取得足夠的真實惡劣\n天氣（大雨、濃霧）駕駛場景資料，工程師提議使用合成資料（Synthetic Data）\n來補充訓練集。請問下列何者最能正確敘述合成資料在 AI 訓練中的角色？",
+      "options": {
+        "A": "合成資料主要用於文字任務的資料擴增，影像任務仍需依賴真實資料",
+        "B": "合成資料可完全取代真實資料，直接用於模型訓練",
+        "C": "合成資料主要用於降低模型推論時的計算成本",
+        "D": "合成資料可在控制條件下產生多樣化場景，用於擴充訓練資料並提升模型的\n泛化能力"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 10
+      }
+    },
+    {
+      "id": "115-1-S1-34",
+      "number": 34,
+      "answer": "B",
+      "prompt": "某廣告技術公司的點擊率（CTR）預測系統每天新增數百個用戶行為特徵（如新\n廣告位、新設備類型）\n，特徵空間持續動態擴展。若採用傳統靜態模型每週批次重\n訓一次，會導致嚴重的模型過期問題。為在特徵空間頻繁變化的情況下維持模型\n即時準確度，最適合的模型架構方向為何？",
+      "options": {
+        "A": "採用傳統靜態羅吉斯迴歸（Logistic Regression），縮短批次重訓週期從每週改\n為每日",
+        "B": "採用支援增量學習（Incremental Learning）的模型，使模型能隨新資料即時更\n新並適應新增特徵，而不需重新訓練整個模型",
+        "C": "採用固定架構的深度神經網路（DNN）\n，每次有新特徵時重新定義輸入層後全\n量重訓",
+        "D": "改用預訓練圖神經網路（GNN）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 11
+      }
+    },
+    {
+      "id": "115-1-S1-35",
+      "number": 35,
+      "answer": "B",
+      "prompt": "，透過圖結構建立特徵間的關聯，自動應對新\n增特徵\n某生物醫學研究機構正在建構一個整合「基因序列特徵」與「電子病歷文本特徵」\n的疾病風險預測模型。由於高維數值特徵和語意文本特徵的性質差異顯著，請問\n下列哪一種特徵處理與選擇策略最為合適？",
+      "options": {
+        "A": "將所有特徵合併為單一特徵矩陣後，使用主成分分析（PCA）進行降維，作為\n模型輸入",
+        "B": "採分層策略，先對基因序列特徵進行特徵選擇，再對文本特徵進行語意表示，\n最後將兩類特徵融合（Feature Fusion）後輸入模型",
+        "C": "將所有特徵合併後，使用隨機森林（Random Forest）的特徵重要性進行一次性\n排序與篩選",
+        "D": "將文本特徵轉換為簡單統計特徵（如詞頻）後與基因特徵一併建模，以降低特\n徵處理複雜度"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 11
+      }
+    },
+    {
+      "id": "115-1-S1-36",
+      "number": 36,
+      "answer": "A",
+      "prompt": "某公司希望開發一個工業零件瑕疵辨識分類模型，共有 10 個類別，但每類僅約\n50 張人工標註影像（總計約 500 張）。由於標註成本高昂，短期內無法擴充資料\n集。在此情境下，工程師需要在有限標註資料下建構高效能模型。請問下列哪一\n種策略最為適合？",
+      "options": {
+        "A": "使用在大型資料集預訓練完成的卷積神經網路（CNN）\n，並進行遷移學習微調",
+        "B": "從頭訓練大型 Vision Transformer（ViT），完全使用現有 500 張影像",
+        "C": "使用 K-means 對影像進行分群，並直接將群集結果作為分類模型輸出",
+        "D": "複製既有的資料以增加標註影像數量，並從頭訓練深度 CNN 模型"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 11
+      }
+    },
+    {
+      "id": "115-1-S1-37",
+      "number": 37,
+      "answer": "A",
+      "prompt": "某製造廠開發產線瑕疵檢測模型時，資料集存在嚴重類別不平衡問題，其中良品\n約占 99%，瑕疵品僅占 1%。若直接使用原始資料進行訓練，模型容易偏向預測\n多數類別（良品）\n，導致對少數類別（瑕疵品）辨識能力不足。在不調整模型架構\n與學習演算法的前提下，僅透過資料前處理方式改善此問題，下列何者最適當？",
+      "options": {
+        "A": "使用 SMOTE 等過採樣方法進行少數類別擴增",
+        "B": "加入 L1／L2 正則化（Regularization）以防止過擬合",
+        "C": "大幅增加深度神經網路的層數，以強化特徵萃取能力",
+        "D": "複製更多良品數據，以進一步提升模型的準確率（Accuracy）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 11
+      }
+    },
+    {
+      "id": "115-1-S1-38",
+      "number": 38,
+      "answer": "D",
+      "prompt": "某 IoT 平台接收工廠溫度感測器資料，發現在常態分佈（均值 25°C，標準差 2°\nC）的數萬筆紀錄中，出現數筆「999°C」的極端值，研判為感測器通訊錯誤（網\n路封包延遲導致數值溢位）所致，且該異常數值在實際情況下不可能發生。在進\n行模型訓練前的資料清洗階段，針對這類離群值，最適當的處理策略為何？",
+      "options": {
+        "A": "保留所有原始數值，並使用平均數（Mean）作為特徵輸入模型",
+        "B": "對數據進行 Z-score 標準化，使數值落於約[-3, 3]範圍",
+        "C": "將 999°C 以獨熱編碼（One-Hot Encoding）轉為獨立類別特徵",
+        "D": "刪除異常的 999°C 記錄，或以中位數（Median）進行填補"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 12
+      }
+    },
+    {
+      "id": "115-1-S1-39",
+      "number": 39,
+      "answer": "A",
+      "prompt": "某 AI 平台工程師正在為多模態模型訓練系統規劃資料儲存架構，需要同時處理\n原始影像、非結構化文本，以及經過整理的結構化特徵資料。在此情境下，應如\n何選擇資料湖（Data Lake）與資料倉儲（Data Warehouse）的使用方式？",
+      "options": {
+        "A": "將原始影像與文本資料儲存在 Data Lake，將整理後的結構化特徵資料儲存在\nData Warehouse",
+        "B": "將所有資料統一儲存在 Data Warehouse，以提升查詢效率",
+        "C": "將所有資料統一儲存在 Data Lake，但犧牲結構化資料的查詢效率",
+        "D": "僅將原始影像資料儲存在 Data Lake，其餘資料統一存入 Data Warehouse"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 12
+      }
+    },
+    {
+      "id": "115-1-S1-40",
+      "number": 40,
+      "answer": "D",
+      "prompt": "某智慧製造公司在產線上部署工業相機進行即時外觀瑕疵檢測，原先將影像傳至\n雲端進行 AI 推論，但因網路延遲與連線不穩導致系統無法滿足即時需求（需低\n於 200ms）\n。工程師因此改為將模型部署於產線端的邊緣裝置後，但仍未達系統需\n求。在不更換硬體設備的前提下，下列哪一組技術最能有效降低推論延遲，同時\n維持合理準確率？",
+      "options": {
+        "A": "減少訓練資料的使用數量，並重新訓練模型以提升推論效率",
+        "B": "使用批次推論（Batch Inference）處理多張影像以提升計算效率",
+        "C": "採用模型集成（Model Ensemble），透過多模型投票提升準確率",
+        "D": "將模型由 FP32 量化為 INT8，並進行推論加速優化"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 12
+      }
+    },
+    {
+      "id": "115-1-S1-41",
+      "number": 41,
+      "answer": "A",
+      "prompt": "某 AI 影像辨識平台以單一 GPU 伺服器提供多租戶推論服務，系統長期觀察到\nGPU 使用率約維持在 60%左右，且在執行過程中可觀察到 GPU kernel 之間存在\n明顯閒置間隔，單次推論多以小批次方式執行。然而，在尖峰時段時，請求延遲\n會出現明顯波動甚至突增。同時，CPU 與記憶體資源使用率均未達瓶頸，且系統\n團隊已排除硬體、網路與請求併發控制異常。在此情境下，請判斷最可能造成問\n題的原因為何？",
+      "options": {
+        "A": "GPU 排程策略與批次大小設定不當，導致 GPU 運算單元未被有效利用",
+        "B": "請求併發控制機制不佳，導致多個請求同時搶占 GPU Context 資源造成延遲",
+        "C": "GPU 硬體效能不足，無法支撐推論負載",
+        "D": "模型未進行量化優化，導致推論計算成本過高"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 12
+      }
+    },
+    {
+      "id": "115-1-S1-42",
+      "number": 42,
+      "answer": "D",
+      "prompt": "某保險公司將理賠金額預測模型正式部署上線，MLOps 團隊設計監控機制。三個\n月後模型整體均方根誤差（RMSE）無明顯變化，但業務單位反映高額理賠案件\n的預測誤差明顯增加。經分析，高額理賠案件僅佔約 5%的樣本比例，且未被監\n控機制及時發現。請問最可能的設計缺陷為何？",
+      "options": {
+        "A": "監控頻率不足，應由每日批次監控改為即時串流監控",
+        "B": "高額理賠案件屬於長尾分布，難以透過監控指標偵測，因此無法透過監控機制\n發現問題",
+        "C": "RMSE 無法有效反映高額誤差，應改以平均絕對誤差（MAE）作為主要監控指\n標",
+        "D": "僅監控整體 RMSE，未針對不同理賠金額區間進行分群監控"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 13
+      }
+    },
+    {
+      "id": "115-1-S1-43",
+      "number": 43,
+      "answer": "C",
+      "prompt": "某電商平台的演算法工程師開發了一個新版商品推薦模型，在離線 A/B 測試中，\n新模型的各項評估指標（AUC、NDCG@10）均顯著優於現行線上模型。然而，\n離線測試無法完全反映真實使用者的互動行為（點擊、購買、停留時間）\n。在正式\n全面上線前，若希望在可控制風險下量化真實業務指標，應採用下列何種線上驗\n證策略？",
+      "options": {
+        "A": "影子模式（Shadow Mode）：新舊模型同時產生預測，但僅顯示舊模型結果，\n於後端比較輸出差異",
+        "B": "回測（Backtesting）：使用歷史日誌模擬模型表現作為上線依據",
+        "C": "金絲雀發布（Canary Release）\n：將 1–5%使用者流量導向新模型，量測 CTR、\nCVR 等指標並逐步擴量",
+        "D": "負載測試（Load Testing）：於測試環境進行高流量壓力測試後直接全面上線"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 13
+      }
+    },
+    {
+      "id": "115-1-S1-44",
+      "number": 44,
+      "answer": "B",
+      "prompt": "某 MLOps 工程師正在設計 AI 模型的推論服務 API，需要處理使用者上傳的高解\n析度影像（平均 5MB）進行即時分類。在 RESTful API 設計時，選擇 HTTP 請求\n方法與資料傳輸格式的最佳實踐為何？",
+      "options": {
+        "A": "使用 HTTP GET 方法，將影像資料 Base64 編碼後附加於 URL Query String\n中",
+        "B": "採用 HTTP POST 請求，將影像資料以 multipart/form-data 或 application/octet\nstream 傳輸於 Request Body",
+        "C": "使用 HTTP PUT 方法，透過 Content-Type: application/xml 傳遞影像資料",
+        "D": "要求客戶端下載模型於本地推論，僅回傳分類結果"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 13
+      }
+    },
+    {
+      "id": "115-1-S1-45",
+      "number": 45,
+      "answer": "B",
+      "prompt": "某 AI 平台整合多個外部 AI 微服務（語音辨識 API、NLP 分析 API、知識圖譜查\n詢服務）\n，在高峰期間某外部服務偶發延遲或逾時（Timeout）\n，導致請求鏈路壅塞，\n最終造成平台級服務中斷（Cascading Failure）\n。為從架構層面預防此類連鎖故障，\n最有效的設計模式為何？",
+      "options": {
+        "A": "將所有外部 API 呼叫改為同步串行處理，並取消逾時限制，確保每個請求皆\n完成後再繼續",
+        "B": "為外部服務導入斷路器模式（Circuit Breaker）\n，在異常時暫停呼叫並提供替代\n回應",
+        "C": "擴充各微服務的執行緒池（Thread Pool）上限，以提升併發處理能力",
+        "D": "停用服務健康檢查，減少不必要的額外負載"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 14
+      }
+    },
+    {
+      "id": "115-1-S1-46",
+      "number": 46,
+      "answer": "C",
+      "prompt": "某醫院計劃建立混合雲 AI 平台：使用公有雲 GPU 叢集進行 CT 影像模型訓練，\n但基於 HIPAA（Health Insurance Portability and Accountability Act）法規要求，患\n者影像原始資料不得離開醫院院內環境。下列何者最符合「利用公有雲算力訓練\n模型」與「不傳輸原始患者資料」雙重限制的技術方案？",
+      "options": {
+        "A": "將患者影像資料以 AES-256 加密後上傳至公有雲，並於雲端解密後進行模型\n訓練",
+        "B": "在院內部署同態加密（Homomorphic Encryption）模組，對推論請求進行加密\n處理",
+        "C": "採用聯邦學習（Federated Learning）於院內訓練模型，僅傳送模型更新至雲端\n聚合，原始資料不外流",
+        "D": "建立專線 VPN 連接醫院與雲端，以網路層安全保護資料傳輸"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 14
+      }
+    },
+    {
+      "id": "115-1-S1-47",
+      "number": 47,
+      "answer": "D",
+      "prompt": "某電商平台將新的推薦模型部署至線上系統，為降低風險，團隊採用漸進式部署\n策略（Phased Rollout）\n，先將新模型流量從 5%逐步提升至 100%。在部署初期，\n團隊發現轉換率（Conversion Rate）略有提升，但在流量提升至 30%時，系統延\n遲（Latency）明顯上升，且部分使用者體驗變差。請問在此情境下，最適當的下\n一步策略為何？",
+      "options": {
+        "A": "立即將新模型全面部署至 100%，以觀察整體效果並評估系統表現變化",
+        "B": "還原（Rollback）至舊模型並停止新模型測試流程，以確保系統穩定與使用者\n體驗品質",
+        "C": "維持目前 30%流量並持續觀察，即使延遲問題存在也暫不進行調整",
+        "D": "暫停流量提升，針對延遲問題進行效能分析與優化後再繼續部署"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 14
+      }
+    },
+    {
+      "id": "115-1-S1-48",
+      "number": 48,
+      "answer": "C",
+      "prompt": "某銀行的信用卡風控模型已穩定上線一年，主要用於偵測盜刷交易提醒。近期在\n未對模型或特徵工程進行調整的情況下，系統觀察到深夜電商交易的核准率明顯\n上升，盜刷攔截率下降，但模型 AUC 幾乎維持不變，且交易金額、地區與裝置\n等特徵分布未出現明顯變化。進一步分析發現，疫情後使用者行為改變，使原本\n被視為高風險的交易型態逐漸轉為一般消費。下列何者最能敘述此現象的原因？",
+      "options": {
+        "A": "資料漂移（Data Drift），因輸入特徵分布發生變化",
+        "B": "訓練與服務偏差（Training-Serving Skew），因線上與離線特徵處理不一致",
+        "C": "概念漂移（Concept Drift），因特徵與目標標籤之間的關聯性改變",
+        "D": "決策閾值偏移（Threshold Shift），因分類門檻設定不當導致預測偏差"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 15
+      }
+    },
+    {
+      "id": "115-1-S1-49",
+      "number": 49,
+      "answer": "A",
+      "prompt": "某零售電商平台已建立模型監控儀表板，用於追蹤線上推薦模型的運作狀態與效\n能 表 現 。 維 運 工 程 師 需 判 斷 哪 些 指 標 屬 於 「 線 上 持 續 監 控 （ Continuous\nMonitoring）」的範疇。下列指標中，哪一項最不適合在即時監控系統中追蹤，而\n應改由離線實驗追蹤系統管理？",
+      "options": {
+        "A": "訓 練 實 驗 中 每 個 Epoch 的 學 習 率 （ Learning Rate ） 變 化 曲 線 與 超 參 數\n（Hyperparameter）設定軌跡",
+        "B": "線上推論 API 的 P50/P95/P99 回應延遲與每日請求量（RPS）趨勢",
+        "C": "輸入特徵分佈的族群穩定性指數（Population Stability Index, PSI）\n，偵測資料漂\n移",
+        "D": "模型預測結果分佈（如 CTR）與定期回收的人工標註結果之對比"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 15
+      }
+    },
+    {
+      "id": "115-1-S1-50",
+      "number": 50,
+      "answer": "D",
+      "prompt": "某醫療團隊建立肺炎診斷系統，採用晚期融合（Late Fusion）策略，將胸腔 X 光\n影像與病患問診文字分別進行預測後再整合結果。測試發現，當問診紀錄品質不\n佳（如描述簡短或資訊缺漏）時，整體模型效能僅小幅下降。關於此現象，下列\n何者最不可能為其原因？",
+      "options": {
+        "A": "各模態獨立進行預測，可降低單一模態品質不佳對整體結果的影響",
+        "B": "融合階段可調整不同模態的權重，使低品質模態影響降低",
+        "C": "各模態使用獨立模型，使錯誤不會在特徵層被放大",
+        "D": "晚期融合會在輸入階段整合多模態特徵，因此能避免低品質資料影響"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S1",
+        "subjectName": "科目1 人工智慧技術應用與規劃",
+        "testDate": "115-05-23",
+        "page": 15
+      }
+    },
+    {
+      "id": "115-1-S3-01",
+      "number": 1,
+      "answer": "C",
+      "prompt": "某量化投資團隊需估算某投資組合未來 30 日的風險值。由於衍生性金融商品的\n定價模型過於複雜，無法以解析解直接求得，工程師因此採用隨機模擬方式，產\n生大量市場情境模擬並估計損失分布。此方法屬於下列哪一種技術框架？",
+      "options": {
+        "A": "馬可夫鏈（Markov Chain）：以狀態轉移機率描述系統演變的隨機過程",
+        "B": "梯度下降最佳化（Gradient Descent）：透過迭代更新參數以最小化損失函數",
+        "C": "蒙地卡羅方法（Monte Carlo Method）\n：透過大量隨機抽樣近似機率分布或數值\n結果",
+        "D": "貝氏推論（Bayesian Inference）：結合先驗分布與資料更新後驗機率"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 1
+      }
+    },
+    {
+      "id": "115-1-S3-02",
+      "number": 2,
+      "answer": "C",
+      "prompt": "某工程師在建立房價預測模型時，訓練資料中存在少數豪宅（成交價超過一般物\n件 10 倍以上）\n。若工程師希望模型對這些極端高價物件的預測誤差更敏感，並在\n訓練時產生較大的梯度更新影響，應優先選擇下列哪種損失函數？",
+      "options": {
+        "A": "平均絕對誤差（MAE）\n：對誤差進行線性懲罰，對離群值較不敏感，梯度近似\n固定",
+        "B": "Huber 損失（Huber Loss）\n：小誤差採平方懲罰，大誤差轉為線性懲罰，以降低\n離群值影響",
+        "C": "均方誤差（MSE）：對誤差進行平方處理，使大誤差產生更大的懲罰與梯度",
+        "D": "交叉熵損失（Cross-Entropy Loss）：用於分類問題的機率分布差異衡量"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 1
+      }
+    },
+    {
+      "id": "115-1-S3-03",
+      "number": 3,
+      "answer": "A",
+      "prompt": "某工程師在撰寫 Transformer 的 Attention 層時，需手動驗證矩陣維度是否相容。\n輸入矩陣 Q 已攤平成形狀為(1, 10)，Query 投影權重矩陣 WQ 形狀為(10, 64)。執\n行 Q x WQ 後輸出的形狀為何？",
+      "options": {
+        "A": "(1, 64)",
+        "B": "(10, 10)",
+        "C": "(64, 1)",
+        "D": "維度不相容，無法相乘"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 1
+      }
+    },
+    {
+      "id": "115-1-S3-04",
+      "number": 4,
+      "answer": "C",
+      "prompt": "某 AI 團隊同時開發多個影像辨識系統，並在訓練流程中統一加入資料擴增策略\n（包含隨機水平翻轉）以提升模型泛化能力。實驗後發現，部分任務的測試表現\n明顯下降。下列哪一項任務最可能因該資料擴增策略引入語意錯誤（Semantic\nInconsistency），使同一樣本在翻轉後對應不同類別標籤，進而影響模型學習？",
+      "options": {
+        "A": "寵物監控中的貓狗分類",
+        "B": "車輛辨識中的車型分類",
+        "C": "手寫數字辨識",
+        "D": "道路場景中的行人偵測"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 1
+      }
+    },
+    {
+      "id": "115-1-S3-05",
+      "number": 5,
+      "answer": "C",
+      "prompt": "某工程師完成多元線性迴歸模型後，繪製殘差圖（Residual Plot），發現殘差隨預\n測值增大而呈現擴散現象（右側明顯比左側分散）\n。此現象最可能代表什麼問題？",
+      "options": {
+        "A": "殘差之間存在關聯",
+        "B": "特徵之間高度相關",
+        "C": "殘差變異數不一致",
+        "D": "殘差不符合常態分布"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 1
+      }
+    },
+    {
+      "id": "115-1-S3-06",
+      "number": 6,
+      "answer": "B",
+      "prompt": "某資料科學家欲對 512 維詞嵌入向量（共 10 萬筆）進行視覺化以探索群集結構，\n同時另一工程師需將 200 個製程特徵降維後作為 XGBoost 的輸入特徵。關於 tSNE 與 PCA 選型，下列敘述何者最正確？",
+      "options": {
+        "A": "t-SNE 保留全局線性結構，適合作為 XGBoost 的降維前處理",
+        "B": "t-SNE 保留局部鄰域結構，適合視覺化；但不保留全局結構，不適合作為模型\n輸入特徵",
+        "C": "PCA 為非線性降維方法，能保留複雜流形結構",
+        "D": "t-SNE 與 PCA 皆可直接對新資料進行線性外推"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 2
+      }
+    },
+    {
+      "id": "115-1-S3-07",
+      "number": 7,
+      "answer": "B",
+      "prompt": "某金融團隊建立信貸風險模型，特徵工程後共產生 200 個變數，其中「月收入」\n、\n「年收入」\n、\n「季收入」三者高度相關。模型上線後業務單位反映：每次重新訓練\n後，模型輸出的重要特徵清單在這些高度相關特徵間反覆變動，難以向審查單位\n解釋。請問下列何者為造成此現象最可能的原因？",
+      "options": {
+        "A": "模型使用 L2 正則化，導致所有特徵係數被壓縮至接近零，重要性難以區分",
+        "B": "模型使用 L1 正則化，面對高度相關特徵時隨機保留其中之一，導致每次訓練\n保留的特徵不穩定",
+        "C": "模型未使用任何正則化，過擬合導致係數每次收斂至不同極值",
+        "D": "特徵數量過多導致梯度消失，應優先進行 PCA 降維再套用正則化"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 2
+      }
+    },
+    {
+      "id": "115-1-S3-08",
+      "number": 8,
+      "answer": "B",
+      "prompt": "某深度學習工程師訓練 ResNet 時，發現模型在前幾個 Epoch 驗證損失快速下降，\n但從第 15 個 Epoch 起驗證損失開始上升，而訓練損失持續下降。工程師將學習\n率調高後，訓練損失反而開始明顯震盪。學習率過大最直接導致下列哪種現象？",
+      "options": {
+        "A": "梯度消失（Gradient Vanishing）：梯度在反向傳播中逐層縮小趨近於零，底層\n無法學習",
+        "B": "損失函數震盪或發散（Oscillation / Divergence）：每次更新步伐過大，參數在\n最優點兩側反覆跳越，無法穩定收斂",
+        "C": "過擬合（Overfitting）：模型記憶訓練資料的雜訊，泛化能力下降",
+        "D": "死亡 ReLU（Dying ReLU）：大量神經元輸出永久為零，停止參與梯度更新"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 2
+      }
+    },
+    {
+      "id": "115-1-S3-09",
+      "number": 9,
+      "answer": "A",
+      "prompt": "某工程師訓練深度神經網路時發現損失函數震盪嚴重且收斂速度慢，改用 Adam\n優化器後訓練變得穩定且收斂更快。下列何者為 Adam 能改善此問題的主要原\n因？",
+      "options": {
+        "A": "同時結合一階動量（Momentum）與自適應學習率（Adaptive Learning Rate），\n為每個參數調整更新步長",
+        "B": "強制所有參數使用相同學習率（Learning Rate），避免梯度差異造成不穩定",
+        "C": "透過批次正規化（Batch Normalization）重新分布輸入資料",
+        "D": "將梯度裁剪為固定範圍以避免梯度爆炸（Gradient Explosion）"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 2
+      }
+    },
+    {
+      "id": "115-1-S3-10",
+      "number": 10,
+      "answer": "A",
+      "prompt": "某工程師同時開發兩個模型：一個預測使用者「隔日 App 使用時長（分鐘）」\n，另\n一個預測使用者「隔日是否流失（是/否）」\n。關於上述兩個任務，他應分別選擇哪\n種適當的損失函數？",
+      "options": {
+        "A": "使用時長預測：均方誤差（MSE）；流失預測：二元交叉熵（Binary CrossEntropy）",
+        "B": "使用時長預測：交叉熵損失（Cross-Entropy）\n；流失預測：均方誤差（MSE）",
+        "C": "使用時長預測：Hinge 損失（Hinge Loss）\n；流失預測：MAE（平均絕對誤差）",
+        "D": "兩個任務均使用交叉熵損失，因為兩者的輸出都有不確定性"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 3
+      }
+    },
+    {
+      "id": "115-1-S3-11",
+      "number": 11,
+      "answer": "D",
+      "prompt": "某工程師在 A100 GPU 叢集上訓練大型語言模型，觀察到以下現象：全批次梯度\n下降時 GPU 利用率達 100%，但每次更新耗時 45 秒；隨機梯度下降（SGD）每\n次更新僅需 0.01 秒，但梯度極不穩定、訓練曲線震盪劇烈。為兼顧梯度穩定性與\nGPU 吞吐量（Throughput），應採用下列哪種策略？",
+      "options": {
+        "A": "全批次梯度下降（Full-batch GD）：使用完整資料集計算梯度，更新穩定但每\n次更新耗時長",
+        "B": "隨機梯度下降（SGD）：每次只用一個樣本，速度快但梯度雜訊大，收斂不穩\n定",
+        "C": "第二階梯度法（Newton's Method）：利用 Hessian 矩陣精確估計曲率，大幅減\n少更新次數",
+        "D": "小批次梯度下降（Mini-batch GD）"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 3
+      }
+    },
+    {
+      "id": "115-1-S3-12",
+      "number": 12,
+      "answer": "A",
+      "prompt": "：以適當批次大小（如 256-2048）平衡梯度\n估計穩定性與 GPU 平行效率，是深度學習的業界標準\n某醫院導入肺癌篩檢模型，資料集中正常病例佔 99%、肺癌陽性僅佔 1%。模型\n上線後，系統報告整體準確率（Accuracy）為 99.1%。醫師對此數字感到疑慮，\n認為不足以評估臨床價值，在漏診風險上可能存在重大問題。請問在此情境下，\n僅以 Accuracy 作為評估指標最嚴重的缺陷為何？",
+      "options": {
+        "A": "Accuracy 對類別不平衡不敏感，可能無法反映模型對肺癌陽性的偵測能力",
+        "B": "Accuracy 的計算不包含模型對邊界樣本的分類結果，容易遺漏困難樣本",
+        "C": "Accuracy 無法處理多分類問題，在二元分類下需改用 AUC",
+        "D": "Accuracy 無法揭示模型的收斂速度，因此不適合用來選擇最終模型"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 3
+      }
+    },
+    {
+      "id": "115-1-S3-13",
+      "number": 13,
+      "answer": "C",
+      "prompt": "某工程師訓練文本情感分類模型，訓練集 F1=0.96、驗證集 F1=0.71，落差明顯，\n顯示模型出現過擬合。下列哪一種策略能最直接從降低模型複雜度的角度緩解過\n擬合？",
+      "options": {
+        "A": "增加訓練 Epoch 數至 200，讓模型充分學習訓練資料的所有細節",
+        "B": "引入更多原始文本特徵（包括原始 URL、HTML 標籤），增加特徵多樣性",
+        "C": "對 Embedding 層與全連結層加入 L2 權重衰減（Weight Decay）\n，懲罰參數值",
+        "D": "移除驗證集並將其併入訓練集，以增加模型可見的訓練樣本數"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 3
+      }
+    },
+    {
+      "id": "115-1-S3-14",
+      "number": 14,
+      "answer": "C",
+      "prompt": "某電商平台使用樸素貝氏分類器（Naive Bayes Classifier）建立垃圾郵件過濾模型。\n訓練集準確率（Accuracy）達 92%，但上線後發現，包含「限時優惠、立即下單\n享折扣」等關鍵字的正常促銷郵件，常被誤判為垃圾信。經分析發現，這些詞彙\n在訓練資料中多出現在垃圾郵件中，導致其類別條件機率偏高。請問造成此現象\n的最主要原因與較適當的改善方式為何？",
+      "options": {
+        "A": "應禁用 Naive Bayes，改用其他更先進演算法",
+        "B": "模型過擬合於訓練資料，應增加 Epoch 數以提升泛化能力",
+        "C": "類別條件機率受訓練資料分布影響，導致促銷關鍵字被視為垃圾信特徵，應重\n新平衡資料或調整先驗機率",
+        "D": "模型未進行特徵標準化（Feature Scaling）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 4
+      }
+    },
+    {
+      "id": "115-1-S3-15",
+      "number": 15,
+      "answer": "D",
+      "prompt": "，導致分類邊界偏移，應先進行正規\n化處理\n某資料科學家將客戶資料進行分群，使用 K-means（K=5）後發現部分群集呈現\n半月形（非凸）結構，且資料中存在少數離群值（Outliers）。他同時觀察到每次\n執行結果略有不同。下列敘述何者最完整且準確地反映 K-means 在此情境中的已\n知限制？",
+      "options": {
+        "A": "K-means 無法處理維度超過 10 的資料，在高維空間中距離計算失效",
+        "B": "K-means 假設群集為高斯分佈，無法處理任何非球形群集",
+        "C": "K-means 對 K 值敏感，但初始化不影響最終結果（演算法保證全局最優）",
+        "D": "K-means 需預先指定 K；以歐氏距離為基礎，難以處理非凸群集；對初始化與\n離群值敏感"
+      },
+      "topic": "傳統機器學習",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 4
+      }
+    },
+    {
+      "id": "115-1-S3-16",
+      "number": 16,
+      "answer": "A",
+      "prompt": "某資料科學家在信用評分任務中使用 XGBoost 建立模型，發現模型在訓練集表現\n良好但驗證集出現過擬合跡象。他檢視其模型設計，發現 XGBoost 在目標函數\n（Objective Function）中引入額外的正則化機制以控制模型複雜度。相較於傳統\n梯度提升決策樹（GBDT）\n，XGBoost 在其核心目標函數中加入了下列哪一種關鍵\n設計，使其具備更強的防過擬合能力？",
+      "options": {
+        "A": "加入樹的複雜度懲罰項（包含深度、葉節點數量與葉節點權重的 L2 正則化）",
+        "B": "加入動態學習率（Dynamic Learning Rate）的強制衰減機制",
+        "C": "加入卷積運算（Convolution）以萃取特徵間的空間關係",
+        "D": "強制所有決策樹深度為 1（Decision Stumps）"
+      },
+      "topic": "傳統機器學習",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 4
+      }
+    },
+    {
+      "id": "115-1-S3-17",
+      "number": 17,
+      "answer": "B",
+      "prompt": "某醫療新創團隊將原有 3 層 CNN 升級為 16 層架構以提升 CT 影像腫瘤偵測率，\n但發現訓練損失反而高於 3 層版本且收斂困難。工程師懷疑是網路深度造成的訓\n練問題，下列診斷與對策何者最正確？",
+      "options": {
+        "A": "網路層數增加導致參數量過多，應減少每層卷積濾波器（Filters）數量以降低\n模型複雜度",
+        "B": "深層網路可能出現梯度消失問題，導致淺層權重難以更新；應採用 ResNet 的\n殘差連接（Skip Connection）以改善梯度傳遞",
+        "C": "16 層模型對 CT 影像而言仍過淺，應進一步增加網路深度以學習更高階特徵",
+        "D": "問題可能來自激活函數（Activation Function），將 ReLU 改為 Sigmoid 可改善\n梯度傳遞問題"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 5
+      }
+    },
+    {
+      "id": "115-1-S3-18",
+      "number": 18,
+      "answer": "A",
+      "prompt": "某工程師設計用於醫療 X 光影像分類的 CNN，發現卷積層後直接接全連結層導\n致參數量高達 5,000 萬，訓練速度極慢。為降低模型參數量與計算成本，他在卷\n積層後加入池化層（Pooling Layer）\n。下列何者為池化層在此設計中最主要解決的\n問題？",
+      "options": {
+        "A": "降低特徵圖空間維度，減少參數與計算量",
+        "B": "提供非線性表達能力，以提升模型學習複雜度",
+        "C": "改善梯度消失問題，以強化反向傳播穩定性",
+        "D": "提升模型泛化能力而不影響特徵維度"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 5
+      }
+    },
+    {
+      "id": "115-1-S3-19",
+      "number": 19,
+      "answer": "D",
+      "prompt": "某團隊開發合約文件審查系統，需比對合約首頁的定義條款與第 20 頁的責任條\n款是否一致。工程師初版採用雙向長短期記憶（Bidirectional LSTM），但發現長\n文件的跨段落語義關聯捕捉效果不佳，且訓練時間隨文件長度明顯增加。改用\nTransformer 架構後問題獲得改善，下列何者為最主要的原因？",
+      "options": {
+        "A": "Transformer 參數量比 LSTM 少，因此訓練速度更快、不易過擬合",
+        "B": "Transformer 內建位置編碼，使模型天生理解文件的章節結構與段落順序",
+        "C": "LSTM 無法處理超過 512 個 token 的輸入，Transformer 無此硬性限制",
+        "D": "Transformer 的 Self-Attention 可讓任意 token 直接建立關聯，不受距離限制，\n且運算可平行化"
+      },
+      "topic": "深度學習",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 5
+      }
+    },
+    {
+      "id": "115-1-S3-20",
+      "number": 20,
+      "answer": "C",
+      "prompt": "工程師在 PyTorch 中建構貓、狗、鳥三分類 CNN，並使用交叉熵損失函數\n（CrossEntropyLoss）作為訓練目標。由於此損失函數在內部已包含 Softmax 計\n算，輸出層的設計需特別注意。請問輸出層的激活函數（Activation Function）與\n輸出維度應如何設定？",
+      "options": {
+        "A": "使用 ReLU 作為激活函數，輸出維度設為 1，直接輸出單一數值作為預測結\n果",
+        "B": "使用 Sigmoid 作為激活函數，輸出維度設為 3，使每個類別獨立輸出 0 到 1 的\n機率",
+        "C": "不使用任何激活函數，直接輸出未經正規化的 logits，輸出維度設為 3 對應三\n個類別",
+        "D": "使用 Softmax 作為激活函數，輸出維度設為 3，輸出為已正規化的機率分布"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 5
+      }
+    },
+    {
+      "id": "115-1-S3-21",
+      "number": 21,
+      "answer": "D",
+      "prompt": "某工程師將一個大型預訓練模型部署至資源受限的行動裝置，發現模型體積過大\n且推論效率不足。為降低模型大小並提升推論速度，他將原本 32-bit 浮點數權重\n轉換為 8-bit 整數。在不重新訓練模型的前提下，請問此過程稱為何？",
+      "options": {
+        "A": "知識蒸餾（Knowledge Distillation）",
+        "B": "權重剪枝（Pruning）",
+        "C": "張量分解（Tensor Decomposition）",
+        "D": "模型量化（Quantization）"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 6
+      }
+    },
+    {
+      "id": "115-1-S3-22",
+      "number": 22,
+      "answer": "C",
+      "prompt": "某工程師建置企業內部知識問答的 RAG 系統，上線後發現部分問題檢索結果與\n查詢語意不符。分析後確認問題出在向量搜尋的語意匹配不準確。於檢索階段，\n採取下列哪種方法最能直接改善此問題？",
+      "options": {
+        "A": "將切片大小（Chunk Size）由 512tokens 縮小至 128tokens，以提升檢索精細度",
+        "B": "調整向量相似度閾值（Similarity Threshold），以過濾低相關檢索結果",
+        "C": "採用混合搜尋（Hybrid Search）：結合語意向量搜尋與關鍵字搜尋（BM25），\n並以 RRF（Reciprocal Rank Fusion）融合排序",
+        "D": "將檢索結果隨機洗牌（Shuffle）後回傳給 LLM，避免位置偏誤（Position Bias）"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 6
+      }
+    },
+    {
+      "id": "115-1-S3-23",
+      "number": 23,
+      "answer": "D",
+      "prompt": "某團隊開發法律文件生成系統，需根據合約前半段內容自動生成後半段條款。工\n程師分別使用 BERT 與 GPT-2 進行微調，但發現 BERT 的生成效果明顯較差，且\n即使增加訓練資料也無法改善。下列何者為最主要原因？",
+      "options": {
+        "A": "BERT 缺乏法律領域知識，因此生成能力較差",
+        "B": "BERT 的分詞方式影響語意理解，導致生成效果不佳",
+        "C": "BERT 模型規模較小，因此生成能力不足",
+        "D": "BERT 無法根據前文逐步生成後續文字，較不適合此類任務"
+      },
+      "topic": "NLP",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 6
+      }
+    },
+    {
+      "id": "115-1-S3-24",
+      "number": 24,
+      "answer": "D",
+      "prompt": "某推薦系統工程師處理商品類別特徵，該特徵包含約 3,000 個不同商品項目，每\n一種商品或其規格皆視為一個獨立類別。請問在高基數（High Cardinality）的情\n境下，下列哪一種編碼方式最容易造成維度爆炸問題？",
+      "options": {
+        "A": "目標編碼（Target Encoding）",
+        "B": "標籤編碼（Label Encoding）",
+        "C": "Embedding 層（Categorical Embedding）",
+        "D": "One-Hot 編碼（One-Hot Encoding）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 6
+      }
+    },
+    {
+      "id": "115-1-S3-25",
+      "number": 25,
+      "answer": "A",
+      "prompt": "某工程師建立房價預測模型，輸入特徵包含屋齡與距捷運站距離（公尺）\n。他發現\n距捷運站距離分布嚴重右偏，經對數（Log）轉換後模型表現明顯改善；但將同樣\n轉換套用於屋齡後，模型表現反而下降。下列何者為最可能的原因？",
+      "options": {
+        "A": "屋齡與房價若呈線性關係，Log 轉換反而破壞此結構",
+        "B": "Log 轉換會壓縮所有特徵的變異數，導致模型失去鑑別能力",
+        "C": "Log 轉換不適用於有單位的連續變數，應改用 Box-Cox",
+        "D": "兩特徵須套用相同轉換，否則尺度不一致導致梯度不穩定"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 7
+      }
+    },
+    {
+      "id": "115-1-S3-26",
+      "number": 26,
+      "answer": "D",
+      "prompt": "在時間序列資料的特徵工程中，工程師常使用滑動窗口（Sliding Window）方法，\n將過去多個時間點的觀測值組合為模型輸入。下列何者為此方法的主要目的？",
+      "options": {
+        "A": "資料增強",
+        "B": "去除資料雜訊",
+        "C": "降低特徵維度",
+        "D": "建立滯後特徵"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 7
+      }
+    },
+    {
+      "id": "115-1-S3-27",
+      "number": 27,
+      "answer": "C",
+      "prompt": "某工程師建立零售商品銷量預測模型，初期以第 1 至 52 週資料作為訓練集、第\n53 週作為測試集（固定時間切分）。半年後重新評估，發現模型對最新資料（如\n第 80 週）的預測明顯衰退，推測為時間演進導致行為模式改變。若重新設計驗\n證策略，應採用下列哪種方法，使每次訓練皆基於最新時間區間資料？",
+      "options": {
+        "A": "K-fold 交叉驗證（K-fold Cross-Validation）",
+        "B": "分層 K-fold（Stratified K-fold）",
+        "C": "滾動窗口驗證（Rolling Window Validation / Time Series Split）",
+        "D": "留一驗證法（Leave-One-Out Cross-Validation）"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 7
+      }
+    },
+    {
+      "id": "115-1-S3-28",
+      "number": 28,
+      "answer": "B",
+      "prompt": "某房仲平台要預測物件成交價，資料集含 50 個特徵，其中部分特徵與房價呈非\n線性關係，且業務單位要求模型須能提供整體特徵重要性以供稽核。下列哪一種\n模型選擇策略最符合需求？",
+      "options": {
+        "A": "使用羅吉斯迴歸（Logistic Regression），透過線性係數解釋特徵影響，但無法\n有效建模非線性關係",
+        "B": "使用隨機森林迴歸（Random Forest Regression），可處理非線性關係，並提供\n整體特徵重要性（Feature Importance）作為解釋依據",
+        "C": "用 K-means 分群（K-means Clustering）後分別建立迴歸模型，以提升預測準確\n度並間接提升可解釋性",
+        "D": "使用支持向量迴歸（Support Vector Regression, SVR），透過核函數（Kernel\nFunction）捕捉非線性關係，並以支持向量解釋模型決策"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 7
+      }
+    },
+    {
+      "id": "115-1-S3-29",
+      "number": 29,
+      "answer": "B",
+      "prompt": "某工廠設備監測系統需偵測馬達軸承的異常振動，但過去僅記錄了大量正常運作\n的振動時序資料，缺乏任何已確認故障的標註樣本。請問下列何種任務範疇最符\n合此情境下的異常偵測需求？",
+      "options": {
+        "A": "監督式二元分類（Supervised Binary Classification）",
+        "B": "非監督或半監督異常偵測（Unsupervised / Semi-supervised Anomaly Detection）",
+        "C": "強化學習（Reinforcement Learning）",
+        "D": "自監督學習（Self-supervised Learning）"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 7
+      }
+    },
+    {
+      "id": "115-1-S3-30",
+      "number": 30,
+      "answer": "B",
+      "prompt": "某信用風險模型：訓練 AUC=0.97、驗證 AUC=0.72、少數違約樣本預測波動極大\n及不同 K-fold 切分結果差異明顯。下列何者為最可能的問題？",
+      "options": {
+        "A": "高偏差",
+        "B": "高變異",
+        "C": "過擬合",
+        "D": "資料漂移"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 8
+      }
+    },
+    {
+      "id": "115-1-S3-31",
+      "number": 31,
+      "answer": "A",
+      "prompt": "某倉儲自動化公司以強化學習（Reinforcement Learning, RL）訓練機器手臂進行\n揀貨，獎勵函數設計為「每成功抓取一個貨品得+1 分」。部署後發現機器手臂學\n會反覆放開再抓取同一物品，以累積分數，但實際完成任務的效率極低。請問此\n現象的核心問題為何？應如何修正獎勵設計？",
+      "options": {
+        "A": "獎勵塑形（Reward Shaping）\n：將獎勵改為「成功完成一次揀貨任務」而非單次\n抓取行為",
+        "B": "策略退化（Policy Degradation）：降低學習率以穩定訓練",
+        "C": "信 用 分 配 問 題 （ Credit Assignment Problem ）： 引 入 優 勢 函 數 （ Advantage\nFunction）",
+        "D": "災難性遺忘（Catastrophic Forgetting）：加入經驗回放（Replay Buffer）"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 8
+      }
+    },
+    {
+      "id": "115-1-S3-32",
+      "number": 32,
+      "answer": "D",
+      "prompt": "某詐欺偵測模型需同時具備高精確率（Precision）\n，以避免誤凍結正常帳號，並維\n持高召回率（Recall）表現，以確保不放過任何詐欺行為。然而工程師發現兩者之\n間存在取捨關係（Precision-Recall Tradeoff）\n。在此情境下，F1-score 最能反映何種\n特性？",
+      "options": {
+        "A": "F1-score = (Precision + Recall) / 2，為算術平均",
+        "B": "F1-score 為 Precision 的加權平均",
+        "C": "F1-score 僅適用於類別平衡資料",
+        "D": "F1-score = 2 × (Precision×Recall)/(Precision+Recall)，為調和平均，對較小值敏\n感"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 8
+      }
+    },
+    {
+      "id": "115-1-S3-33",
+      "number": 33,
+      "answer": "B",
+      "prompt": "某工程師的多元線性迴歸模型包含 150 個特徵，其中許多特徵高度相關（如「建\n坪」與「總面積」）\n。他同時希望控制過擬合且保留所有特徵的解釋能力，不讓任\n何特徵係數歸零，下列哪一項正則化方案最適當？",
+      "options": {
+        "A": "Lasso 迴歸（L1 正則化）：透過絕對值懲罰使部分係數歸零，具有特徵選擇效\n果",
+        "B": "Ridge 迴歸（L2 正則化）：透過平方懲罰縮小所有係數，在共線性下穩定估計\n且不歸零",
+        "C": "Elastic Net（L1+L2）：結合稀疏性與穩定性，但部分係數仍可能被壓為 0",
+        "D": "無正則化的 OLS 迴歸：不控制過擬合，在共線性下係數估計不穩定"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 8
+      }
+    },
+    {
+      "id": "115-1-S3-34",
+      "number": 34,
+      "answer": "D",
+      "prompt": "某工程師使用 XGBoost 模型進行調參，需對以下超參數進行網格搜尋（Grid\nSearch）：learning_rate（3 個候選值）、max_depth（4 個）、n_estimators（5 個）、\nsubsample（3 個）、colsample_bytree（3 個）。每組參數組合皆需完整進行 5-Fold\n交叉驗證。請問總共需要訓練幾個模型？",
+      "options": {
+        "A": "3 + 4 + 5 + 3 + 3 = 18 個",
+        "B": "5 × 5 = 25 個",
+        "C": "max(3,4,5,3,3) × 5 = 25 個",
+        "D": "3 × 4 × 5 × 3 × 3 × 5 = 2,700 個"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 9
+      }
+    },
+    {
+      "id": "115-1-S3-35",
+      "number": 35,
+      "answer": "D",
+      "prompt": "某團隊使用 LoRA 微調大型語言模型進行法律摘要任務，發現模型在複雜條款的\n摘要上常出現內容遺漏，但 GPU 顯存已接近上限。下列哪種調整方式最能在不\n明顯增加記憶體使用的前提下改善模型表現？",
+      "options": {
+        "A": "提高 LoRA rank 以增強模型表達能力",
+        "B": "改用完整微調（Full Fine-tuning）以學習更多細節",
+        "C": "降低 LoRA rank 以釋放記憶體並增加 Batch Size",
+        "D": "降低 LoRA rank 但套用到更多層，保持 trainable 總參數不變"
+      },
+      "topic": "生成式 AI",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 9
+      }
+    },
+    {
+      "id": "115-1-S3-36",
+      "number": 36,
+      "answer": "B",
+      "prompt": "某金融機構的 AI 信用評分模型需上傳至第三方雲端服務商進行推論。法務部門\n要求：在不解密資料的前提下，由單一雲端服務商直接對加密資料進行模型運算。\n下列哪種隱私保護技術最符合此需求？",
+      "options": {
+        "A": "聯邦學習（Federated Learning）",
+        "B": "同態加密（Homomorphic Encryption）",
+        "C": "差分隱私（Differential Privacy）",
+        "D": "安全多方計算（Secure Multi-Party Computation, MPC）"
+      },
+      "topic": "治理與合規",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 9
+      }
+    },
+    {
+      "id": "115-1-S3-37",
+      "number": 37,
+      "answer": "A",
+      "prompt": "某銀行導入 AI 貸款審核系統，監管要求每筆被拒絕的申請須提供可理解的拒絕\n原因。技術主管評估以下方案，哪一種最能實現個別預測的局部可解釋性（Local\nExplainability）？",
+      "options": {
+        "A": "SHAP（SHapley Additive exPlanations）值：計算每個特徵對單筆預測的貢獻",
+        "B": "全域特徵重要性（Global Feature Importance）：說明整體特徵影響，無法解釋\n單一個案",
+        "C": "Grad-CAM（Gradient-weighted Class Activation Mapping）：以熱力圖解釋影像\n模型",
+        "D": "混淆矩陣（Confusion Matrix）：呈現整體分類表現"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 9
+      }
+    },
+    {
+      "id": "115-1-S3-38",
+      "number": 38,
+      "answer": "C",
+      "prompt": "某公司導入 AI 履歷篩選系統，用於自動決定是否進入面試。模型對男性應徵者\n的面試通過率為 55%，對女性應徵者為 30%。在其他條件不變的情況下，工程師\n需評估模型是否符合統計均等（Statistical Parity）的公平性定義。下列何者最正\n確？",
+      "options": {
+        "A": "符合統計均等，因為模型未使用性別作為輸入特徵",
+        "B": "符合統計均等，因為兩個族群皆有部分應徵者被錄取",
+        "C": "不符合統計均等，因為不同群體的正向決策比例（通過率）存在明顯差異",
+        "D": "不符合統計均等，因為女性族群的預測準確率較低"
+      },
+      "topic": "數學與統計",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 10
+      }
+    },
+    {
+      "id": "115-1-S3-39",
+      "number": 39,
+      "answer": "A",
+      "prompt": "某銀行信貸模型上線後稽核發現，女性申請者中「實際具有還款能力卻被模型拒\n絕」的比例顯著高於男性，但法務限制不允許在推論階段使用性別欄位調整輸出。\n下列去偏策略何者在此限制下仍可執行？",
+      "options": {
+        "A": "訓練中（In-processing）\n：在損失函數加入公平性懲罰項，降低不同群體的錯誤\n拒絕比例差異",
+        "B": "前處理（Pre-processing）：僅於訓練資料進行重新採樣，無法直接修正既有模\n型在推論階段的偏誤",
+        "C": "後處理（Post-processing）\n：依性別分組調整決策門檻，使不同群體的錯誤拒絕\n比例一致",
+        "D": "改用人口統計均等指標（Demographic Parity）"
+      },
+      "topic": "模型評估",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 10
+      }
+    },
+    {
+      "id": "115-1-S3-40",
+      "number": 40,
+      "answer": "B",
+      "prompt": "，錯誤拒絕比例差異將自動消失\n分析師準備建立一個能將手寫數字圖片（28x28 像素展平為 784 維度）分為 0~9 共\n10 個類別的多層感知機（MLP）\n，且標籤已轉為 One-Hot 編碼（One-Hot Encoding）\n。\n為符合 10 個類別的單標籤分類需求，下圖中的程式碼中",
+      "options": {
+        "A": "sigmoid，mean_squared_error",
+        "B": "softmax，categorical_crossentropy",
+        "C": "relu，binary_crossentropy",
+        "D": "tanh，sparse_categorical_crossentropy"
+      },
+      "topic": "導入與部署",
+      "hasFigureReference": true,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 11
+      }
+    },
+    {
+      "id": "115-1-S3-41",
+      "number": 41,
+      "answer": "B",
+      "prompt": "工程師使用 PyTorch 建立 OCR 訓練 pipeline，並對手寫字母資料集套用下圖程式進\n行資料增強（Transform）\n。模型在訓練過程中顯示驗證損失（Validation Loss）持續\n下降，但實際部署後，系統在辨識「b/d/p/q」類字母錯誤率異常偏高。下列何者為\n最可能的根本原因？",
+      "options": {
+        "A": "RandomRotation(15)角度過大導致特徵變形，應降至 5 度以內",
+        "B": "RandomHorizontalFlip 破壞字母方向語義，使模型以 50%機率學到鏡像錯誤標\n籤",
+        "C": "ColorJitter 改變筆畫灰階，導致邊緣偵測特徵失真",
+        "D": "ToTensor( )應放在所有幾何變換之前才能保持座標對應正確"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": true,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 11
+      }
+    },
+    {
+      "id": "115-1-S3-42",
+      "number": 42,
+      "answer": "C",
+      "prompt": "下圖為使用 ResNet 進行遷移學習（Transfer Learning）的 Python 程式片段。請回答\n第 42~43 題。\n觀察程式中行",
+      "options": {
+        "A": "全面微調（Full Fine-Tuning）",
+        "B": "零樣本學習（Zero-shot Learning）",
+        "C": "特徵萃取（Feature Extraction）",
+        "D": "知識蒸餾（Knowledge Distillation）"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": true,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 12
+      }
+    },
+    {
+      "id": "115-1-S3-43",
+      "number": 43,
+      "answer": "D",
+      "prompt": "在進行遷移學習微調（Fine-Tuning）時，通常會將優化器的學習率（Learning Rate）\n設得非常小（如 1e-4），下列何者為主要的原因？",
+      "options": {
+        "A": "為了避免記憶體耗盡（OOM）",
+        "B": "為了加速模型整體的收斂時間",
+        "C": "為了讓損失函數強制歸零",
+        "D": "為了避免更新步伐過大，破壞預訓練模型原本已學好的良好特徵表示"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 12
+      }
+    },
+    {
+      "id": "115-1-S3-44",
+      "number": 44,
+      "answer": "B",
+      "prompt": "請依據下方資訊回答第 44~45 題。\nIris 是 UCI Dataset 上的一組經典資料集，常被用來教學與測試分類模型。\n這份資料包含三種類型的鳶尾花（Iris setosa、Iris versicolor、Iris virginica）\n，每個類\n別各有 50 筆資料。\n每筆資料包含四個特徵：花萼長度、花萼寬度、花瓣長度、花瓣寬度。\n研究人員希望透過機器學習模型，根據花朵的形態特徵，自動判斷該花屬於哪一種\n類型。在本次任務中，研究人員希望比較不同分類模型的表現。他們首先嘗試用線\n性判別分析（LDA）進行降維，接著使用 K 最近鄰（KNN）分類器來做分類預測，\n並使用交叉驗證（Cross Validation）評估模型的準確率。\n研究人員撰寫的程式中（下圖），先用整體資料進行 LDA（Linear Discriminant\nAnalysis）降維，接著再用 KNN（K-Nearest Neighbors）進行分類，並用交叉驗證\n來評估準確率。請問下列敘述何者正確？",
+      "options": {
+        "A": "此寫法完全正確，因為先以整體資料進行 LDA 降維，再以交叉驗證測試 KNN，\n是標準流程",
+        "B": "此寫法存在資料洩漏（Data Leakage）問題，應將 LDA 納入交叉驗證流程中一\n併進行",
+        "C": "雖然流程不夠嚴謹，但結果仍然能夠代表模型真實的泛化能力",
+        "D": "如果只想驗證 KNN 的分類效果，可以直接跳過 LDA 步驟，以簡化流程"
+      },
+      "topic": "特徵工程",
+      "hasFigureReference": true,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 13
+      }
+    },
+    {
+      "id": "115-1-S3-45",
+      "number": 45,
+      "answer": "A",
+      "prompt": "研究人員在程式（下圖）中使用 cross_val_score 進行交叉驗證，但目前尚未設定 cv\n參數。\n他們希望確保在每次資料分割時，訓練集與測試集的類別比例與原始資料一致，以\n免影響模型的準確率估計。目前有以下幾段候選程式碼可供選擇。請問為了確保在\n交叉驗證時每個分割中的類別比例與原始資料一致，上面哪幾段程式碼插入在原\n始程式中[#填入程式碼]的部分比較合適？",
+      "options": {
+        "A": "程式碼 B、程式碼 C、程式碼 D",
+        "B": "程式碼 A、程式碼 C",
+        "C": "程式碼 A、程式碼 B、程式碼 D",
+        "D": "程式碼 C、程式碼 D"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": true,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 14
+      }
+    },
+    {
+      "id": "115-1-S3-46",
+      "number": 46,
+      "answer": "B",
+      "prompt": "請依據下方資訊回答第 46~48 題。\n使用 CIFAR-10 資料集以建立卷積神經網路（CNN），進行彩色影像之分類與辨識\n分析。CIFAR-10 為一常用之影像分類基準資料集，內容包含 10 個類別，共計 60000\n張彩色影像，其中訓練集含 50000 張影像，測試集則含 10000 張影像。每張影像解\n析度為 32 × 32 像素，並具有三個通道（channel），分別對應紅、綠、藍三原色。\n以下程式碼片段示範資料載入與處理流程。\n下圖顯示資料集的第 1 筆部分資料。\n參考下圖資料處理，下列哪一項描述組合正確？",
+      "options": {
+        "A": "描述 A、描述 C、描述 F",
+        "B": "描述 B、描述 D、描述 E、描述 F",
+        "C": "描述 B、描述 C、描述 E、描述 F",
+        "D": "描述 A、描述 B、描述 D、描述 E、描述 F"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": true,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 15
+      }
+    },
+    {
+      "id": "115-1-S3-47",
+      "number": 47,
+      "answer": "B",
+      "prompt": "參考下圖建立模型結果，下列哪一項描述組合正確？",
+      "options": {
+        "A": "描述 A、描述 C",
+        "B": "描述 C、描述 E、描述 F",
+        "C": "描述 A、描述 D、描述 E",
+        "D": "描述 D、描述 E、描述 F"
+      },
+      "topic": "機器學習基礎",
+      "hasFigureReference": true,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 16
+      }
+    },
+    {
+      "id": "115-1-S3-48",
+      "number": 48,
+      "answer": "D",
+      "prompt": "參考下圖繪圖結果，當 Epochs=6 時，訓練曲線值(0.81)明顯大於驗證曲線值(0.72)，\n下列何者為最可能的原因？",
+      "options": {
+        "A": "學習率（Learning Rate）太低",
+        "B": "批次大小（Batch Size）設定太大",
+        "C": "模型低度擬合（Underfitting）",
+        "D": "模型過擬合（Overfitting）"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": true,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 16
+      }
+    },
+    {
+      "id": "115-1-S3-49",
+      "number": 49,
+      "answer": "C",
+      "prompt": "某人工智慧團隊正在開發一套自動光學檢測（Automated Optical Inspection, AOI）\n系統，目標是透過機械手臂上的相機，自動辨識晶圓表面是否存在「劃傷（Scratch）」\n或「污點（Spot）」等瑕疵。目前系統開發面臨以下挑戰：\n● 資料極度不平衡，正常晶圓影像約佔 99%，有瑕疵影像僅佔 1%。\n● 輸入影像品質不一致，包含不同解析度，且部分影像因機械手臂震動而出現模\n糊。\n● 在使用深層卷積神經網路（CNN）訓練時，Loss 曲線震盪劇烈，甚至偶爾出現\n數值溢出（NaN）情形。\n請根據上述情境，回答第 49~50 題。\n若團隊需要建立一個超過 50 層的深層神經網路，以捕捉晶圓表面細微的劃傷特徵，\n但又擔心傳統深層網路常見的梯度消失（Vanishing Gradient）問題，則下列哪一種\n經典架構最適合優先考慮？",
+      "options": {
+        "A": "VGG（Visual Geometry Group）\n：透過重複堆疊 3×3 卷積層與池化層來維持梯度\n穩定",
+        "B": "GoogLeNet：透過 Inception 模塊並行使用不同大小的卷積核，以避免深層網路\n的梯度問題",
+        "C": "ResNet （ Residual Network ）： 透 過 殘 差 連 接 （ Residual Connection / Skip\nConnection），使梯度能跨層傳遞並降低深層訓練困難",
+        "D": "Vision Transformer（ViT）：完全捨棄卷積，因此不會出現任何深層模型的訓練\n問題"
+      },
+      "topic": "電腦視覺",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 17
+      }
+    },
+    {
+      "id": "115-1-S3-50",
+      "number": 50,
+      "answer": "B",
+      "prompt": "為了修復訓練過程中 Loss 突然變成 NaN 的問題，工程師考慮在 PyTorch 訓練迴圈\n中加入梯度裁剪（Gradient Clipping）機制，例如 torch.nn.utils.clip_grad_norm_。若\n要正確加入梯度裁剪，最適合插入於哪個位置？其主要作用為何？",
+      "options": {
+        "A": "插入於位置 3 與位置 4 之間；用以限制 Loss 數值大小，避免梯度消失",
+        "B": "插入於位置 4 與位置 5 之間；用以限制梯度範數過大，避免更新步幅失控導致\n數值不穩",
+        "C": "插入於位置 5 之後；用以將更新後的權重強制壓縮回正常範圍",
+        "D": "插入於位置 1 與位置 2 之間；用以對輸入影像進行批次標準化"
+      },
+      "topic": "最佳化",
+      "hasFigureReference": false,
+      "source": {
+        "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+        "examId": "115-1",
+        "examLabel": "115 年第一次",
+        "subject": "S3",
+        "subjectName": "科目3 機器學習技術與應用",
+        "testDate": "115-05-23",
+        "page": 18
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "file": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+      "examId": "114-2",
+      "subject": "S1",
+      "count": 50,
+      "missingOptions": [],
+      "figureRefs": 0
+    },
+    {
+      "file": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+      "examId": "114-2",
+      "subject": "S3",
+      "count": 50,
+      "missingOptions": [],
+      "figureRefs": 10
+    },
+    {
+      "file": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+      "examId": "115-1",
+      "subject": "S1",
+      "count": 50,
+      "missingOptions": [],
+      "figureRefs": 1
+    },
+    {
+      "file": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+      "examId": "115-1",
+      "subject": "S3",
+      "count": 50,
+      "missingOptions": [],
+      "figureRefs": 8
+    }
+  ]
+}
