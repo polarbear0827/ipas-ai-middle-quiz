@@ -6,17 +6,19 @@ import {
   BookmarkCheck,
   CalendarDays,
   Check,
-  ChevronDown,
   CircleAlert,
   ClipboardList,
   Download,
   ExternalLink,
+  FastForward,
   FileText,
   Flame,
   Gauge,
   GraduationCap,
   ListChecks,
   Menu,
+  PanelRightClose,
+  PanelRightOpen,
   RefreshCcw,
   Search,
   Settings,
@@ -49,6 +51,8 @@ function App() {
   const [showList, setShowList] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
   const searchRef = useRef(null);
+  const stageRef = useRef(null);
+  const autoAdvanceRef = useRef(null);
 
   const filtered = useMemo(() => filterQuestions(QUESTIONS, state), [state]);
   const pool = useMemo(() => poolByMode(QUESTIONS, state), [state]);
@@ -63,6 +67,7 @@ function App() {
   const progress = useMemo(() => summarizeProgress(QUESTIONS, state), [state]);
   const weakness = useMemo(() => topicWeakness(QUESTIONS, state), [state]);
   const activeAttempt = state.attempts[activeQuestion?.id] || null;
+  const preferences = state.preferences || {};
   const selectedAnswer =
     state.mode === "mock" && state.mock?.active
       ? state.mock.answers[activeQuestion?.id]
@@ -72,6 +77,13 @@ function App() {
   useEffect(() => {
     saveState(state);
   }, [state]);
+
+  useEffect(() => {
+    stageRef.current?.scrollTo({ top: 0, behavior: "auto" });
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [activeQuestion?.id]);
+
+  useEffect(() => () => clearAutoAdvance(), []);
 
   useEffect(() => {
     if (!state.activeId && pool[0]) {
@@ -112,7 +124,58 @@ function App() {
     setState((current) => ({ ...current, ...patch }));
   }
 
+  function clearAutoAdvance() {
+    if (!autoAdvanceRef.current) return;
+    window.clearTimeout(autoAdvanceRef.current);
+    autoAdvanceRef.current = null;
+  }
+
+  function advanceToNextQuestion() {
+    setShowAnswer(false);
+    setState((current) => {
+      if (current.mode === "mock" && current.mock?.active) {
+        return {
+          ...current,
+          mock: { ...current.mock, index: Math.min(current.mock.index + 1, current.mock.ids.length - 1) },
+        };
+      }
+      const currentPool = poolByMode(QUESTIONS, current);
+      const next = weightedPick(currentPool, current, current.activeId || activeQuestion?.id);
+      return next ? { ...current, activeId: next.id } : current;
+    });
+  }
+
+  function scheduleAutoAdvance() {
+    clearAutoAdvance();
+    autoAdvanceRef.current = window.setTimeout(() => {
+      autoAdvanceRef.current = null;
+      advanceToNextQuestion();
+    }, 850);
+  }
+
+  function togglePreference(key) {
+    if (key === "autoNext") clearAutoAdvance();
+    setState((current) => ({
+      ...current,
+      preferences: {
+        ...(current.preferences || {}),
+        [key]: !current.preferences?.[key],
+      },
+    }));
+  }
+
+  function updateSearch(search) {
+    clearAutoAdvance();
+    patchState({ search, activeId: null });
+  }
+
+  function pickQuestion(id) {
+    clearAutoAdvance();
+    patchState({ activeId: id, mode: "quick", mock: null });
+  }
+
   function setMode(mode) {
+    clearAutoAdvance();
     setShowAnswer(false);
     if (mode === "mock") {
       const eligible = filtered.length ? filtered : QUESTIONS;
@@ -124,6 +187,7 @@ function App() {
 
   function handleAnswer(choice) {
     if (!activeQuestion) return;
+    clearAutoAdvance();
     if (isMock) {
       setState((current) => ({
         ...current,
@@ -136,22 +200,16 @@ function App() {
     }
     setShowAnswer(true);
     setState((current) => recordAttempt(current, activeQuestion, choice));
+    if (preferences.autoNext) scheduleAutoAdvance();
   }
 
   function goNext() {
-    setShowAnswer(false);
-    if (isMock) {
-      setState((current) => ({
-        ...current,
-        mock: { ...current.mock, index: Math.min(current.mock.index + 1, current.mock.ids.length - 1) },
-      }));
-      return;
-    }
-    const next = weightedPick(pool, state, activeQuestion?.id);
-    if (next) patchState({ activeId: next.id });
+    clearAutoAdvance();
+    advanceToNextQuestion();
   }
 
   function goPrevious() {
+    clearAutoAdvance();
     setShowAnswer(false);
     if (isMock) {
       setState((current) => ({
@@ -166,12 +224,14 @@ function App() {
   }
 
   function toggleSubject(subject) {
+    clearAutoAdvance();
     const exists = state.subjects.includes(subject);
     const next = exists ? state.subjects.filter((item) => item !== subject) : [...state.subjects, subject];
     patchState({ subjects: next.length ? next : [subject], activeId: null });
   }
 
   function toggleExam(examId) {
+    clearAutoAdvance();
     const exists = state.examIds.includes(examId);
     const next = exists ? state.examIds.filter((item) => item !== examId) : [...state.examIds, examId];
     patchState({ examIds: next.length ? next : [examId], activeId: null });
@@ -198,17 +258,20 @@ function App() {
   function resetProgress() {
     const ok = window.confirm("確定清除本機作答紀錄？題庫不會被刪除。");
     if (!ok) return;
+    clearAutoAdvance();
     setState({ ...loadState(), attempts: {}, history: [], bookmarks: {}, activeId: QUESTIONS[0].id, mock: null });
   }
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell ${preferences.focusMode ? "focus-mode" : ""}`}>
       <TopBar
         progress={progress}
         state={state}
-        onSearch={(search) => patchState({ search, activeId: null })}
+        preferences={preferences}
+        onSearch={updateSearch}
         searchRef={searchRef}
         onReset={resetProgress}
+        onTogglePreference={togglePreference}
       />
 
       <aside className="left-rail">
@@ -291,7 +354,7 @@ function App() {
         </a>
       </aside>
 
-      <main className="question-stage">
+      <main className="question-stage" ref={stageRef}>
         {activeQuestion ? (
           <>
             <QuestionHeader
@@ -312,7 +375,9 @@ function App() {
                 showAnswer={!isMock && (showAnswer || Boolean(activeAttempt?.lastAnswer))}
                 isMock={isMock}
                 bookmarked={Boolean(state.bookmarks[activeQuestion.id])}
+                autoNext={Boolean(preferences.autoNext)}
                 onAnswer={handleAnswer}
+                onNext={goNext}
                 onToggleBookmark={() => toggleBookmark(activeQuestion.id)}
                 onShowAnswer={() => setShowAnswer((value) => !value)}
               />
@@ -341,7 +406,7 @@ function App() {
       <aside className="right-rail">
         <StudyStatus progress={progress} />
         <WeakTopics weakness={weakness} />
-        <ReviewQueue questions={QUESTIONS} state={state} onPick={(id) => patchState({ activeId: id, mode: "quick", mock: null })} />
+        <ReviewQueue questions={QUESTIONS} state={state} onPick={pickQuestion} />
         <SourcePanel question={activeQuestion} />
       </aside>
 
@@ -351,7 +416,7 @@ function App() {
           state={state}
           onClose={() => setShowList(false)}
           onPick={(id) => {
-            patchState({ activeId: id, mode: "quick", mock: null });
+            pickQuestion(id);
             setShowList(false);
           }}
         />
@@ -360,7 +425,7 @@ function App() {
   );
 }
 
-function TopBar({ progress, state, onSearch, searchRef, onReset }) {
+function TopBar({ progress, state, preferences, onSearch, searchRef, onReset, onTogglePreference }) {
   return (
     <header className="topbar">
       <div className="brand">
@@ -371,10 +436,7 @@ function TopBar({ progress, state, onSearch, searchRef, onReset }) {
         <Search size={20} />
         <input ref={searchRef} value={state.search} onChange={(event) => onSearch(event.target.value)} placeholder="搜尋題目 / 關鍵字" />
       </label>
-      <div className="top-select">
-        全部題型
-        <ChevronDown size={17} />
-      </div>
+      <PracticeToggles preferences={preferences} onTogglePreference={onTogglePreference} />
       <div className="top-stats">
         <Stat label="總題數" value={progress.total} />
         <Stat label="已作答" value={progress.answered} />
@@ -385,6 +447,35 @@ function TopBar({ progress, state, onSearch, searchRef, onReset }) {
         <Settings size={21} />
       </button>
     </header>
+  );
+}
+
+function PracticeToggles({ preferences, onTogglePreference }) {
+  const autoNext = Boolean(preferences?.autoNext);
+  const focusMode = Boolean(preferences?.focusMode);
+  return (
+    <div className="quick-toggles" aria-label="刷題偏好">
+      <button
+        className={`toggle-chip ${autoNext ? "active" : ""}`}
+        type="button"
+        aria-pressed={autoNext}
+        onClick={() => onTogglePreference("autoNext")}
+        title="答題後自動進入下一題"
+      >
+        <FastForward size={17} />
+        答後下一題
+      </button>
+      <button
+        className={`toggle-chip ${focusMode ? "active" : ""}`}
+        type="button"
+        aria-pressed={focusMode}
+        onClick={() => onTogglePreference("focusMode")}
+        title={focusMode ? "顯示右側資訊欄" : "收起右側資訊欄"}
+      >
+        {focusMode ? <PanelRightOpen size={17} /> : <PanelRightClose size={17} />}
+        專注模式
+      </button>
+    </div>
   );
 }
 
@@ -464,7 +555,7 @@ function QuestionHeader({ question, index, total, isMock, mock, onFinishMock }) 
   );
 }
 
-function QuestionCard({ question, selectedAnswer, showAnswer, isMock, bookmarked, onAnswer, onToggleBookmark, onShowAnswer }) {
+function QuestionCard({ question, selectedAnswer, showAnswer, isMock, bookmarked, autoNext, onAnswer, onNext, onToggleBookmark, onShowAnswer }) {
   const correct = question.answer;
   const answered = Boolean(selectedAnswer);
 
@@ -506,9 +597,19 @@ function QuestionCard({ question, selectedAnswer, showAnswer, isMock, bookmarked
           <div className="feedback-title">
             {selectedAnswer === correct ? <Check size={20} /> : <X size={20} />}
             <strong>{selectedAnswer === correct ? "答對了" : `答錯了，正解是 ${correct}`}</strong>
+            {autoNext ? (
+              <span className="feedback-status">
+                <FastForward size={15} />
+                自動續刷
+              </span>
+            ) : null}
           </div>
           <p>{buildHint(question)}</p>
           <div className="feedback-links">
+            <button className="feedback-next" type="button" onClick={onNext}>
+              下一題
+              <ArrowRight size={17} />
+            </button>
             <a href={pdfUrlFor(question, BASE_URL)} target="_blank" rel="noreferrer">
               <ExternalLink size={17} />
               開原題頁

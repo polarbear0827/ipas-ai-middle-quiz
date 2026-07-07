@@ -6,7 +6,16 @@ export function loadState() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return defaultState();
-    const next = { ...defaultState(), ...JSON.parse(raw) };
+    const defaults = defaultState();
+    const parsed = JSON.parse(raw);
+    const next = {
+      ...defaults,
+      ...parsed,
+      preferences: {
+        ...defaults.preferences,
+        ...(parsed.preferences || {}),
+      },
+    };
     if (!next.examIds.includes("GUIDE")) next.examIds = [...next.examIds, "GUIDE"];
     return next;
   } catch {
@@ -25,6 +34,10 @@ export function defaultState() {
     search: "",
     activeId: null,
     mock: null,
+    preferences: {
+      autoNext: false,
+      focusMode: false,
+    },
   };
 }
 

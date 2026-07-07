@@ -60,10 +60,23 @@ a {
   grid-template-rows: 80px minmax(0, 1fr);
 }
 
+.app-shell.focus-mode {
+  grid-template-columns: 300px minmax(0, 1fr);
+}
+
+.app-shell.focus-mode .right-rail {
+  display: none;
+}
+
+.app-shell.focus-mode .question-stage {
+  width: min(1120px, 100%);
+  justify-self: center;
+}
+
 .topbar {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 300px minmax(260px, 1fr) 164px auto 56px;
+  grid-template-columns: 300px minmax(220px, 1fr) auto auto 52px;
   align-items: center;
   min-height: 80px;
   background: rgba(255, 255, 255, 0.92);
@@ -89,7 +102,7 @@ a {
 
 .search-box {
   height: 52px;
-  margin: 0 24px;
+  margin: 0 18px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -127,18 +140,51 @@ a {
   font-size: 15px;
 }
 
+.quick-toggles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.toggle-chip {
+  min-height: 42px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: #ffffff;
+  color: var(--navy);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.toggle-chip:hover {
+  background: #f3f8fb;
+}
+
+.toggle-chip.active {
+  border-color: rgba(7, 141, 126, 0.42);
+  background: var(--teal-soft);
+  color: var(--teal);
+  box-shadow: inset 0 0 0 1px rgba(7, 141, 126, 0.12);
+}
+
 .top-stats {
   display: flex;
   height: 56px;
   align-items: center;
   border-left: 1px solid var(--line);
   border-right: 1px solid var(--line);
-  margin-left: 24px;
+  margin-left: 14px;
 }
 
 .stat {
-  min-width: 96px;
-  padding: 0 20px;
+  min-width: 86px;
+  padding: 0 14px;
   border-right: 1px solid var(--line);
   display: flex;
   flex-direction: column;
@@ -323,7 +369,7 @@ a {
 
 .question-stage {
   min-width: 0;
-  padding: 30px 24px 36px;
+  padding: 24px 24px 36px;
   overflow: auto;
 }
 
@@ -393,7 +439,7 @@ a {
 }
 
 .question-card {
-  padding: 28px;
+  padding: 24px;
 }
 
 .question-meta {
@@ -414,8 +460,8 @@ a {
 .question-card h1 {
   margin: 0;
   color: var(--text);
-  font-size: 23px;
-  line-height: 1.82;
+  font-size: 22px;
+  line-height: 1.72;
   font-weight: 750;
   white-space: pre-wrap;
 }
@@ -436,7 +482,7 @@ a {
 .options {
   display: grid;
   gap: 0;
-  margin-top: 28px;
+  margin-top: 22px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
@@ -444,12 +490,12 @@ a {
 
 .option-row {
   width: 100%;
-  min-height: 74px;
+  min-height: 66px;
   display: grid;
   grid-template-columns: 44px 1fr;
   align-items: center;
   gap: 12px;
-  padding: 16px 18px;
+  padding: 14px 18px;
   background: var(--surface);
   border: 0;
   border-bottom: 1px solid var(--line);
@@ -532,7 +578,21 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
   color: var(--navy);
+}
+
+.feedback-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 0 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 800;
 }
 
 .feedback p {
@@ -576,6 +636,12 @@ a {
 
 .feedback-links button {
   font: inherit;
+}
+
+.feedback-links .feedback-next {
+  border-color: var(--navy);
+  background: var(--navy);
+  color: #ffffff;
 }
 
 .question-tools {
@@ -855,6 +921,10 @@ a {
     grid-template-rows: auto auto minmax(0, 1fr);
   }
 
+  .app-shell.focus-mode {
+    grid-template-columns: 250px minmax(0, 1fr);
+  }
+
   .topbar {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -868,8 +938,13 @@ a {
   }
 
   .search-box,
+  .quick-toggles,
   .top-stats {
     margin: 0;
+  }
+
+  .quick-toggles {
+    flex-wrap: wrap;
   }
 
   .top-select {
@@ -919,6 +994,17 @@ a {
     grid-template-columns: repeat(2, 1fr);
     height: auto;
     border: 1px solid var(--line);
+  }
+
+  .quick-toggles {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .toggle-chip {
+    min-width: 0;
+    padding: 0 10px;
+    font-size: 15px;
   }
 
   .stat {
