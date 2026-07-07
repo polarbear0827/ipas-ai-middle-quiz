@@ -539,6 +539,7 @@ a {
   margin: 10px 0 14px;
   line-height: 1.75;
   color: #334258;
+  white-space: pre-line;
 }
 
 .feedback-links,

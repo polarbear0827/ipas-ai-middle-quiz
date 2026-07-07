@@ -17,148 +17,323 @@ GUIDES = {
 
 
 VARIANTS = [
-    "某專案團隊正在{scenario}，希望{goal}。下列哪一項作法最符合「{term}」的核心觀念？",
+    "某專案團隊正在處理「{scenario}」，希望落實「{goal}」這個目標。下列哪一項作法最符合「{term}」的核心觀念？",
     "關於「{term}」在 AI 應用規劃或機器學習專案中的角色，下列何者最正確？",
-    "團隊在{scenario}時需要判斷「{term}」是否被正確理解，下列哪一項描述最合理？",
+    "團隊在「{scenario}」時需要判斷「{term}」是否被正確理解，下列哪一項描述最合理？",
     "主管要求你檢查一份 AI 專案中與「{term}」相關的設計，下列哪一項說法最值得保留？",
-    "在準備 iPAS AI 應用規劃師中級考試時，看到「{term}」這個關鍵字，應優先聯想到哪一項判斷？",
+    "規劃文件中出現「{term}」時，下列哪一項判斷最能連到實務需求？",
     "某工程師把「{term}」誤解為單純的工具名稱。若要修正他的理解，下列哪一句最適合？",
-    "團隊需要在{scenario}中做技術選型，下列哪個理由最能支持使用或重視「{term}」？",
+    "團隊需要針對「{scenario}」做技術選型，下列哪個理由最能支持使用或重視「{term}」？",
     "下列哪一個情境最能反映「{term}」在實務中的正確應用？",
+]
+
+BASIC_VARIANT_NOTES = [
+    {
+        "angle": "情境應用",
+        "why": "題幹已經給出專案脈絡與目標，正解必須同時符合「{term}」的定義與{scenario}這個情境，而不是只選聽起來像 AI 的名詞。",
+        "tip": "遇到情境題時，先圈出業務目標、資料型態、模型輸出與驗收方式，再回頭比對概念。",
+    },
+    {
+        "angle": "概念定位",
+        "why": "這題在考「{term}」的角色定位。正解要能說明它如何對應「{goal}」，而不是把相鄰技術或不相關流程混進來。",
+        "tip": "看到概念定義題，不要只背英文縮寫，要想清楚它的輸入、輸出、用途與限制。",
+    },
+    {
+        "angle": "理解檢查",
+        "why": "題目要求判斷團隊是否真的理解概念，因此正解會把「{term}」連到可操作的資料、模型或評估判斷。",
+        "tip": "若選項只停在口號、工具名稱或絕對化保證，通常不是好的規劃答案。",
+    },
+    {
+        "angle": "專案審查",
+        "why": "專案審查不是看名詞是否華麗，而是看設計是否能讓「{goal}」被驗證、被部署、被監控。",
+        "tip": "審查題常考資料流程、驗收指標、風險控管與維運責任是否完整。",
+    },
+    {
+        "angle": "實務需求",
+        "why": "規劃文件中的技術名詞必須回到需求本身。正解會說明「{term}」在{scenario}中如何創造可衡量價值。",
+        "tip": "只說『使用某技術』不等於完成規劃；要能說出為什麼用、怎麼驗證、失敗時怎麼處理。",
+    },
+    {
+        "angle": "誤解修正",
+        "why": "這題在考常見誤解。正解會修正把「{term}」看成單一工具或萬用解法的錯誤。",
+        "tip": "遇到誤解題，優先排除過度簡化、絕對化、把不同任務混在一起的選項。",
+    },
+    {
+        "angle": "技術選型",
+        "why": "技術選型要看任務目標、資料條件、限制與成本。正解必須說得出為什麼「{term}」能對應「{goal}」。",
+        "tip": "選型題不是選最熱門或最大模型，而是選最符合問題條件、可驗證且可維運的方案。",
+    },
+    {
+        "angle": "正確應用",
+        "why": "正確應用題會把概念放進可觀察的工作流程。正解要能從{scenario}走到「{goal}」，而不是只描述抽象口號。",
+        "tip": "把每個概念練成一句話：在什麼資料與任務下，用它得到什麼輸出，如何判斷做得好不好。",
+    },
 ]
 
 DEEP_VARIANTS = [
     {
-        "prompt": "若考題把「{term}」放在{scenario}的案例中，最合理的判斷流程是？",
-        "correct": "先確認任務目標、資料條件與限制，再把「{term}」用在{goal}相關的判斷",
+        "prompt": "某團隊要把{scenario}納入 AI 專案，卻還沒說清楚輸入資料與預期輸出。若要正確運用「{term}」，下一步最合理的是？",
+        "correct": "先定義資料來源、輸入型態、預期輸出與驗收標準，再判斷「{term}」如何對應「{goal}」",
         "wrongs": [
-            "只因技術名稱熱門就直接採用，不檢查資料與評估方式",
-            "先上線再回頭補資料品質、權限與風險控管",
-            "只看單一整體分數，忽略錯誤類型與使用情境",
+            {
+                "text": "先購買最昂貴的工具或模型，再慢慢尋找可以套用的問題",
+                "reason": "這是工具先行，沒有先界定任務與資料，容易導致導入後無法驗收。",
+            },
+            {
+                "text": "先把所有欄位都丟進模型，等模型自行找出業務目標",
+                "reason": "模型不能替團隊定義業務目標；資料欄位也需要清理、授權與語意確認。",
+            },
+            {
+                "text": "只要求模型輸出看起來合理，不設定客觀評估方式",
+                "reason": "缺少評估方式會讓結果無法比較，也無法判斷是否真的達成「{goal}」。",
+            },
         ],
         "difficulty": "情境",
-        "explanation": "這類題目會把概念放進專案脈絡；判斷時要回到任務目標、資料條件、限制與風險，而不是只背技術名稱。",
+        "angle": "需求定義",
+        "why": "「{term}」不能脫離資料與任務使用。先把輸入、輸出與驗收標準定清楚，才知道它是否真的能對應「{goal}」。",
+        "tip": "看到專案導入題，先問三件事：資料從哪裡來、模型要輸出什麼、成功標準是什麼。",
     },
     {
-        "prompt": "下列哪一項最像是把「{term}」用錯地方的陷阱選項？",
-        "correct": "把「{term}」當成所有 AI 問題的固定答案，忽略它真正支援的是{goal}",
+        "prompt": "在{scenario}的模型評估會議中，哪一種評估設計最能檢查「{term}」是否真的有效？",
+        "correct": "選擇能反映「{goal}」的指標，並同時檢查錯誤類型、資料切分與實際使用限制",
         "wrongs": [
-            "先釐清資料型態與任務目標，再評估是否需要此概念",
-            "將此概念與評估指標、資料流程或部署限制一起檢查",
-            "在{scenario}中確認它是否能解決實際痛點",
-        ],
-        "difficulty": "易混淆",
-        "explanation": "考題常把熱門名詞包裝成萬用答案；看到這類選項，要檢查它是否真的對應該概念的適用範圍。",
-    },
-    {
-        "prompt": "某團隊在{scenario}後提出四個改善方向。若要貼近「{term}」的精神，哪一項最合理？",
-        "correct": "把改善方向連到{goal}，並設定可驗證的資料、模型或營運指標",
-        "wrongs": [
-            "只增加模型參數量，不重新檢查問題定義",
-            "只調整介面文字，不確認模型或資料流程是否改善",
-            "移除驗證集以提高訓練分數，看起來更容易通過",
+            {
+                "text": "只看訓練集分數，只要訓練集表現高就直接上線",
+                "reason": "訓練集高分可能只是記住資料，不能代表泛化能力或實務表現。",
+            },
+            {
+                "text": "只用一個整體 accuracy，不看類別不平衡、漏報或誤報成本",
+                "reason": "很多 AI 應用更在意少數類別、漏報或誤報；只看整體 accuracy 可能誤判。",
+            },
+            {
+                "text": "只看模型名稱是否熱門，不建立測試資料或驗收門檻",
+                "reason": "熱門模型不等於適合任務；沒有測試資料與門檻就無法驗證成效。",
+            },
         ],
         "difficulty": "應用",
-        "explanation": "改善題要找能被驗證的方案；好的答案會同時照顧目標、資料、模型表現與營運指標。",
+        "angle": "評估驗證",
+        "why": "評估要對準業務目標與錯誤成本。「{term}」是否有效，不能只看單一分數，而要看它是否真的改善「{goal}」。",
+        "tip": "看到評估題，要同步檢查指標、資料切分、錯誤類型與部署條件。",
     },
     {
-        "prompt": "準備考試時，若想把「{term}」放進自己的筆記，下列哪個筆記寫法最有助於答題？",
-        "correct": "記下適用任務、輸入輸出、常見限制與它如何支援{goal}",
+        "prompt": "團隊在{scenario}時發現資料來源品質不一。若要讓「{term}」的應用更可靠，哪一項資料處理最合理？",
+        "correct": "檢查缺失值、格式一致性、標註品質與資料授權，確認資料足以支撐「{goal}」",
         "wrongs": [
-            "只記英文縮寫，不寫任何適用情境",
-            "只背一個廠商產品名稱，忽略概念本身",
-            "只記最複雜的公式，不管題目問的是規劃或應用判斷",
+            {
+                "text": "只要資料量夠大，就不需要檢查錯標、缺失值或授權問題",
+                "reason": "大量低品質或未授權資料會放大錯誤與合規風險，不能取代資料治理。",
+            },
+            {
+                "text": "把測試資料也拿來做特徵選擇，讓模型評估分數更高",
+                "reason": "這是資料洩漏，會讓評估結果過度樂觀，實際上線容易失準。",
+            },
+            {
+                "text": "刪掉所有難以判斷的樣本，只保留模型容易答對的資料",
+                "reason": "這會讓資料分布失真，模型在真實情境中遇到困難樣本時表現可能很差。",
+            },
         ],
-        "difficulty": "基礎",
-        "explanation": "中級考試很重視情境判斷；筆記要能幫你把概念、適用條件、限制與實務用途串起來。",
+        "difficulty": "應用",
+        "angle": "資料品質",
+        "why": "資料品質決定 AI 應用是否可靠。若資料不乾淨、不一致或授權不明，再適合的「{term}」也可能得到錯誤結論。",
+        "tip": "資料題常考缺失值、錯標、資料洩漏、授權、更新頻率與資料分布是否符合上線情境。",
     },
     {
-        "prompt": "在{scenario}的規劃會議中，哪一個問題最能檢查團隊是否真的理解「{term}」？",
-        "correct": "這個概念要解決的核心問題是否就是{goal}，需要哪些資料與驗證方式支持？",
+        "prompt": "主管要求在{scenario}中選擇是否採用「{term}」。下列哪一個選型理由最完整？",
+        "correct": "任務目標、資料型態、模型限制、成本與維運需求都與「{goal}」相符，因此才採用",
         "wrongs": [
-            "這個名詞聽起來是否比其他名詞更像最新技術？",
-            "能不能完全不看資料品質就保證模型準確？",
-            "是否只要寫進簡報就能取代風險管理與測試？",
+            {
+                "text": "因為名稱看起來最新，所以不需要比較其他方法",
+                "reason": "技術新不代表適合；選型要看任務、資料、限制與可維運性。",
+            },
+            {
+                "text": "因為可以寫進簡報，所以不需要驗證資料與模型表現",
+                "reason": "簡報說法不能取代驗證；導入規劃必須有可測試的成效證據。",
+            },
+            {
+                "text": "因為所有 AI 專案都應該使用同一種方法，避免評估成本",
+                "reason": "不同任務需要不同方法；一體適用通常會忽略資料與業務差異。",
+            },
         ],
         "difficulty": "情境",
-        "explanation": "好的規劃問題會逼團隊說清楚概念與目標、資料、驗證方式之間的關係。",
+        "angle": "方法選型",
+        "why": "選型題要回答為什麼這個概念適合這個任務。正解把「{term}」與資料、限制、成本、維運和「{goal}」連在一起。",
+        "tip": "選型時不要問哪個技術最強，要問哪個技術最符合目前任務與限制。",
     },
     {
-        "prompt": "如果考題要求比較「{term}」與相鄰概念，下列哪個比較角度最穩？",
-        "correct": "比較它們的任務目標、輸入輸出、假設條件與評估方式是否不同",
+        "prompt": "模型上線後，團隊想持續確認{scenario}的服務品質。若系統使用「{term}」，最重要的監控設計是？",
+        "correct": "追蹤資料分布、模型表現、錯誤案例、延遲與使用者回饋，確認仍能對應「{goal}」",
         "wrongs": [
-            "只比較哪個名詞比較長或比較常出現在新聞",
-            "只看是否都能被稱為 AI，不再區分任務差異",
-            "只用單一 accuracy 決定所有概念優劣",
-        ],
-        "difficulty": "易混淆",
-        "explanation": "相鄰概念題常考差異；最穩的比較軸是任務、輸入輸出、假設、限制與評估方式。",
-    },
-    {
-        "prompt": "某公司希望把「{term}」納入正式 AI 專案，而不只是概念展示。下列哪項最像完整落地思維？",
-        "correct": "把{goal}轉成可衡量需求，並規劃資料、模型、驗證、部署與維運責任",
-        "wrongs": [
-            "只完成一次 demo，就視為正式營運系統",
-            "只保留 notebook，不規劃 API、監控或權限",
-            "只要求模型回答更像人，完全不定義驗收標準",
-        ],
-        "difficulty": "應用",
-        "explanation": "落地題不只問模型；還要能把需求、資料、驗證、部署、維運與責任分工串起來。",
-    },
-    {
-        "prompt": "下列哪個敘述最能避免在「{term}」相關題目中被錯誤選項誤導？",
-        "correct": "先判斷題目問的是概念定義、模型選型、評估指標、資料治理還是部署維運",
-        "wrongs": [
-            "看到熟悉名詞就直接選，不讀完情境條件",
-            "所有題目都優先選最大模型或最複雜架構",
-            "只要選項提到自動化，就一定代表正確答案",
-        ],
-        "difficulty": "易混淆",
-        "explanation": "很多錯誤選項不是完全錯，而是答非所問；先辨認題目層次，可以排除看似相關但不貼題的選項。",
-    },
-    {
-        "prompt": "若要替「{term}」設計一題更接近實務的考題，最應該加入哪種條件？",
-        "correct": "加入資料型態、業務目標、限制條件與{goal}是否可被驗證",
-        "wrongs": [
-            "只加入更多專有名詞，讓題目看起來更艱深",
-            "刻意刪除所有業務背景，只留下孤立名詞",
-            "只問哪個選項字數最長，不涉及概念判斷",
-        ],
-        "difficulty": "情境",
-        "explanation": "實務型題目會提供條件讓你做取捨；業務目標、資料型態、限制與驗證方式是關鍵。",
-    },
-    {
-        "prompt": "在{scenario}時，哪一個行動最能降低「知道名詞但不會用」的風險？",
-        "correct": "把「{term}」對應到具體輸入、處理流程、輸出結果與{goal}",
-        "wrongs": [
-            "只重複背誦名詞，避免接觸任何情境題",
-            "完全跳過錯題，不分析錯在概念、條件或指標",
-            "把所有延伸概念都視為考試不會出現",
-        ],
-        "difficulty": "應用",
-        "explanation": "刷題要從名詞走到流程；能說清楚輸入、處理、輸出與目的，才比較能應付情境變化。",
-    },
-    {
-        "prompt": "若題目問「{term}」在風險或治理上的注意事項，下列哪個回答最合理？",
-        "correct": "除了{goal}，也要檢查資料品質、偏誤、隱私、效能監控與人工作業介面",
-        "wrongs": [
-            "只要模型準確率高，就不需要任何治理或監控",
-            "只把資料全部集中保存，不管授權與保存期限",
-            "只讓模型自動決策，不保留紀錄、覆核或回滾機制",
+            {
+                "text": "上線後只要服務沒有當機，就不需要看模型輸出品質",
+                "reason": "AI 系統可能服務正常但模型品質漂移，因此必須監控資料與預測表現。",
+            },
+            {
+                "text": "只在部署當天看一次準確率，之後不再追蹤",
+                "reason": "資料與使用情境會變，單次評估不足以保證長期可靠。",
+            },
+            {
+                "text": "只記錄成功案例，不保存錯誤案例與回饋",
+                "reason": "錯誤案例是改善模型與風險控管的關鍵，不能只看成功樣本。",
+            },
         ],
         "difficulty": "進階",
-        "explanation": "中級規劃題常把技術與治理綁在一起；高分答案會同時考慮效能、資料、合規、監控與營運風險。",
+        "angle": "部署維運",
+        "why": "AI 上線後仍可能因資料漂移、使用者行為改變或外部環境變化而失準，因此要持續監控模型與系統。",
+        "tip": "部署題要同時想到效能、延遲、資料漂移、錯誤率、回滾機制與人工作業流程。",
     },
     {
-        "prompt": "若「{term}」出現在跨部門 AI 導入討論中，哪一項溝通方式最適合？",
-        "correct": "用業務語言說明它如何支援{goal}，再補上資料需求、限制與驗收方式",
+        "prompt": "在{scenario}中，若要比較「{term}」與其他候選方法，下列哪個比較角度最有判斷力？",
+        "correct": "比較任務目標、輸入輸出、假設條件、限制與評估方式是否能對應「{goal}」",
         "wrongs": [
-            "只用公式或縮寫說明，讓非技術成員自行猜測價值",
-            "只承諾模型一定正確，不揭露限制與風險",
-            "完全不談資料來源、權限、維運與責任分工",
+            {
+                "text": "只比較哪個名詞比較常出現在新聞或產品宣傳",
+                "reason": "曝光度不是適用性；實務上要看任務與資料條件。",
+            },
+            {
+                "text": "只要都能被稱為 AI，就不需要再區分任務差異",
+                "reason": "AI 概念之間常有不同輸入、輸出與假設，不能混為一談。",
+            },
+            {
+                "text": "只用單一分數決定所有概念優劣，不看錯誤成本",
+                "reason": "不同場景的錯誤成本不同，單一分數常會掩蓋真正風險。",
+            },
+        ],
+        "difficulty": "易混淆",
+        "angle": "概念比較",
+        "why": "相鄰概念常在輸入、輸出、假設或評估上不同。比較這些軸線，才能判斷「{term}」是否真的適合。",
+        "tip": "遇到比較題，先列出：處理什麼資料、輸出什麼結果、依賴什麼假設、用什麼指標驗證。",
+    },
+    {
+        "prompt": "某公司想把「{term}」從展示型 demo 變成正式服務。下列哪一項最符合完整落地思維？",
+        "correct": "把「{goal}」轉成可衡量需求，並規劃資料流程、模型驗證、部署監控、權限與維運責任",
+        "wrongs": [
+            {
+                "text": "只完成一次展示 demo，就視為正式營運系統",
+                "reason": "demo 只能證明概念可行，正式服務還需要安全、穩定、監控與維運設計。",
+            },
+            {
+                "text": "只保留 notebook，不規劃 API、權限、監控或回滾",
+                "reason": "notebook 不等於可營運系統；缺少整合與監控會讓服務難以維護。",
+            },
+            {
+                "text": "只要求模型回答更像人，完全不定義驗收標準",
+                "reason": "主觀感受不足以驗收；正式專案要有可量測指標與風險門檻。",
+            },
         ],
         "difficulty": "應用",
-        "explanation": "AI 應用規劃師要能跨部門溝通；技術概念需要被翻譯成業務價值、資料需求、限制與驗收標準。",
+        "angle": "系統落地",
+        "why": "正式服務不只要模型能跑，還要能整合到流程、被監控、被治理，並且能證明它改善「{goal}」。",
+        "tip": "看到 demo 轉正式服務，請立刻想到 API、權限、監控、回滾、資料更新與責任分工。",
+    },
+    {
+        "prompt": "同事主張「只要使用{term}，{scenario}就一定能成功」。你應該如何回應才最合理？",
+        "correct": "提醒仍需檢查資料品質、任務適配、評估指標、限制條件與「{goal}」是否被驗證",
+        "wrongs": [
+            {
+                "text": "同意這個說法，因為任何 AI 技術只要導入就會自動產生價值",
+                "reason": "AI 導入成效取決於問題、資料、流程與治理，不會因為名詞正確就保證成功。",
+            },
+            {
+                "text": "只要求換成更大的模型，不需要重新檢查資料與流程",
+                "reason": "模型變大不一定解決資料品質、標註、流程或評估問題。",
+            },
+            {
+                "text": "取消驗證流程，避免指標不好看影響專案推動",
+                "reason": "取消驗證會讓風險被隱藏，和 AI 應用規劃的精神相反。",
+            },
+        ],
+        "difficulty": "易混淆",
+        "angle": "過度承諾",
+        "why": "「一定成功」是危險訊號。即使概念正確，也要用資料、指標與實務限制來驗證是否真的能對應「{goal}」。",
+        "tip": "看到『一定、完全、只要、保證』這類絕對語氣，要特別小心。",
+    },
+    {
+        "prompt": "在{scenario}的專案中，模型表現突然變差。若系統仰賴「{term}」，第一輪診斷最應該做什麼？",
+        "correct": "檢查輸入資料分布、標籤或答案品質、前處理流程與評估指標是否仍對應「{goal}」",
+        "wrongs": [
+            {
+                "text": "直接宣告「{term}」失效，不需要看資料或流程變化",
+                "reason": "表現變差可能來自資料漂移、前處理錯誤、標籤變化或使用情境改變，不能直接怪概念。",
+            },
+            {
+                "text": "只把訓練輪數加倍，不檢查驗證資料與錯誤案例",
+                "reason": "增加訓練可能加重過擬合，無法定位真正問題。",
+            },
+            {
+                "text": "只看平均分數，不分析哪一類樣本或場景出錯",
+                "reason": "平均分數會掩蓋特定族群、類別或情境的失敗模式。",
+            },
+        ],
+        "difficulty": "情境",
+        "angle": "錯誤診斷",
+        "why": "模型退化時要先定位問題來源。資料分布、前處理、標籤品質與指標都可能讓「{term}」的效果失準。",
+        "tip": "診斷題要從資料、流程、模型、指標四層往回查，不要一開始就只調參數。",
+    },
+    {
+        "prompt": "若{scenario}的使用者會受到模型結果影響，導入「{term}」時最應優先納入哪一項風險控制？",
+        "correct": "保留資料授權檢查、錯誤紀錄、人工覆核、異常警示與回滾機制，避免偏離「{goal}」",
+        "wrongs": [
+            {
+                "text": "只要模型分數夠高，就不需要人工覆核或錯誤紀錄",
+                "reason": "高分不代表零風險；高影響場景仍需要監控、覆核與可追溯紀錄。",
+            },
+            {
+                "text": "把所有資料永久保存並公開給所有人使用",
+                "reason": "這違反資料最小化、授權與隱私保護原則，也會增加資安風險。",
+            },
+            {
+                "text": "讓模型自動改變業務流程，不需要通知負責單位",
+                "reason": "正式系統需要責任分工與變更管理，不能讓模型無控地改變流程。",
+            },
+        ],
+        "difficulty": "進階",
+        "angle": "風險治理",
+        "why": "AI 應用規劃不只看模型效果，也要管理隱私、偏誤、錯誤決策、資安與營運中斷風險。",
+        "tip": "高影響場景的好答案通常會包含：授權、紀錄、監控、人工覆核、回滾與責任歸屬。",
+    },
+    {
+        "prompt": "跨部門會議中，非技術主管問「{term}」到底能為{scenario}帶來什麼價值。哪一種說法最適合？",
+        "correct": "用業務語言說明它如何對應「{goal}」，再補充資料需求、限制、驗收指標與維運方式",
+        "wrongs": [
+            {
+                "text": "只列出公式、英文縮寫與模型名稱，讓主管自行推測價值",
+                "reason": "應用規劃需要把技術翻成業務語言，否則難以對齊需求與驗收。",
+            },
+            {
+                "text": "只承諾模型一定正確，不揭露限制、風險或失敗條件",
+                "reason": "過度承諾會掩蓋風險；正式規劃要說清楚限制與監控方式。",
+            },
+            {
+                "text": "完全不談資料來源、權限、流程整合與責任分工",
+                "reason": "這些都是導入能否落地的核心條件，不能只談模型本身。",
+            },
+        ],
+        "difficulty": "應用",
+        "angle": "跨部門溝通",
+        "why": "AI 應用規劃師要能把技術轉成業務可理解的價值、限制與驗收方式，而不只是展示名詞。",
+        "tip": "溝通題的好答案會同時出現價值、資料、限制、指標、維運與責任分工。",
+    },
+    {
+        "prompt": "團隊準備驗收一個使用「{term}」的 AI 功能。下列哪一項驗收條件最完整？",
+        "correct": "用獨立測試資料與實際場景案例檢查是否達到「{goal}」，並設定效能、錯誤率、延遲、風險與回滾門檻",
+        "wrongs": [
+            {
+                "text": "只要開發者在自己的電腦上示範成功一次，就算通過驗收",
+                "reason": "單次展示不能代表正式環境、不同資料與長期營運的穩定性。",
+            },
+            {
+                "text": "只看平均分數，不設定錯誤率、延遲或風險門檻",
+                "reason": "正式驗收需要多面向指標，平均分數不足以代表可上線。",
+            },
+            {
+                "text": "只確認畫面能顯示結果，不檢查答案品質與資料流程",
+                "reason": "介面可用不代表模型正確；AI 功能必須檢查資料、模型與流程。",
+            },
+        ],
+        "difficulty": "應用",
+        "angle": "驗收設計",
+        "why": "驗收要證明功能在真實條件下達成「{goal}」，並且符合效能、風險與營運門檻。",
+        "tip": "驗收題要找有獨立測試資料、實際案例、明確門檻與回滾方案的選項。",
     },
 ]
 
@@ -278,10 +453,71 @@ def fill_template(template: str, term: str, scenario: str, goal: str) -> str:
     return template.format(term=term, scenario=scenario, goal=goal)
 
 
+def goal_label(goal: str) -> str:
+    for suffix in ["是關鍵", "是核心", "是重點"]:
+        if goal.endswith(suffix):
+            return goal[: -len(suffix)]
+    return goal
+
+
+def wrong_reason(option_text: str, term: str, goal: str) -> str:
+    if any(keyword in option_text for keyword in ["一定", "完全", "所有", "保證"]):
+        return f"這個選項用了絕對化語氣，把「{term}」講成沒有條件限制的解法；實務上仍要看資料、任務與評估是否支持「{goal}」。"
+    if "只" in option_text:
+        return f"這個選項把問題過度簡化成「{option_text}」，忽略「{term}」需要和資料條件、任務目標及「{goal}」一起判斷。"
+    if any(keyword in option_text for keyword in ["資料", "標註", "測試", "訓練"]):
+        return f"這個選項碰到資料或訓練流程，但方向不符合本題；資料處理必須服務「{term}」的任務，而不是偏離「{goal}」。"
+    if any(keyword in option_text for keyword in ["影像", "文字", "翻譯", "分割", "分類", "迴歸"]):
+        return f"這個選項把任務型態混淆了；作答時要先確認「{term}」處理的是什麼輸入、輸出以及是否對應「{goal}」。"
+    return f"這個選項描述的是相鄰概念或不完整作法，沒有抓到「{term}」用來對應「{goal}」的主軸。"
+
+
+def build_explanation(
+    subject_name: str,
+    section: str,
+    topic: str,
+    term: str,
+    goal: str,
+    options: dict[str, str],
+    answer: str,
+    correct_reason: str,
+    wrong_reasons: dict[str, str],
+    tip: str,
+) -> str:
+    wrong_lines = []
+    for letter in ["A", "B", "C", "D"]:
+        if letter == answer:
+            continue
+        text = options[letter]
+        reason = wrong_reasons.get(text) or wrong_reason(text, term, goal)
+        wrong_lines.append(f"{letter}. {reason}")
+
+    return "\n".join(
+        [
+            f"學習指引定位：{subject_name} 第 {section} 節，主題「{topic}」。",
+            f"題目考點：看到「{term}」時，要連到「{goal}」，而不是只背名詞。",
+            "",
+            f"為什麼選 {answer}：{correct_reason} 正確選項寫的是「{options[answer]}」，它有對準題幹的任務條件。",
+            "",
+            "為什麼其他選項不對：",
+            *wrong_lines,
+            "",
+            f"考點提醒：{tip}",
+        ]
+    )
+
+
+def render_wrong_choice(wrong: dict[str, str], term: str, scenario: str, goal: str) -> tuple[str, str]:
+    text = fill_template(wrong["text"], term, scenario, goal)
+    reason = fill_template(wrong["reason"], term, scenario, goal)
+    return text, reason
+
+
 def make_question(concept: tuple, variant_index: int, serial: int) -> dict:
     subject, topic, section, page, term, correct, wrong1, wrong2, wrong3, scenario, goal = concept
+    goal_text = goal_label(goal)
     if variant_index < len(VARIANTS):
-        prompt = fill_template(VARIANTS[variant_index], term, scenario, goal)
+        prompt = fill_template(VARIANTS[variant_index], term, scenario, goal_text)
         variants = [
             correct,
             wrong1,
@@ -289,21 +525,28 @@ def make_question(concept: tuple, variant_index: int, serial: int) -> dict:
             wrong3,
         ]
         difficulty = ["基礎", "應用", "情境", "易混淆"][variant_index % 4]
-        explanation_tail = f"{term} 的核心是{goal}；因此應選「{correct}」。"
+        note = BASIC_VARIANT_NOTES[variant_index]
+        correct_reason = fill_template(note["why"], term, scenario, goal_text)
+        tip = fill_template(note["tip"], term, scenario, goal_text)
+        wrong_reasons = {wrong: wrong_reason(wrong, term, goal_text) for wrong in [wrong1, wrong2, wrong3]}
     else:
         deep_variant = DEEP_VARIANTS[variant_index - len(VARIANTS)]
-        prompt = fill_template(deep_variant["prompt"], term, scenario, goal)
+        prompt = fill_template(deep_variant["prompt"], term, scenario, goal_text)
+        wrong_choices = [render_wrong_choice(wrong, term, scenario, goal_text) for wrong in deep_variant["wrongs"]]
         variants = [
-            fill_template(deep_variant["correct"], term, scenario, goal),
-            *[fill_template(wrong, term, scenario, goal) for wrong in deep_variant["wrongs"]],
+            fill_template(deep_variant["correct"], term, scenario, goal_text),
+            *[text for text, _reason in wrong_choices],
         ]
         difficulty = deep_variant["difficulty"]
-        explanation_tail = f"{deep_variant['explanation']} 本題仍要回到「{term}」與「{goal}」的連結。"
+        correct_reason = fill_template(deep_variant["why"], term, scenario, goal_text)
+        tip = fill_template(deep_variant["tip"], term, scenario, goal_text)
+        wrong_reasons = {text: reason for text, reason in wrong_choices}
     order = option_order(serial + variant_index)
     options = {letter: variants[idx] for idx, letter in enumerate(order)}
     answer = next(letter for letter, text in options.items() if text == variants[0])
     guide_file = GUIDES[subject]
     subject_name = "科目1 人工智慧技術應用與規劃" if subject == "S1" else "科目3 機器學習技術與應用"
+    explanation = build_explanation(subject_name, section, topic, term, goal_text, options, answer, correct_reason, wrong_reasons, tip)
     return {
         "id": f"GUIDE-{subject}-{serial:03d}-{variant_index + 1}",
         "number": serial,
@@ -312,7 +555,7 @@ def make_question(concept: tuple, variant_index: int, serial: int) -> dict:
         "options": options,
         "topic": topic,
         "difficulty": difficulty,
-        "explanation": f"學習指引 {subject_name} 第 {section} 節重點：{explanation_tail}",
+        "explanation": explanation,
         "hasFigureReference": False,
         "source": {
             "file": guide_file,
@@ -320,7 +563,7 @@ def make_question(concept: tuple, variant_index: int, serial: int) -> dict:
             "examLabel": "學習指引延伸題",
             "subject": subject,
             "subjectName": subject_name,
-            "testDate": "2026-07-06",
+            "testDate": "2026-07-07",
             "page": page,
             "section": section,
             "generated": True,
